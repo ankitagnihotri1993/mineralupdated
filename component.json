@@ -1,0 +1,70 @@
+{
+	"title": "Mineral Tree",
+	"description": "magic software component for the Mineral Tree",
+	"docsUrl": "",
+	"credentials": {
+		"fields": {
+			"username": {
+				"label": "User Name",
+				"required": true,
+				"viewClass": "TextFieldWithNoteView"
+			},
+			"password": {
+				"label": "Password",
+				"required": true,
+				"viewClass": "TextFieldWithNoteView"
+			},
+			"endPointURL": {
+				"label": "End Point URL",
+				"required": true,
+        "viewClass": "TextFieldWithNoteView"
+		},
+		"companyId": {
+			"label": "Company Id",
+			"required": true,
+	"viewClass": "TextFieldWithNoteView"
+		}
+     	}
+	},
+	"triggers": {
+		"getGetMineralTreeInvoiceDetails": {
+			"main": "./lib/triggers/getMineralTreeInvoiceDetails.js",
+			"type": "polling",
+			"title": "Get MineralTree Invoice Details",
+			"model": "InvoiceDetails"
+		},
+		"getVendorList": {
+			"main": "./lib/triggers/getVendorList.js",
+			"type": "polling",
+			"title": "Get Vendor List"
+		}
+	},
+	"actions": {
+		"createUpdateVendor": {
+			"main": "./lib/actions/createUpdateVendor.js",
+			"title": "Create Or Update Vendor",
+			"metadata": {
+				"in": "./lib/schemas/Vendor/createVendor.in.json",
+				"out": "./lib/schemas/Vendor/createVendor.out.json"
+		  }
+	},
+	"createGLAccount": {
+		"main": "./lib/actions/createGLAccount.js",
+		"title": "Create GL Account",
+		"metadata": {
+			"in": "./lib/schemas/GLAccount/createGLAccount.in.json",
+			"out": "./lib/schemas/GLAccount/createGLAccount.out.json"
+	   }
+	 },
+	 "createUpdateInvoice": {
+		"main": "./lib/actions/createUpdateInvoice.js",
+		"title": "Create Or Update Invoice",
+		"metadata": {
+			"in": "./lib/schemas/Invoice/createUpdateInvoice.in.json",
+			"out": "./lib/schemas/Invoice/createUpdateInvoice.out.json"
+	   }
+	 }
+                      
+  }
+}
+

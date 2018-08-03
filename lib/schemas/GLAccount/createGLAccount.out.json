@@ -1,0 +1,521 @@
+{
+  "type": "object",
+  "definitions": {},
+  "properties": {
+    "modified": {
+      "type": "string",
+      "title": "The Modified ",
+      "default": "",
+      "examples": [
+        "2018-06-29T16:42:24Z"
+      ]
+    },
+    "created": {
+      "type": "string",
+      "title": "The Created ",
+      "default": "",
+      "examples": [
+        "2018-06-29T15:32:49Z"
+      ]
+    },
+    "id": {
+      "type": "string",
+      "title": "The Id ",
+      "default": "",
+      "examples": [
+        "1659488f-89c5-4bfd-80b8-357879a327b4"
+      ]
+    },
+    "externalId": {
+      "type": "string",
+      "title": "The Externalid ",
+      "default": "",
+      "examples": [
+        "8518"
+      ]
+    },
+    "memo": {
+      "type": "null",
+      "title": "The Memo ",
+      "default": null,
+      "examples": [
+        null
+      ]
+    },
+    "description": {
+      "type": "null",
+      "title": "The Description ",
+      "default": null,
+      "examples": [
+        null
+      ]
+    },
+    "name": {
+      "type": "string",
+      "title": "The Name ",
+      "default": "",
+      "examples": [
+        "David COA"
+      ]
+    },
+    "accountNumber": {
+      "type": "string",
+      "title": "The Accountnumber ",
+      "default": "",
+      "examples": [
+        "0003"
+      ]
+    },
+    "accountTypeLabel": {
+      "type": "null",
+      "title": "The Accounttypelabel ",
+      "default": null,
+      "examples": [
+        null
+      ]
+    },
+    "classRequired": {
+      "type": "boolean",
+      "title": "The Classrequired ",
+      "default": false,
+      "examples": [
+        true
+      ]
+    },
+    "customerRequired": {
+      "type": "boolean",
+      "title": "The Customerrequired ",
+      "default": false,
+      "examples": [
+        true
+      ]
+    },
+    "departmentRequired": {
+      "type": "boolean",
+      "title": "The Departmentrequired ",
+      "default": false,
+      "examples": [
+        true
+      ]
+    },
+    "employeeRequired": {
+      "type": "boolean",
+      "title": "The Employeerequired ",
+      "default": false,
+      "examples": [
+        true
+      ]
+    },
+    "itemRequired": {
+      "type": "boolean",
+      "title": "The Itemrequired ",
+      "default": false,
+      "examples": [
+        true
+      ]
+    },
+    "locationRequired": {
+      "type": "boolean",
+      "title": "The Locationrequired ",
+      "default": false,
+      "examples": [
+        true
+      ]
+    },
+    "projectRequired": {
+      "type": "boolean",
+      "title": "The Projectrequired ",
+      "default": false,
+      "examples": [
+        true
+      ]
+    },
+    "vendorRequired": {
+      "type": "boolean",
+      "title": "The Vendorrequired ",
+      "default": false,
+      "examples": [
+        true
+      ]
+    },
+    "status": {
+      "type": "string",
+      "title": "The Status ",
+      "default": "",
+      "examples": [
+        "ACTIVE"
+      ]
+    },
+    "ledgerType": {
+      "type": "string",
+      "title": "The Ledgertype ",
+      "default": "",
+      "examples": [
+        "EXPENSE_ACCOUNT"
+      ]
+    },
+    "active": {
+      "type": "boolean",
+      "title": "The Active ",
+      "default": false,
+      "examples": [
+        true
+      ]
+    },
+    "accountBalance": {
+      "type": "null",
+      "title": "The Accountbalance ",
+      "default": null,
+      "examples": [
+        null
+      ]
+    },
+    "subsidiaries": {
+      "type": "null",
+      "title": "The Subsidiaries ",
+      "default": null,
+      "examples": [
+        null
+      ]
+    },
+    "company": {
+      "type": "object",
+      "properties": {
+        "modified": {
+          "type": "null",
+          "title": "The Modified ",
+          "default": null,
+          "examples": [
+            null
+          ]
+        },
+        "created": {
+          "type": "string",
+          "title": "The Created ",
+          "default": "",
+          "examples": [
+            "2018-06-04T14:18:28Z"
+          ]
+        },
+        "id": {
+          "type": "string",
+          "title": "The Id ",
+          "default": "",
+          "examples": [
+            "83fbcf24-7482-4df9-a254-d53e87f738e4"
+          ]
+        },
+        "externalId": {
+          "type": "null",
+          "title": "The Externalid ",
+          "default": null,
+          "examples": [
+            null
+          ]
+        },
+        "memo": {
+          "type": "null",
+          "title": "The Memo ",
+          "default": null,
+          "examples": [
+            null
+          ]
+        },
+        "description": {
+          "type": "null",
+          "title": "The Description ",
+          "default": null,
+          "examples": [
+            null
+          ]
+        },
+        "name": {
+          "type": "string",
+          "title": "The Name ",
+          "default": "",
+          "examples": [
+            "Magic PoC - Caliber"
+          ]
+        },
+        "legalName": {
+          "type": "null",
+          "title": "The Legalname ",
+          "default": null,
+          "examples": [
+            null
+          ]
+        },
+        "dBAName": {
+          "type": "string",
+          "title": "The Dbaname ",
+          "default": "",
+          "examples": [
+            "Magic PoC - Caliber"
+          ]
+        },
+        "vendorType": {
+          "type": "null",
+          "title": "The Vendortype ",
+          "default": null,
+          "examples": [
+            null
+          ]
+        },
+        "emails": {
+          "type": "null",
+          "title": "The Emails ",
+          "default": null,
+          "examples": [
+            null
+          ]
+        },
+        "externalParentId": {
+          "type": "null",
+          "title": "The Externalparentid ",
+          "default": null,
+          "examples": [
+            null
+          ]
+        },
+        "address": {
+        
+          "type": "object",
+          "properties": {
+            "modified": {
+             "type": "null",
+              "title": "The Modified ",
+              "default": null,
+              "examples": [
+                null
+              ]
+            },
+            "created": {
+              "type": "null",
+              "title": "The Created ",
+              "default": null,
+              "examples": [
+                null
+              ]
+            },
+            "id": {
+             "type": "null",
+              "title": "The Id ",
+              "default": null,
+              "examples": [
+                null
+              ]
+            },
+            "externalId": {
+              "type": "null",
+              "title": "The Externalid ",
+              "default": null,
+              "examples": [
+                null
+              ]
+            },
+            "memo": {
+             "type": "null",
+              "title": "The Memo ",
+              "default": null,
+              "examples": [
+                null
+              ]
+            },
+            "description": {
+             "type": "null",
+              "title": "The Description ",
+              "default": null,
+              "examples": [
+                null
+              ]
+            },
+            "name": {
+              "type": "null",
+              "title": "The Name ",
+              "default": null,
+              "examples": [
+                null
+              ]
+            },
+            "address1": {
+             "type": "string",
+              "title": "The Address1 ",
+              "default": "",
+              "examples": [
+                "125 Cambridgepark Drive "
+              ]
+            },
+            "address2": {
+              "type": "null",
+              "title": "The Address2 ",
+              "default": null,
+              "examples": [
+                null
+              ]
+            },
+            "address3": {
+              "type": "null",
+              "title": "The Address3 ",
+              "default": null,
+              "examples": [
+                null
+              ]
+            },
+            "address4": {
+             "type": "null",
+              "title": "The Address4 ",
+              "default": null,
+              "examples": [
+                null
+              ]
+            },
+            "address5": {
+              "type": "null",
+              "title": "The Address5 ",
+              "default": null,
+              "examples": [
+                null
+              ]
+            },
+            "postalCode": {
+              "type": "string",
+              "title": "The Postalcode ",
+              "default": "",
+              "examples": [
+                "02140"
+              ]
+            },
+            "town": {
+              "type": "string",
+              "title": "The Town ",
+              "default": "",
+              "examples": [
+                "Cambridge"
+              ]
+            },
+            "ctrySubDivision": {
+              "type": "string",
+              "title": "The Ctrysubdivision ",
+              "default": "",
+              "examples": [
+                "Massachusetts"
+              ]
+            },
+            "country": {
+              "type": "string",
+              "title": "The Country ",
+              "default": "",
+              "examples": [
+                "US"
+              ]
+            }
+          }
+        },
+        "phones": {
+          "type": "array",
+          "items": {
+           "type": "object",
+            "properties": {
+              "modified": {
+                "type": "null",
+                "title": "The Modified ",
+                "default": null,
+                "examples": [
+                  null
+                ]
+              },
+              "created": {
+               "type": "null",
+                "title": "The Created ",
+                "default": null,
+                "examples": [
+                  null
+                ]
+              },
+              "id": {
+                "type": "null",
+                "title": "The Id ",
+                "default": null,
+                "examples": [
+                  null
+                ]
+              },
+              "externalId": {
+                "type": "null",
+                "title": "The Externalid ",
+                "default": null,
+                "examples": [
+                  null
+                ]
+              },
+              "name": {
+                "type": "null",
+                "title": "The Name ",
+                "default": null,
+                "examples": [
+                  null
+                ]
+              },
+              "location": {
+                 "type": "null",
+                "title": "The Location ",
+                "default": null,
+                "examples": [
+                  null
+                ]
+              },
+              "number": {
+                "type": "string",
+                "title": "The Number ",
+                "default": "",
+                "examples": [
+                  "6172993399"
+                ]
+              },
+              "countryCode": {
+               "type": "string",
+                "title": "The Countrycode ",
+                "default": "",
+                "examples": [
+                  "US"
+                ]
+              },
+              "fax": {
+                "type": "boolean",
+                "title": "The Fax ",
+                "default": false,
+                "examples": [
+                  false
+                ]
+              }
+            }
+          }
+        },
+        "parent": {
+          "type": "null",
+          "title": "The Parent ",
+          "default": null,
+          "examples": [
+            null
+          ]
+        },
+        "subsidiaries": {
+          "type": "null",
+          "title": "The Subsidiaries ",
+          "default": null,
+          "examples": [
+            null
+          ]
+        },
+        "paymentMethods": {
+           "type": "null",
+          "title": "The Paymentmethods ",
+          "default": null,
+          "examples": [
+            null
+          ]
+        }
+      }
+    }
+  }
+}

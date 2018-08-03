@@ -1,0 +1,527 @@
+{
+  "type": "object",
+  "definitions": {},
+  "properties": {
+    "bill": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "title": "The Id ",
+          "default": "",
+          "examples": [
+            "Unique ID of this bill <only required during update>"
+          ]
+        },
+        "externalId": {
+          "type": "string",
+          "title": "The Externalid ",
+          "default": "",
+          "examples": [
+            "External ID that will help reference this bill with external system"
+          ]
+        },
+        "term": {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "string",
+              "title": "The Id ",
+              "default": "",
+              "examples": [
+                "Id of the term object"
+              ]
+            }
+          }
+        },
+        "classification": {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "string",
+              "title": "The Id ",
+              "default": "",
+              "examples": [
+                "Id of the class object"
+              ]
+            }
+          }
+        },
+        "department": {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "string",
+              "title": "The Id ",
+              "default": "",
+              "examples": [
+                "Id of the department object"
+              ]
+            }
+          }
+        },
+        "location": {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "string",
+              "title": "The Id ",
+              "default": "",
+              "examples": [
+                "Id of the location object"
+              ]
+            }
+          }
+        },
+        "subsidiary": {
+          "type": "object",
+          "properties": {
+            "id": {
+            "type": "string",
+              "title": "The Id ",
+              "default": "",
+              "examples": [
+                "Id of the subsidiary object"
+              ]
+            }
+          }
+        },
+        "dueDate": {
+          "type": "string",
+          "title": "The Duedate ",
+          "default": "",
+          "examples": [
+            "ex:2017-03-12"
+          ]
+        },
+        "transactionDate": {
+          "type": "string",
+          "title": "The Transactiondate ",
+          "default": "",
+          "examples": [
+            ""
+          ]
+        },
+        "invoiceNumber": {
+          "type": "string",
+          "title": "The Invoicenumber ",
+          "default": "",
+          "examples": [
+            "Invoice number for this bill"
+          ]
+        },
+        "amount": {
+          "type": "object",
+          "properties": {
+            "amount": {
+              "type": "integer",
+              "title": "The Amount ",
+              "default": 0,
+              "examples": [
+                0
+              ]
+            }
+          }
+        },
+        "balance": {
+          "type": "object",
+          "properties": {
+            "amount": {
+              "type": "integer",
+              "title": "The Amount ",
+              "default": 0,
+              "examples": [
+                0
+              ]
+            }
+          }
+        },
+        "totalTaxAmount": {
+          "type": "object",
+          "properties": {
+            "amount": {
+              "type": "integer",
+              "title": "The Amount ",
+              "default": 0,
+              "examples": [
+                0
+              ]
+            }
+          }
+        },
+        "memo": {
+          "type": "string",
+          "title": "The Memo ",
+          "default": "",
+          "examples": [
+            "string"
+          ]
+        },
+        "poNumber": {
+          "type": "string",
+          "title": "The Ponumber ",
+          "default": "",
+          "examples": [
+            "ponumber1"
+          ]
+        },
+        "state": {
+          "type": "string",
+          "title": "The State ",
+          "default": "",
+          "examples": [
+            "Any | Open | Settled | PendingSettled | ClosedByCredit | Voided"
+          ]
+        },
+        "vendor": {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "string",
+              "title": "The Id ",
+              "default": "",
+              "examples": [
+                "Id of the vendor object"
+              ]
+            }
+          }
+        },
+        "expenses": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "classification": {
+                "type": "object",
+                "properties": {
+                  "id": {
+                    "type": "string",
+                    "title": "The Id ",
+                    "default": "",
+                    "examples": [
+                      "Id of the class object"
+                    ]
+                  }
+                }
+              },
+              "department": {
+                "type": "object",
+                "properties": {
+                  "id": {
+                    "type": "string",
+                    "title": "The Id ",
+                    "default": "",
+                    "examples": [
+                      "Id of the department object"
+                    ]
+                  }
+                }
+              },
+              "location": {
+                "type": "object",
+                "properties": {
+                  "id": {
+                    "type": "string",
+                    "title": "The Id ",
+                    "default": "",
+                    "examples": [
+                      "Id of the location object"
+                    ]
+                  }
+                }
+              },
+              "glAccount": {
+                "type": "object",
+                "properties": {
+                  "id": {
+                    "type": "string",
+                    "title": "The Id ",
+                    "default": "",
+                    "examples": [
+                      "Id of the gl account object"
+                    ]
+                  }
+                }
+              },
+              "taxRate": {
+                "type": "object",
+                "properties": {
+                  "amount": {
+                    "type": "integer",
+                    "title": "The Amount ",
+                    "default": 0,
+                    "examples": [
+                      0
+                    ]
+                  }
+                }
+              },
+              "taxAmount": {
+                "type": "object",
+                "properties": {
+                  "amount": {
+                    "type": "integer",
+                    "title": "The Amount ",
+                    "default": 0,
+                    "examples": [
+                      0
+                    ]
+                  }
+                }
+              },
+              "netAmount": {
+                "type": "object",
+                "properties": {
+                  "amount": {
+                    "type": "integer",
+                    "title": "The Amount ",
+                    "default": 0,
+                    "examples": [
+                      0
+                    ]
+                  }
+                }
+              },
+              "amountDue": {
+                "type": "object",
+                "properties": {
+                  "amount": {
+                    "type": "integer",
+                    "title": "The Amount ",
+                    "default": 0,
+                    "examples": [
+                      0
+                    ]
+                  }
+                }
+              },
+              "lineNumber": {
+                "type": "integer",
+                "title": "The Linenumber ",
+                "default": 0,
+                "examples": [
+                  0
+                ]
+              },
+              "closed": {
+                "type": "boolean",
+                "title": "The Closed ",
+                "default": false,
+                "examples": [
+                  true
+                ]
+              },
+              "memo": {
+                "type": "string",
+                "title": "The Memo ",
+                "default": "",
+                "examples": [
+                  "Memo for the expense"
+                ]
+              }
+            }
+          }
+        },
+        "items": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "companyItem": {
+                "type": "object",
+                "properties": {
+                  "id": {
+                    "type": "string",
+                    "title": "The Id ",
+                    "default": "",
+                    "examples": [
+                      "Id of the company item object"
+                    ]
+                  }
+                }
+              },
+              "classification": {
+                "type": "object",
+                "properties": {
+                  "id": {
+                  "type": "string",
+                    "title": "The Id ",
+                    "default": "",
+                    "examples": [
+                      "Id of the class object"
+                    ]
+                  }
+                }
+              },
+              "department": {
+                "type": "object",
+                "properties": {
+                  "id": {
+                    "type": "string",
+                    "title": "The Id ",
+                    "default": "",
+                    "examples": [
+                      "Id of the department object"
+                    ]
+                  }
+                }
+              },
+              "location": {
+                "type": "object",
+                "properties": {
+                  "id": {
+                    "type": "string",
+                    "title": "The Id ",
+                    "default": "",
+                    "examples": [
+                      "Id of the location object"
+                    ]
+                  }
+                }
+              },
+              "glAccount": {
+                "type": "object",
+                "properties": {
+                  "id": {
+                    "type": "string",
+                    "title": "The Id ",
+                    "default": "",
+                    "examples": [
+                      "Id of the gl account object"
+                    ]
+                  }
+                }
+              },
+              "name": {
+                "type": "string",
+                "title": "The Name ",
+                "default": "",
+                "examples": [
+                  "Name of the item if applicable"
+                ]
+              },
+              "quantity": {
+                "type": "object",
+                "properties": {
+                  "value": {
+                    "type": "integer",
+                    "title": "The Value ",
+                    "default": 0,
+                    "examples": [
+                      1
+                    ]
+                  },
+                  "precision": {
+                    "type": "integer",
+                    "title": "The Precision ",
+                    "default": 0,
+                    "examples": [
+                      2
+                    ]
+                  }
+                }
+              },
+              "cost": {
+                "type": "object",
+                "properties": {
+                  "amount": {
+                    "type": "integer",
+                    "title": "The Amount ",
+                    "default": 0,
+                    "examples": [
+                      0
+                    ]
+                  },
+                  "precision": {
+                    "type": "integer",
+                    "title": "The Precision ",
+                    "default": 0,
+                    "examples": [
+                      2
+                    ]
+                  }
+                }
+              },
+              "taxRate": {
+                "type": "object",
+                "properties": {
+                  "amount": {
+                    "type": "integer",
+                    "title": "The Amount ",
+                    "default": 0,
+                    "examples": [
+                      0
+                    ]
+                  }
+                }
+              },
+              "taxAmount": {
+                "type": "object",
+                "properties": {
+                  "amount": {
+                    "type": "integer",
+                    "title": "The Amount ",
+                    "default": 0,
+                    "examples": [
+                      0
+                    ]
+                  }
+                }
+              },
+              "netAmount": {
+                "type": "object",
+                "properties": {
+                  "amount": {
+                    "type": "integer",
+                    "title": "The Amount ",
+                    "default": 0,
+                    "examples": [
+                      0
+                    ]
+                  }
+                }
+              },
+              "amountDue": {
+                "type": "object",
+                "properties": {
+                  "amount": {
+                  "type": "integer",
+                    "title": "The Amount ",
+                    "default": 0,
+                    "examples": [
+                      0
+                    ]
+                  }
+                }
+              },
+              "lineNumber": {
+                "type": "integer",
+                "title": "The Linenumber ",
+                "default": 0,
+                "examples": [
+                  0
+                ]
+              },
+              "closed": {
+                "type": "boolean",
+                "title": "The Closed ",
+                "default": false,
+                "examples": [
+                  true
+                ]
+              },
+              "description": {
+                "type": "string",
+                "title": "The Description ",
+                "default": "",
+                "examples": [
+                  "Item description"
+                ]
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

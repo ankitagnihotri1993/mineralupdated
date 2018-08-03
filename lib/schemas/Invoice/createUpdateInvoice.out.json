@@ -1,0 +1,902 @@
+{
+  "type": "object",
+  "definitions": {},
+  "properties": {
+    "modified": {
+      "type": "string",
+      "title": "The Modified",
+      "default": "",
+      "examples": [
+        "2018-07-10T05:49:31Z"
+      ]
+    },
+    "created": {
+      "type": "string",
+      "title": "The Created",
+      "default": "",
+      "examples": [
+        "2018-07-10T05:49:31Z"
+      ]
+    },
+    "id": {
+      "type": "string",
+      "title": "The Id",
+      "default": "",
+      "examples": [
+        "b41450ef-ba50-4fdb-910e-e383c7a639f5"
+      ]
+    },
+    "externalId": {
+      "type": "string",
+      "title": "The Externalid",
+      "default": "",
+      "examples": [
+        "370"
+      ]
+    },
+    "memo": {
+      "type": "string",
+      "title": "The Memo",
+      "default": "",
+      "examples": [
+        "memo002"
+      ]
+    },
+    "description": {
+      "type": "null",
+      "title": "The Description",
+      "default": null,
+      "examples": [
+        null
+      ]
+    },
+    "name": {
+      "type": "null",
+      "title": "The Name",
+      "default": null,
+      "examples": [
+        null
+      ]
+    },
+    "parent": {
+      "type": "null",
+      "title": "The Parent",
+      "default": null,
+      "examples": [
+        null
+      ]
+    },
+    "state": {
+      "title": "The State",
+      "default": null,
+      "examples": [
+        null
+      ]
+    },
+    "started": {
+      "type": "null",
+      "title": "The Started",
+      "default": null,
+      "examples": [
+        null
+      ]
+    },
+    "ended": {
+      "type": "null",
+      "title": "The Ended",
+      "default": null,
+      "examples": [
+        null
+      ]
+    },
+    "transactionDate": {
+      "type": "string",
+      "title": "The Transactiondate",
+      "default": "",
+      "examples": [
+        "2018-06-14T00:00:00Z"
+      ]
+    },
+    "dueDate": {
+      "type": "string",
+      "title": "The Duedate",
+      "default": "",
+      "examples": [
+        "2018-06-14T00:00:00Z"
+      ]
+    },
+    "invoiceNumber": {
+      "type": "string",
+      "title": "The Invoicenumber",
+      "default": "",
+      "examples": [
+        "m0002"
+      ]
+    },
+    "expenseReport": {
+      "type": "boolean",
+      "title": "The Expensereport",
+      "default": false,
+      "examples": [
+        false
+      ]
+    },
+    "active": {
+      "type": "boolean",
+      "title": "The Active",
+      "default": false,
+      "examples": [
+        true
+      ]
+    },
+    "dataSource": {
+      "type": "null",
+      "title": "The Datasource",
+      "default": null,
+      "examples": [
+        null
+      ]
+    },
+    "poNumber": {
+      "type": "string",
+      "title": "The Ponumber",
+      "default": "",
+      "examples": [
+        "pon002"
+      ]
+    },
+    "popType": {
+      "type": "null",
+      "title": "The Poptype",
+      "default": null,
+      "examples": [
+        null
+      ]
+    },
+    "status": {
+      "type": "string",
+      "title": "The Status",
+      "default": "",
+      "examples": [
+        "Open"
+      ]
+    },
+    "dimensions": {
+      "type": "null",
+      "title": "The Dimensions",
+      "default": null,
+      "examples": [
+        null
+      ]
+    },
+    "vendor": {
+      "type": "object",
+      "properties": {
+        "modified": {
+          "type": "null",
+          "title": "The Modified",
+          "default": null,
+          "examples": [
+            null
+          ]
+        },
+        "created": {
+          "type": "null",
+          "title": "The Created",
+          "default": null,
+          "examples": [
+            null
+          ]
+        },
+        "id": {
+          "type": "string",
+          "title": "The Id",
+          "default": "",
+          "examples": [
+            "ebb4bd07-8401-48c2-b07b-bd6ef7391dfb"
+          ]
+        },
+        "externalId": {
+          "type": "string",
+          "title": "The Externalid",
+          "default": "",
+          "examples": [
+            "^_^8f4f466d-4ad1-4149-b29b-23818"
+          ]
+        },
+        "memo": {
+          "type": "null",
+          "title": "The Memo",
+          "default": null,
+          "examples": [
+            null
+          ]
+        },
+        "description": {
+          "type": "null",
+          "title": "The Description",
+          "default": null,
+          "examples": [
+            null
+          ]
+        },
+        "name": {
+          "type": "null",
+          "title": "The Name",
+          "default": null,
+          "examples": [
+            null
+          ]
+        },
+        "legalName": {
+          "type": "null",
+          "title": "The Legalname",
+          "default": null,
+          "examples": [
+            null
+          ]
+        },
+        "dBAName": {
+          "type": "null",
+          "title": "The Dbaname",
+          "default": null,
+          "examples": [
+            null
+          ]
+        },
+        "vendorType": {
+          "type": "null",
+          "title": "The Vendortype",
+          "default": null,
+          "examples": [
+            null
+          ]
+        },
+        "emails": {
+          "type": "null",
+          "title": "The Emails",
+          "default": null,
+          "examples": [
+            null
+          ]
+        },
+        "form1099Enabled": {
+          "type": "null",
+          "title": "The Form1099enabled",
+          "default": null,
+          "examples": [
+            null
+          ]
+        },
+        "active": {
+          "type": "null",
+          "title": "The Active",
+          "default": null,
+          "examples": [
+            null
+          ]
+        },
+        "taxId": {
+          "type": "null",
+          "title": "The Taxid",
+          "default": null,
+          "examples": [
+            null
+          ]
+        },
+        "vatNumber": {
+          "type": "null",
+          "title": "The Vatnumber",
+          "default": null,
+          "examples": [
+            null
+          ]
+        },
+        "customerAccount": {
+          "type": "null",
+          "title": "The Customeraccount",
+          "default": null,
+          "examples": [
+            null
+          ]
+        },
+        "remittanceEnabled": {
+          "type": "null",
+          "title": "The Remittanceenabled",
+          "default": null,
+          "examples": [
+            null
+          ]
+        },
+        "remittanceEmails": {
+          "type": "null",
+          "title": "The Remittanceemails",
+          "default": null,
+          "examples": [
+            null
+          ]
+        },
+        "address": {
+          "type": "null",
+          "title": "The Address",
+          "default": null,
+          "examples": [
+            null
+          ]
+        },
+        "phones": {
+          "type": "null",
+          "title": "The Phones",
+          "default": null,
+          "examples": [
+            null
+          ]
+        },
+        "parent": {
+          "type": "null",
+          "title": "The Parent",
+          "default": null,
+          "examples": [
+            null
+          ]
+        },
+        "defaultTerms": {
+          "type": "null",
+          "title": "The Defaultterms",
+          "default": null,
+          "examples": [
+            null
+          ]
+        },
+        "defaultExpenseAccount": {
+          "type": "null",
+          "title": "The Defaultexpenseaccount",
+          "default": null,
+          "examples": [
+            null
+          ]
+        },
+        "defaultAPAccount": {
+          "type": "null",
+          "title": "The Defaultapaccount",
+          "default": null,
+          "examples": [
+            null
+          ]
+        },
+        "fundingMethods": {
+          "type": "null",
+          "title": "The Fundingmethods",
+          "default": null,
+          "examples": [
+            null
+          ]
+        },
+        "primarySubsidiary": {
+          "type": "null",
+          "title": "The Primarysubsidiary",
+          "default": null,
+          "examples": [
+            null
+          ]
+        },
+        "vendorCompanyDefault": {
+          "type": "null",
+          "title": "The Vendorcompanydefault",
+          "default": null,
+          "examples": [
+            null
+          ]
+        },
+        "company": {
+          "type": "null",
+          "title": "The Company",
+          "default": null,
+          "examples": [
+            null
+          ]
+        }
+      }
+    },
+    "company": {
+      "type": "object",
+      "properties": {
+        "modified": {
+          "type": "null",
+          "title": "The Modified",
+          "default": null,
+          "examples": [
+            null
+          ]
+        },
+        "created": {
+          "type": "null",
+          "title": "The Created",
+          "default": null,
+          "examples": [
+            null
+          ]
+        },
+        "id": {
+          "type": "string",
+          "title": "The Id",
+          "default": "",
+          "examples": [
+            "83fbcf24-7482-4df9-a254-d53e87f738e4"
+          ]
+        },
+        "externalId": {
+          "type": "null",
+          "title": "The Externalid",
+          "default": null,
+          "examples": [
+            null
+          ]
+        },
+        "memo": {
+          "type": "null",
+          "title": "The Memo",
+          "default": null,
+          "examples": [
+            null
+          ]
+        },
+        "description": {
+          "type": "null",
+          "title": "The Description",
+          "default": null,
+          "examples": [
+            null
+          ]
+        },
+        "name": {
+          "type": "null",
+          "title": "The Name",
+          "default": null,
+          "examples": [
+            null
+          ]
+        },
+        "legalName": {
+          "type": "null",
+          "title": "The Legalname",
+          "default": null,
+          "examples": [
+            null
+          ]
+        },
+        "dBAName": {
+          "type": "null",
+          "title": "The Dbaname",
+          "default": null,
+          "examples": [
+            null
+          ]
+        },
+        "vendorType": {
+          "type": "null",
+          "title": "The Vendortype",
+          "default": null,
+          "examples": [
+            null
+          ]
+        },
+        "emails": {
+          "type": "null",
+          "title": "The Emails",
+          "default": null,
+          "examples": [
+            null
+          ]
+        },
+        "externalParentId": {
+          "type": "null",
+          "title": "The Externalparentid",
+          "default": null,
+          "examples": [
+            null
+          ]
+        },
+        "address": {
+          "type": "null",
+          "title": "The Address",
+          "default": null,
+          "examples": [
+            null
+          ]
+        },
+        "phones": {
+          "type": "null",
+          "title": "The Phones",
+          "default": null,
+          "examples": [
+            null
+          ]
+        },
+        "parent": {
+          "type": "null",
+          "title": "The Parent",
+          "default": null,
+          "examples": [
+            null
+          ]
+        },
+        "subsidiaries": {
+          "type": "null",
+          "title": "The Subsidiaries",
+          "default": null,
+          "examples": [
+            null
+          ]
+        },
+        "paymentMethods": {
+          "type": "null",
+          "title": "The Paymentmethods",
+          "default": null,
+          "examples": [
+            null
+          ]
+        }
+      }
+    },
+    "amount": {
+      "type": "object",
+      "properties": {
+        "modified": {
+          "type": "null",
+          "title": "The Modified",
+          "default": null,
+          "examples": [
+            null
+          ]
+        },
+        "created": {
+          "type": "null",
+          "title": "The Created",
+          "default": null,
+          "examples": [
+            null
+          ]
+        },
+        "amount": {
+          "type": "integer",
+          "title": "The Amount",
+          "default": 0,
+          "examples": [
+            500
+          ]
+        },
+        "precision": {
+          "type": "integer",
+          "title": "The Precision",
+          "default": 0,
+          "examples": [
+            2
+          ]
+        },
+        "currency": {
+          "type": "string",
+          "title": "The Currency",
+          "default": "",
+          "examples": [
+            "USD"
+          ]
+        }
+      }
+    },
+    "balance": {
+      "type": "object",
+      "properties": {
+        "modified": {
+          "type": "null",
+          "title": "The Modified",
+          "default": null,
+          "examples": [
+            null
+          ]
+        },
+        "created": {
+          "type": "null",
+          "title": "The Created",
+          "default": null,
+          "examples": [
+            null
+          ]
+        },
+        "amount": {
+          "type": "integer",
+          "title": "The Amount",
+          "default": 0,
+          "examples": [
+            500
+          ]
+        },
+        "precision": {
+          "type": "integer",
+          "title": "The Precision",
+          "default": 0,
+          "examples": [
+            2
+          ]
+        },
+        "currency": {
+          "type": "string",
+          "title": "The Currency",
+          "default": "",
+          "examples": [
+            "USD"
+          ]
+        }
+      }
+    },
+    "totalTaxAmount": {
+      "type": "object",
+      "properties": {
+        "modified": {
+          "type": "null",
+          "title": "The Modified",
+          "default": null,
+          "examples": [
+            null
+          ]
+        },
+        "created": {
+          "type": "null",
+          "title": "The Created",
+          "default": null,
+          "examples": [
+            null
+          ]
+        },
+        "amount": {
+          "type": "integer",
+          "title": "The Amount",
+          "default": 0,
+          "examples": [
+            12
+          ]
+        },
+        "precision": {
+          "type": "integer",
+          "title": "The Precision",
+          "default": 0,
+          "examples": [
+            2
+          ]
+        },
+        "currency": {
+          "type": "string",
+          "title": "The Currency",
+          "default": "",
+          "examples": [
+            "USD"
+          ]
+        }
+      }
+    },
+    "discountAmount": {
+      "type": "null",
+      "title": "The Discountamount",
+      "default": null,
+      "examples": [
+        null
+      ]
+    },
+    "appliedDiscountAmount": {
+      "type": "null",
+      "title": "The Applieddiscountamount",
+      "default": null,
+      "examples": [
+        null
+      ]
+    },
+    "items": {
+      "type": "null",
+      "title": "The Items",
+      "default": null,
+      "examples": [
+        null
+      ]
+    },
+    "expenses": {
+      "type": "null",
+      "title": "The Expenses",
+      "default": null,
+      "examples": [
+        null
+      ]
+    },
+    "accountingPeriod": {
+      "type": "null",
+      "title": "The Accountingperiod",
+      "default": null,
+      "examples": [
+        null
+      ]
+    },
+    "apAccount": {
+      "type": "null",
+      "title": "The Apaccount",
+      "default": null,
+      "examples": [
+        null
+      ]
+    },
+    "classification": {
+      "type": "null",
+      "title": "The Classification",
+      "default": null,
+      "examples": [
+        null
+      ]
+    },
+    "department": {
+      "type": "null",
+      "title": "The Department",
+      "default": null,
+      "examples": [
+        null
+      ]
+    },
+    "location": {
+      "type": "null",
+      "title": "The Location",
+      "default": null,
+      "examples": [
+        null
+      ]
+    },
+    "subsidiary": {
+      "type": "null",
+      "title": "The Subsidiary",
+      "default": null,
+      "examples": [
+        null
+      ]
+    },
+    "term": {
+      "type": "object",
+      "properties": {
+        "modified": {
+          "type": "null",
+          "title": "The Modified",
+          "default": null,
+          "examples": [
+            null
+          ]
+        },
+        "created": {
+          "type": "null",
+          "title": "The Created",
+          "default": null,
+          "examples": [
+            null
+          ]
+        },
+        "id": {
+          "type": "null",
+          "title": "The Id",
+          "default": null,
+          "examples": [
+            null
+          ]
+        },
+        "externalId": {
+          "type": "null",
+          "title": "The Externalid",
+          "default": null,
+          "examples": [
+            null
+          ]
+        },
+        "memo": {
+          "type": "null",
+          "title": "The Memo",
+          "default": null,
+          "examples": [
+            null
+          ]
+        },
+        "description": {
+          "type": "null",
+          "title": "The Description",
+          "default": null,
+          "examples": [
+            null
+          ]
+        },
+        "name": {
+          "type": "null",
+          "title": "The Name",
+          "default": null,
+          "examples": [
+            null
+          ]
+        },
+        "active": {
+          "type": "boolean",
+          "title": "The Active",
+          "default": false,
+          "examples": [
+            false
+          ]
+        },
+        "discountDays": {
+          "type": "null",
+          "title": "The Discountdays",
+          "default": null,
+          "examples": [
+            null
+          ]
+        },
+        "discountPercent": {
+          "type": "null",
+          "title": "The Discountpercent",
+          "default": null,
+          "examples": [
+            null
+          ]
+        },
+        "discountAmount": {
+          "type": "null",
+          "title": "The Discountamount",
+          "default": null,
+          "examples": [
+            null
+          ]
+        },
+        "dueDays": {
+          "type": "null",
+          "title": "The Duedays",
+          "default": null,
+          "examples": [
+            null
+          ]
+        },
+        "status": {
+          "type": "null",
+          "title": "The Status",
+          "default": null,
+          "examples": [
+            null
+          ]
+        },
+        "subsidiaries": {
+          "type": "array"
+        },
+        "company": {
+          "type": "null",
+          "title": "The Company",
+          "default": null,
+          "examples": [
+            null
+          ]
+        }
+      }
+    },
+    "billCredits": {
+      "type": "null",
+      "title": "The Billcredits",
+      "default": null,
+      "examples": [
+        null
+      ]
+    },
+    "purchaseOrders": {
+      "type": "null",
+      "title": "The Purchaseorders",
+      "default": null,
+      "examples": [
+        null
+      ]
+    },
+    "appliedPaymentAmount": {
+      "type": "null",
+      "title": "The Appliedpaymentamount",
+      "default": null,
+      "examples": [
+        null
+      ]
+    }
+  }
+}

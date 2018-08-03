@@ -1,0 +1,390 @@
+{
+"type": "object",
+	"properties": {
+		"vendor": {
+			"type": "object",
+			"properties": {
+				"id": {
+					"type": "string",
+					"title": "Id",
+					"default": "",
+					"examples": [
+					 "Unique ID of this vendor <only required during update>"
+					]
+				},
+				"form1099Enabled": {
+					"type": "boolean",
+					"title": "Form1099enabled ",
+					"default": false,
+					"examples": [
+						true
+					]
+				},
+				"externalId": {
+					"type": "string",
+					"title": "Externalid ",
+					"default": "",
+					"examples": [
+						"Reference id that can be used to reference back to calling system"
+					]
+				},
+				"name": {
+					"type": "string",
+					"title": "  Name ",
+					"required": true,
+					"default": "",
+					"examples": [
+						"Name of vendor"
+					]
+				},
+				"active": {
+					"type": "boolean",
+					"title": "Active ",
+					"default": false,
+					"examples": [
+						true
+					]
+				},
+				"address": {
+					"type": "object",
+					"properties": {
+						"name": {
+							"type": "string",
+							"title": "Name",
+							"default": "",
+							"examples": [
+								"address name"
+							]
+						},
+						"address1": {
+							"type": "string",
+							"title": "Address1 ",
+							"default": "",
+							"examples": [
+								"Address line 1"
+							]
+						},
+						"address2": {
+							"type": "string",
+							"title": "Address2 ",
+							"default": "",
+							"examples": [
+								"Address line 2"
+							]
+						},
+						"address3": {
+							"type": "string",
+							"title": "Address3 ",
+							"default": "",
+							"examples": [
+								"Address line 3"
+							]
+						},
+						"address4": {
+							"type": "string",
+							"title": "Address4 ",
+							"default": "",
+							"examples": [
+								"Address line 4"
+							]
+						},
+						"address5": {
+							"type": "string",
+							"title": "Address5 ",
+							"default": "",
+							"examples": [
+								"Address line 5"
+							]
+						},
+						"postalCode": {
+							"type": "string",
+							"title": "  Postalcode ",
+							"default": "",
+							"examples": [
+								"Postal or Zipcode"
+							]
+						},
+						"town": {
+							"type": "string",
+							"title": "Town",
+							"default": "",
+							"examples": [
+								"City or Town"
+							]
+						},
+						"ctrySubDivision": {
+							"type": "string",
+							"title": "Ctrysubdivision ",
+							"default": "",
+							"examples": [
+								"State/Region"
+							]
+						},
+						"country": {
+							"type": "string",
+							"title": "Country ",
+							"default": "",
+							"examples": [
+								"Country"
+							]
+						}
+					}
+				},
+				"legalName": {
+					"type": "string",
+					"title": "Legalname ",
+					"default": "",
+					"examples": [
+						"Vendor name on check"
+					]
+				},
+				"vendorType": {
+					"type": "string",
+					"title": "Vendortype",
+					"default": "",
+					"examples": [
+						"NONPROFIT, CORPORATION, SOLE_PROPRIETORSHIP, INDIVIDUAL, DICISION, SUBSIDIARY"
+					]
+				},
+				"phones": {
+					"type": "array",
+					"items": {
+						"type": "object",
+						"properties": {
+							"number": {
+								"type": "string",
+								"title": "Number ",
+								"default": "",
+								"examples": [
+									"Phone number - only one supported now"
+								]
+							},
+							"isFax": {
+								"type": "boolean",
+								"title": "  Isfax ",
+								"default": false,
+								"examples": [
+									false
+								]
+							}
+						}
+					}
+				},
+				"fundingMethods": {
+					"type": "array",
+					"items": {
+						"type": "object",
+						"properties": {
+							"type": {
+								"type": "string",
+								"title": "  Type ",
+								"default": "",
+								"examples": [
+									"ACH"
+								]
+							},
+							"bankAccount": {
+								"type": "object",
+								"properties": {
+									"accountNumber": {
+										"type": "string",
+										"title": "Accountnumber ",
+										"default": "",
+										"examples": [
+											"accno <optional>"
+										]
+									},
+									"routingNumber": {
+										"type": "string",
+										"title": "Routingnumber ",
+										"default": "",
+										"examples": [
+											"routing number in us | sort code in UK"
+										]
+									}
+								}
+							}
+						}
+					}
+				},
+				"emails": {
+					"type": "array",
+					"items": {
+						"type": "string",
+						"title": "  0th ",
+						"default": "",
+						"examples": [
+							"Vendor emails. Only 1 is supported right now."
+						]
+					}
+				},
+				"remittanceEmails": {
+					"type": "array",
+					"items": {
+						"type": "string",
+						"title": "remittanceEmails",
+						"default": "",
+						"examples": [
+							"abc@xyz.com",
+							"def@xyz.com"
+						]
+					}
+				},
+				"remittanceEnabled": {
+					"type": "boolean",
+					"title": "Remittanceenabled",
+					"default": false,
+					"examples": [
+						true
+					]
+				},
+				"memo": {
+					"type": "string",
+					"title": "Memo",
+					"default": "",
+					"examples": [
+						"Vendor memp"
+					]
+				},
+				"customerAccount": {
+					"type": "string",
+					"title": "  Customer Account",
+					"default": "",
+					"examples": [
+						"Customer account no - String"
+					]
+				},
+				"primarySubsidiary": {
+					"type": "object",
+					"properties": {
+						"id": {
+							"type": "string",
+							"title": "  Id ",
+							"default": "",
+							"examples": [
+								"Id of subsidiary vendor linked to"
+							]
+						}
+					}
+				},
+				"taxId": {
+					"type": "string",
+					"title": "  Taxid ",
+					"default": "",
+					"examples": [
+						"Tax ID"
+					]
+				},
+				"vatNumber": {
+					"type": "string",
+					"title": "Vatnumber",
+					"default": "",
+					"examples": [
+						"Vat Number"
+					]
+				},
+				"vendorCompanyDefault": {
+					"type": "object",
+					"properties": {
+						"defaultClassId": {
+							"type": "string",
+							"title": "Defaultclassid",
+							"default": "",
+							"examples": [
+								"Default class id of vendor"
+							]
+						},
+						"defaultCustomerId": {
+							"type": "string",
+							"title": "Defaultcustomerid",
+							"default": "",
+							"examples": [
+								"Default customer id of vendor"
+							]
+						},
+						"defaultDepartmentId": {
+							"type": "string",
+							"title": "Defaultdepartmentid",
+							"default": "",
+							"examples": [
+								"Default department id of vendor"
+							]
+						},
+						"defaultEmployeeId": {
+							"type": "string",
+							"title": "Defaultemployeeid",
+							"default": "",
+							"examples": [
+								"Default employee id of vendor"
+							]
+						},
+						"defaultItemId": {
+							"type": "string",
+							"title": "Defaultitemid",
+							"default": "",
+							"examples": [
+								"Default item id of vendor"
+							]
+						},
+						"defaultLocationId": {
+							"type": "string",
+							"title": "Defaultlocationid",
+							"default": "",
+							"examples": [
+								"Default location id of vendor"
+							]
+						},
+						"defaultProjectId": {
+							"type": "string",
+							"title": "Defaultprojectid ",
+							"default": "",
+							"examples": [
+								"Default project id of vendor"
+							]
+						},
+						"defaultTermsId": {
+							"type": "string",
+							"title": "Defaulttermsid ",
+							"default": "",
+							"examples": [
+								"Default terms id of vendor"
+							]
+						},
+						"defaultDebitAccountId": {
+							"type": "string",
+							"title": "Defaultdebitaccountid ",
+							"default": "",
+							"examples": [
+								"Default debit account id of vendor"
+							]
+						},
+						"defaultAPAccountId": {
+							"type": "string",
+							"title": "Defaultapaccountid",
+							"default": "",
+							"examples": [
+								"Default AP account id of vendor"
+							]
+						},
+						"defaultExpenseAccountId": {
+							"type": "string",
+							"title": "Defaultexpenseaccountid ",
+							"default": "",
+							"examples": [
+								"Default expense account id of vendor"
+							]
+						},
+						"defaultPaymentChannelCode": {
+							"type": "string",
+							"title": "Defaultpaymentchannelcode",
+							"default": "",
+							"examples": [
+								"Default payment channel code of vendor"
+							]
+						}
+					}
+				}
+			}
+		}
+	}
+}
