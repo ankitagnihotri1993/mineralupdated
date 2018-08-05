@@ -49,15 +49,15 @@
 //     });
 
 
-var MongoClient = require('mongodb').MongoClient;
-var url = "mongodb://sugar:sugar123@ds247141.mlab.com:47141/sugarcrm";
-//mongodb://ankitsinghmongo:Ankit1234@ds247141.mlab.com:47141/sugarcrm
-MongoClient.connect(url, function(err, db) {
-  if (err) throw err;
-  var dbo = db.db("sugarcrm");
-  dbo.collection("Parts").findOne({}, function(err, result) {
-    if (err) throw err;
-    console.log(result.PartName);
-    db.close();
-  });
-});
+//var MongoClient = require('mongodb').MongoClient;
+//var url = "mongodb://sugar:sugar123@ds247141.mlab.com:47141/sugarcrm";
+////mongodb://ankitsinghmongo:Ankit1234@ds247141.mlab.com:47141/sugarcrm
+//MongoClient.connect(url, function(err, db) {
+//  if (err) throw err;
+//  var dbo = db.db("sugarcrm");
+//  dbo.collection("Parts").findOne({}, function(err, result) {
+//    if (err) throw err;
+//    console.log(result.PartName);
+//    db.close();
+//  });
+//});
