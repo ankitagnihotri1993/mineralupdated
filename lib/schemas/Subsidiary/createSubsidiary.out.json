@@ -118,7 +118,6 @@
         "type": "object",
         "properties": {
           "modified": {
-            "$id": "/properties/parent/properties/modified",
             "type": "null",
             "title": "The Modified",
             "default": null,
@@ -127,7 +126,6 @@
             ]
           },
           "created": {
-            "$id": "/properties/parent/properties/created",
             "type": "null",
             "title": "The Created",
             "default": null,
