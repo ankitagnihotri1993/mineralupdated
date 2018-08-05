@@ -71,6 +71,15 @@
         "in": "./lib/schemas/Subsidiary/createSubsidiary.in.json",
         "out": "./lib/schemas/Subsidiary/createSubsidiary.out.json"
       }
+    },
+
+    "createBulkSubsidiary": {
+      "main": "./lib/actions/createBulkSubsidiary.js",
+      "title": "create Bulk Subsidiary",
+      "metadata": {
+        "in": "./lib/schemas/Subsidiary/createBulkSubsidiary.in.json",
+        "out": {}
+      }
     }
 
   }
