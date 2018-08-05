@@ -39,32 +39,40 @@
 			"title": "Get Vendor List"
 		}
 	},
-	"actions": {
-		"createUpdateVendor": {
-			"main": "./lib/actions/createUpdateVendor.js",
-			"title": "Create Or Update Vendor",
-			"metadata": {
-				"in": "./lib/schemas/Vendor/createVendor.in.json",
-				"out": "./lib/schemas/Vendor/createVendor.out.json"
-		  }
-	},
-	"createGLAccount": {
-		"main": "./lib/actions/createGLAccount.js",
-		"title": "Create GL Account",
-		"metadata": {
-			"in": "./lib/schemas/GLAccount/createGLAccount.in.json",
-			"out": "./lib/schemas/GLAccount/createGLAccount.out.json"
-	   }
-	 },
-	 "createUpdateInvoice": {
-		"main": "./lib/actions/createUpdateInvoice.js",
-		"title": "Create Or Update Invoice",
-		"metadata": {
-			"in": "./lib/schemas/Invoice/createUpdateInvoice.in.json",
-			"out": "./lib/schemas/Invoice/createUpdateInvoice.out.json"
-	   }
-	 }
-                      
+  "actions": {
+    "createUpdateVendor": {
+      "main": "./lib/actions/createUpdateVendor.js",
+      "title": "Create Or Update Vendor",
+      "metadata": {
+        "in": "./lib/schemas/Vendor/createVendor.in.json",
+        "out": "./lib/schemas/Vendor/createVendor.out.json"
+      }
+    },
+    "createGLAccount": {
+      "main": "./lib/actions/createGLAccount.js",
+      "title": "Create GL Account",
+      "metadata": {
+        "in": "./lib/schemas/GLAccount/createGLAccount.in.json",
+        "out": "./lib/schemas/GLAccount/createGLAccount.out.json"
+      }
+    },
+    "createUpdateInvoice": {
+      "main": "./lib/actions/createUpdateInvoice.js",
+      "title": "Create Or Update Invoice",
+      "metadata": {
+        "in": "./lib/schemas/Invoice/createUpdateInvoice.in.json",
+        "out": "./lib/schemas/Invoice/createUpdateInvoice.out.json"
+      }
+    },
+    "createSusidiary": {
+      "main": "./lib/actions/createSubsidiary.js",
+      "title": "create Subsidiary",
+      "metadata": {
+        "in": "./lib/schemas/Invoice/createSubsidiary.in.json",
+        "out": "./lib/schemas/Invoice/createSubsidiary.out.json"
+      }
+    }
+
   }
 }
 
