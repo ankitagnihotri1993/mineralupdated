@@ -68,8 +68,8 @@
       "main": "./lib/actions/createSubsidiary.js",
       "title": "create Subsidiary",
       "metadata": {
-        "in": "./lib/schemas/Invoice/createSubsidiary.in.json",
-        "out": "./lib/schemas/Invoice/createSubsidiary.out.json"
+        "in": "./lib/schemas/Subsidiary/createSubsidiary.in.json",
+        "out": "./lib/schemas/Subsidiary/createSubsidiary.out.json"
       }
     }
 
