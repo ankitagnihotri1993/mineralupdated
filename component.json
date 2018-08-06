@@ -38,7 +38,7 @@
 			"type": "polling",
       "title": "Get Vendor List",
       "metadata": {
-        "in": "./lib/schemas/SearchObject/searchObject.in.json"
+        "out": {}
       }
     }    
 	},
