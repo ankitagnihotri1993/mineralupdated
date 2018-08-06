@@ -1,157 +1,31 @@
 {
 
-  "type": "array",
+  "type": "object",
   "definitions": {},
+  "properties": {
+    "list": {
 
-  "items": {
-
-    "type": "object",
-    "properties": {
-      "modified": {
-        "type": "string",
-        "title": "The Modified Schema ",
-        "default": "",
-        "examples": [
-          "2018-07-20T13:24:13Z"
-        ]
-      },
-      "created": {
-
-        "type": "string",
-        "title": "The Created Schema ",
-        "default": "",
-        "examples": [
-          "2018-07-20T13:24:13Z"
-        ]
-      },
-      "id": {
-
-        "type": "string",
-        "title": "The Id Schema ",
-        "default": "",
-        "examples": [
-          "ffd53ba9-a225-43b6-9404-47c930648181"
-        ]
-      },
-      "externalId": {
-
-        "type": "string",
-        "title": "The Externalid Schema ",
-        "default": "",
-        "examples": [
-          "31"
-        ]
-      },
-      "memo": {
-
-        "type": "null",
-        "title": "The Memo Schema ",
-        "default": null,
-        "examples": [
-          null
-        ]
-      },
-      "description": {
-
-        "type": "null",
-        "title": "The Description Schema ",
-        "default": null,
-        "examples": [
-          null
-        ]
-      },
-      "name": {
-
-        "type": "string",
-        "title": "The Name Schema ",
-        "default": "",
-        "examples": [
-          "Agave Springs Apartments"
-        ]
-      },
-      "legalName": {
-
-        "type": "null",
-        "title": "The Legalname Schema ",
-        "default": null,
-        "examples": [
-          null
-        ]
-      },
-      "dBAName": {
-
-        "type": "null",
-        "title": "The Dbaname Schema ",
-        "default": null,
-        "examples": [
-          null
-        ]
-      },
-      "vendorType": {
-
-        "type": "null",
-        "title": "The Vendortype Schema ",
-        "default": null,
-        "examples": [
-          null
-        ]
-      },
-      "emails": {
-
-        "type": "null",
-        "title": "The Emails Schema ",
-        "default": null,
-        "examples": [
-          null
-        ]
-      },
-      "externalParentId": {
-
-        "type": "string",
-        "title": "The Externalparentid Schema ",
-        "default": "",
-        "examples": [
-          "31"
-        ]
-      },
-      "address": {
-
-        "type": "null",
-        "title": "The Address Schema ",
-        "default": null,
-        "examples": [
-          null
-        ]
-      },
-      "phones": {
-
-        "type": "null",
-        "title": "The Phones Schema ",
-        "default": null,
-        "examples": [
-          null
-        ]
-      },
-      "parent": {
+      "type": "array",
+      "items": {
 
         "type": "object",
         "properties": {
           "modified": {
 
-            "type": "null",
+            "type": "string",
             "title": "The Modified Schema ",
-            "default": null,
+            "default": "",
             "examples": [
-              null
+              "2018-07-20T13:24:13Z"
             ]
           },
           "created": {
 
-            "type": "null",
+            "type": "string",
             "title": "The Created Schema ",
-            "default": null,
+            "default": "",
             "examples": [
-              null
+              "2018-07-20T13:24:13Z"
             ]
           },
           "id": {
@@ -160,16 +34,16 @@
             "title": "The Id Schema ",
             "default": "",
             "examples": [
-              "2f436ea7-427d-4a12-9af5-73c8975c545d"
+              "ffd53ba9-a225-43b6-9404-47c930648181"
             ]
           },
           "externalId": {
 
-            "type": "null",
+            "type": "string",
             "title": "The Externalid Schema ",
-            "default": null,
+            "default": "",
             "examples": [
-              null
+              "31"
             ]
           },
           "memo": {
@@ -192,11 +66,11 @@
           },
           "name": {
 
-            "type": "null",
+            "type": "string",
             "title": "The Name Schema ",
-            "default": null,
+            "default": "",
             "examples": [
-              null
+              "Agave Springs Apartments"
             ]
           },
           "legalName": {
@@ -235,6 +109,15 @@
               null
             ]
           },
+          "externalParentId": {
+
+            "type": "string",
+            "title": "The Externalparentid Schema ",
+            "default": "",
+            "examples": [
+              "31"
+            ]
+          },
           "address": {
 
             "type": "null",
@@ -255,32 +138,155 @@
           },
           "parent": {
 
+            "type": "object",
+            "properties": {
+              "modified": {
+
+                "type": "null",
+                "title": "The Modified Schema ",
+                "default": null,
+                "examples": [
+                  null
+                ]
+              },
+              "created": {
+
+                "type": "null",
+                "title": "The Created Schema ",
+                "default": null,
+                "examples": [
+                  null
+                ]
+              },
+              "id": {
+
+                "type": "string",
+                "title": "The Id Schema ",
+                "default": "",
+                "examples": [
+                  "2f436ea7-427d-4a12-9af5-73c8975c545d"
+                ]
+              },
+              "externalId": {
+
+                "type": "null",
+                "title": "The Externalid Schema ",
+                "default": null,
+                "examples": [
+                  null
+                ]
+              },
+              "memo": {
+
+                "type": "null",
+                "title": "The Memo Schema ",
+                "default": null,
+                "examples": [
+                  null
+                ]
+              },
+              "description": {
+
+                "type": "null",
+                "title": "The Description Schema ",
+                "default": null,
+                "examples": [
+                  null
+                ]
+              },
+              "name": {
+
+                "type": "null",
+                "title": "The Name Schema ",
+                "default": null,
+                "examples": [
+                  null
+                ]
+              },
+              "legalName": {
+
+                "type": "null",
+                "title": "The Legalname Schema ",
+                "default": null,
+                "examples": [
+                  null
+                ]
+              },
+              "dBAName": {
+
+                "type": "null",
+                "title": "The Dbaname Schema ",
+                "default": null,
+                "examples": [
+                  null
+                ]
+              },
+              "vendorType": {
+
+                "type": "null",
+                "title": "The Vendortype Schema ",
+                "default": null,
+                "examples": [
+                  null
+                ]
+              },
+              "emails": {
+
+                "type": "null",
+                "title": "The Emails Schema ",
+                "default": null,
+                "examples": [
+                  null
+                ]
+              },
+              "address": {
+
+                "type": "null",
+                "title": "The Address Schema ",
+                "default": null,
+                "examples": [
+                  null
+                ]
+              },
+              "phones": {
+
+                "type": "null",
+                "title": "The Phones Schema ",
+                "default": null,
+                "examples": [
+                  null
+                ]
+              },
+              "parent": {
+
+                "type": "null",
+                "title": "The Parent Schema ",
+                "default": null,
+                "examples": [
+                  null
+                ]
+              }
+            }
+          },
+          "subsidiaries": {
+
             "type": "null",
-            "title": "The Parent Schema ",
+            "title": "The Subsidiaries Schema ",
+            "default": null,
+            "examples": [
+              null
+            ]
+          },
+          "paymentMethods": {
+
+            "type": "null",
+            "title": "The Paymentmethods Schema ",
             "default": null,
             "examples": [
               null
             ]
           }
         }
-      },
-      "subsidiaries": {
-
-        "type": "null",
-        "title": "The Subsidiaries Schema ",
-        "default": null,
-        "examples": [
-          null
-        ]
-      },
-      "paymentMethods": {
-
-        "type": "null",
-        "title": "The Paymentmethods Schema ",
-        "default": null,
-        "examples": [
-          null
-        ]
       }
     }
   }
