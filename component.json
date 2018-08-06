@@ -36,8 +36,11 @@
 		"getVendorList": {
 			"main": "./lib/triggers/getVendorList.js",
 			"type": "polling",
-			"title": "Get Vendor List"
-		}
+      "title": "Get Vendor List",
+      "metadata": {
+        "in": "./lib/schemas/SearchObject/searchObject.in.json"
+      }
+    }    
 	},
   "actions": {
     "createUpdateVendor": {
