@@ -1,0 +1,8 @@
+{
+    "view": "Views supported by the search processor. <BILL, VENDOR, PAYMENT, CREDIT, DEPARTMENT, CLASS, ITEM, LOCATION, PROJECT, GLACCOUNT, PURCHASE_ORDER>. More wil be added with the new releases",
+    "query": "QUERY STRING. SEE BELOW",
+    "page": 0,
+    "count": "",
+    "sortField": "use the field from the below table. Default : modified",
+    "sortAsc": "true/false"
+  }

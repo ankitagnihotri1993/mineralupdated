@@ -80,8 +80,15 @@
         "in": "./lib/schemas/Subsidiary/createBulkSubsidiary.in.json",
         "out": "./lib/schemas/Subsidiary/createBulkSubsidiary.out.json"
       }
+    },
+    "searchObject": {
+      "main": "./lib/actions/searchObject.js",
+      "title": "Search Object",
+      "metadata": {
+        "in": "./lib/schemas/SearchObject/searchObject.in.json",
+        "out": "./lib/schemas/SearchObject/searchObject.out.json"
+      }
     }
-
   }
 }
 
