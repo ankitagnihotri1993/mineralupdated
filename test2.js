@@ -24,7 +24,7 @@ async function CreateUpdateGLAccount(msg, cfg) {
 
 
 
-    console.log(subsidiaries);
+    console.log(JSON.stringify(subsidiaries));
 }
 
 

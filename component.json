@@ -78,7 +78,7 @@
       "title": "create Bulk Subsidiary",
       "metadata": {
         "in": "./lib/schemas/Subsidiary/createBulkSubsidiary.in.json",
-        "out": {}
+        "out": "./lib/schemas/Subsidiary/createBulkSubsidiary.out.json"
       }
     }
 
