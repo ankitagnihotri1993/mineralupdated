@@ -96,7 +96,7 @@
         "title": "create Invoice payment",
         "metadata": {
           "in": "./lib/schemas/Payment/Payment.in.json",
-          "out":{}
+          "out":"./lib/schemas/Payment/Payment.out.json"
         }
       }
     }
