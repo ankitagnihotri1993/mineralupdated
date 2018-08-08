@@ -90,6 +90,14 @@
       "metadata": {
         "in": "./lib/schemas/SearchObject/searchObject.in.json",
         "out": "./lib/schemas/SearchObject/searchObject.out.json"
+      },
+      "createInvoicePayment": {
+        "main": "./lib/actions/createInvoicePayment.js",
+        "title": "create Invoice payment",
+        "metadata": {
+          "in": "./lib/schemas/Payment/Payment.in.json",
+          "out":{}
+        }
       }
     }
   }

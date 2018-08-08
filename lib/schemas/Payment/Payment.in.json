@@ -1,0 +1,129 @@
+
+{
+    "type": "object",
+    "definitions": {},
+    "properties": {
+      "payment": {
+        "type": "object",
+        "properties": {
+          "paymentMethod": {
+            "type": "object",
+            "properties": {
+              "id": {
+                "type": "string",
+                "title": "The Id Schema ",
+                "default": "",
+                "examples": [
+                  ""
+                ]
+              }
+            }
+          },
+          "fundMethod": {
+            "type": "object",
+            "properties": {
+              "type": {
+                "$id": "/properties/payment/properties/fundMethod/properties/type",
+                "type": "string",
+                "title": "The Type Schema ",
+                "default": "",
+                "examples": [
+                  "CHECK | CREDITCARD | DEBITCARD | VCARD | ACH | ECHECK | BILLPAY | WIRE | CREDIT | UNKNOWN"
+                ]
+              }
+            }
+          },
+          "bills": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "string",
+                  "title": "The Id Schema ",
+                  "default": "",
+                  "examples": [
+                    ""
+                  ]
+                },
+                "appliedPaymentAmount": {
+                  "type": "object",
+                  "properties": {
+                    "amount": {
+                      "$id": "/properties/payment/properties/bills/items/properties/appliedPaymentAmount/properties/amount",
+                      "type": "string",
+                      "title": "The Amount Schema ",
+                      "default": "",
+                      "examples": [
+                        ""
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "amount": {
+            "type": "object",
+            "properties": {
+              "amount": {
+                "$id": "/properties/payment/properties/amount/properties/amount",
+                "type": "string",
+                "title": "The Amount Schema ",
+                "default": "",
+                "examples": [
+                  ""
+                ]
+              }
+            }
+          },
+          "accountingPeriod": {
+            "type": "object",
+            "properties": {
+              "id": {
+                "$id": "/properties/payment/properties/accountingPeriod/properties/id",
+                "type": "string",
+                "title": "The Id Schema ",
+                "default": "",
+                "examples": [
+                  ""
+                ]
+              }
+            }
+          },
+          "transactionDate": {
+            "type": "string",
+            "title": "The Transactiondate Schema ",
+            "default": "",
+            "examples": [
+              ""
+            ]
+          },
+          "externalId": {
+            "type": "string",
+            "title": "The Externalid Schema ",
+            "default": "",
+            "examples": [
+              "t"
+            ]
+          },
+          "checkNumber": {
+            "type": "string",
+            "title": "The Checknumber Schema ",
+            "default": "",
+            "examples": [
+              ""
+            ]
+          },
+          "sequenceText": {
+            "type": "string",
+            "title": "The Sequencetext Schema ",
+            "default": "",
+            "examples": [
+              ""
+            ]
+          }
+        }
+      }
+    }
+  }
