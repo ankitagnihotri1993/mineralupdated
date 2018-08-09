@@ -85,13 +85,13 @@
     },
     "searchObject": {
       "main": "./lib/actions/searchObject.js",
-      "title": "Search Object",
+      "title": "Search Object1",
       "metadata": {
         "in": "./lib/schemas/SearchObject/searchObject.in.json",
         "out": "./lib/schemas/SearchObject/searchObject.out.json"
       },
       "createInvoicePayment": {
-        "main": "./lib/actions/createInvoicePayment.js",
+        "main": "./lib/actions/searchObject.js",
         "title": "create Invoice Payment",
         "metadata": {
           "in": "./lib/schemas/SearchObject/searchObject.in.json",
