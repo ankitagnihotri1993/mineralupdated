@@ -23,9 +23,8 @@
             "type": "object",
             "properties": {
               "type": {
-                "$id": "/properties/payment/properties/fundMethod/properties/type",
                 "type": "string",
-                "title": "The Type Schema ",
+                "title": "The Type",
                 "default": "",
                 "examples": [
                   "CHECK | CREDITCARD | DEBITCARD | VCARD | ACH | ECHECK | BILLPAY | WIRE | CREDIT | UNKNOWN"
@@ -40,7 +39,7 @@
               "properties": {
                 "id": {
                   "type": "string",
-                  "title": "The Id Schema ",
+                  "title": "The Id",
                   "default": "",
                   "examples": [
                     ""
@@ -50,9 +49,8 @@
                   "type": "object",
                   "properties": {
                     "amount": {
-                      "$id": "/properties/payment/properties/bills/items/properties/appliedPaymentAmount/properties/amount",
                       "type": "string",
-                      "title": "The Amount Schema ",
+                      "title": "The Amount",
                       "default": "",
                       "examples": [
                         ""
@@ -67,9 +65,8 @@
             "type": "object",
             "properties": {
               "amount": {
-                "$id": "/properties/payment/properties/amount/properties/amount",
                 "type": "string",
-                "title": "The Amount Schema ",
+                "title": "The Amount",
                 "default": "",
                 "examples": [
                   ""
@@ -81,9 +78,8 @@
             "type": "object",
             "properties": {
               "id": {
-                "$id": "/properties/payment/properties/accountingPeriod/properties/id",
                 "type": "string",
-                "title": "The Id Schema ",
+                "title": "The Id",
                 "default": "",
                 "examples": [
                   ""
@@ -93,7 +89,7 @@
           },
           "transactionDate": {
             "type": "string",
-            "title": "The Transactiondate Schema ",
+            "title": "The Transactiondate",
             "default": "",
             "examples": [
               ""
@@ -101,7 +97,7 @@
           },
           "externalId": {
             "type": "string",
-            "title": "The Externalid Schema ",
+            "title": "The Externalid",
             "default": "",
             "examples": [
               "t"
@@ -109,7 +105,7 @@
           },
           "checkNumber": {
             "type": "string",
-            "title": "The Checknumber Schema ",
+            "title": "The Checknumber",
             "default": "",
             "examples": [
               ""
@@ -117,7 +113,7 @@
           },
           "sequenceText": {
             "type": "string",
-            "title": "The Sequencetext Schema ",
+            "title": "The Sequencetext",
             "default": "",
             "examples": [
               ""

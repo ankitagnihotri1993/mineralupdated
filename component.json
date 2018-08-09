@@ -75,7 +75,6 @@
         "out": "./lib/schemas/Subsidiary/createSubsidiary.out.json"
       }
     },
-
     "createBulkSubsidiary": {
       "main": "./lib/actions/createBulkSubsidiary.js",
       "title": "create Bulk Subsidiary",
@@ -93,7 +92,7 @@
       },
       "createInvoicePayment": {
         "main": "./lib/actions/createInvoicePayment.js",
-        "title": "create Invoice payment",
+        "title": "create Invoice Payment",
         "metadata": {
           "in": "./lib/schemas/Payment/Payment.in.json",
           "out":"./lib/schemas/Payment/Payment.out.json"
