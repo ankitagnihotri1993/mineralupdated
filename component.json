@@ -85,20 +85,21 @@
     },
     "searchObject": {
       "main": "./lib/actions/searchObject.js",
-      "title": "Search Object1",
+      "title": "Search Object",
       "metadata": {
         "in": "./lib/schemas/SearchObject/searchObject.in.json",
         "out": "./lib/schemas/SearchObject/searchObject.out.json"
+       }
       },
       "createInvoicePayment": {
-        "main": "./lib/actions/searchObject.js",
-        "title": "create Invoice Payment",
+        "main": "./lib/actions/createInvoicePayment.js",
+        "title": "Create Invoice Payment",
         "metadata": {
-          "in": "./lib/schemas/SearchObject/searchObject.in.json",
-         "out": "./lib/schemas/SearchObject/searchObject.out.json"
+          "in": "./lib/schemas/Payment/Payment.in.json",
+          "out":"./lib/schemas/Payment/Payment.out.json"
         }
       }
     }
   }
-}
+
 
