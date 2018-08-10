@@ -109,7 +109,7 @@
       },
       "createPaymentMethod": {
         "main": "./lib/actions/createPaymentMethod.js",
-        "title": "Create Invoice Payment",
+        "title": "Create Payment Method",
         "metadata": {
           "in": "./lib/schemas/PaymentMethod/createPaymentMethod.in.json",
           "out":"./lib/schemas/PaymentMethod/createPaymentMethod.out.json"
