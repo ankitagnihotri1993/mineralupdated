@@ -1,0 +1,403 @@
+{
+  "type": "object",
+  "definitions": {},
+  "properties": {
+    "modified": {
+      "type": "null",
+      "title": "The Modified",
+      "default": null,
+      "examples": [
+        null
+      ]
+    },
+    "created": {
+      "type": "string",
+      "title": "The Created",
+      "default": "",
+      "examples": [
+        "2018-08-10T15:54:06Z"
+      ]
+    },
+    "id": {
+      "type": "string",
+      "title": "The Id",
+      "default": "",
+      "examples": [
+        "3498f89a-e7a3-40bd-a612-f4d30ce2836f"
+      ]
+    },
+    "externalId": {
+      "type": "string",
+      "title": "The Externalid",
+      "default": "",
+      "examples": [
+        "13"
+      ]
+    },
+    "memo": {
+      "type": "null",
+      "title": "The Memo",
+      "default": null,
+      "examples": [
+        null
+      ]
+    },
+    "description": {
+      "type": "null",
+      "title": "The Description",
+      "default": null,
+      "examples": [
+        null
+      ]
+    },
+    "name": {
+      "type": "string",
+      "title": "The Name",
+      "default": "",
+      "examples": [
+        "Operating"
+      ]
+    },
+    "kind": {
+      "type": "integer",
+      "title": "The Kind",
+      "default": 0,
+      "examples": [
+        0
+      ]
+    },
+    "required": {
+      "type": "boolean",
+      "title": "The Required",
+      "default": false,
+      "examples": [
+        false
+      ]
+    },
+    "active": {
+      "type": "boolean",
+      "title": "The Active",
+      "default": false,
+      "examples": [
+        true
+      ]
+    },
+    "range": {
+      "type": "integer",
+      "title": "The Range",
+      "default": 0,
+      "examples": [
+        0
+      ]
+    },
+    "status": {
+      "type": "string",
+      "title": "The Status",
+      "default": "",
+      "examples": [
+        "ACTIVE"
+      ]
+    },
+    "uiclass": {
+      "type": "null",
+      "title": "The Uiclass",
+      "default": null,
+      "examples": [
+        null
+      ]
+    },
+    "value": {
+      "type": "null",
+      "title": "The Value",
+      "default": null,
+      "examples": [
+        null
+      ]
+    },
+    "subsidiaries": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "modified": {
+            "type": "null",
+            "title": "The Modified",
+            "default": null,
+            "examples": [
+              null
+            ]
+          },
+          "created": {
+            "type": "null",
+            "title": "The Created",
+            "default": null,
+            "examples": [
+              null
+            ]
+          },
+          "id": {
+            "type": "string",
+            "title": "The Id",
+            "default": "",
+            "examples": [
+              "685b0273-78f7-4f8c-82a6-744f9053ff80"
+            ]
+          },
+          "externalId": {
+            "type": "null",
+            "title": "The Externalid",
+            "default": null,
+            "examples": [
+              null
+            ]
+          },
+          "memo": {
+            "type": "null",
+            "title": "The Memo",
+            "default": null,
+            "examples": [
+              null
+            ]
+          },
+          "description": {
+            "type": "null",
+            "title": "The Description",
+            "default": null,
+            "examples": [
+              null
+            ]
+          },
+          "name": {
+            "type": "null",
+            "title": "The Name",
+            "default": null,
+            "examples": [
+              null
+            ]
+          },
+          "legalName": {
+            "type": "null",
+            "title": "The Legalname",
+            "default": null,
+            "examples": [
+              null
+            ]
+          },
+          "dBAName": {
+            "type": "null",
+            "title": "The Dbaname",
+            "default": null,
+            "examples": [
+              null
+            ]
+          },
+          "vendorType": {
+            "type": "null",
+            "title": "The Vendortype",
+            "default": null,
+            "examples": [
+              null
+            ]
+          },
+          "emails": {
+            "type": "null",
+            "title": "The Emails",
+            "default": null,
+            "examples": [
+              null
+            ]
+          },
+          "externalParentId": {
+            "type": "null",
+            "title": "The Externalparentid",
+            "default": null,
+            "examples": [
+              null
+            ]
+          },
+          "address": {
+            "type": "null",
+            "title": "The Address",
+            "default": null,
+            "examples": [
+              null
+            ]
+          },
+          "phones": {
+            "type": "null",
+            "title": "The Phones",
+            "default": null,
+            "examples": [
+              null
+            ]
+          },
+          "parent": {
+            "type": "null",
+            "title": "The Parent",
+            "default": null,
+            "examples": [
+              null
+            ]
+          },
+          "subsidiaries": {
+            "type": "null",
+            "title": "The Subsidiaries",
+            "default": null,
+            "examples": [
+              null
+            ]
+          },
+          "paymentMethods": {
+            "type": "null",
+            "title": "The Paymentmethods",
+            "default": null,
+            "examples": [
+              null
+            ]
+          }
+        }
+      }
+    },
+    "company": {
+      "type": "object",
+      "properties": {
+        "modified": {
+          "type": "null",
+          "title": "The Modified",
+          "default": null,
+          "examples": [
+            null
+          ]
+        },
+        "created": {
+          "type": "null",
+          "title": "The Created",
+          "default": null,
+          "examples": [
+            null
+          ]
+        },
+        "id": {
+          "type": "string",
+          "title": "The Id",
+          "default": "",
+          "examples": [
+            "2f436ea7-427d-4a12-9af5-73c8975c545d"
+          ]
+        },
+        "externalId": {
+          "type": "null",
+          "title": "The Externalid",
+          "default": null,
+          "examples": [
+            null
+          ]
+        },
+        "memo": {
+          "type": "null",
+          "title": "The Memo",
+          "default": null,
+          "examples": [
+            null
+          ]
+        },
+        "description": {
+          "type": "null",
+          "title": "The Description",
+          "default": null,
+          "examples": [
+            null
+          ]
+        },
+        "name": {
+          "type": "null",
+          "title": "The Name",
+          "default": null,
+          "examples": [
+            null
+          ]
+        },
+        "legalName": {
+          "type": "null",
+          "title": "The Legalname",
+          "default": null,
+          "examples": [
+            null
+          ]
+        },
+        "dBAName": {
+          "type": "null",
+          "title": "The Dbaname",
+          "default": null,
+          "examples": [
+            null
+          ]
+        },
+        "vendorType": {
+          "type": "null",
+          "title": "The Vendortype",
+          "default": null,
+          "examples": [
+            null
+          ]
+        },
+        "emails": {
+          "type": "null",
+          "title": "The Emails",
+          "default": null,
+          "examples": [
+            null
+          ]
+        },
+        "externalParentId": {
+          "type": "null",
+          "title": "The Externalparentid",
+          "default": null,
+          "examples": [
+            null
+          ]
+        },
+        "address": {
+          "type": "null",
+          "title": "The Address",
+          "default": null,
+          "examples": [
+            null
+          ]
+        },
+        "phones": {
+          "type": "null",
+          "title": "The Phones",
+          "default": null,
+          "examples": [
+            null
+          ]
+        },
+        "parent": {
+          "type": "null",
+          "title": "The Parent",
+          "default": null,
+          "examples": [
+            null
+          ]
+        },
+        "subsidiaries": {
+          "type": "null",
+          "title": "The Subsidiaries",
+          "default": null,
+          "examples": [
+            null
+          ]
+        },
+        "paymentMethods": {
+          "type": "null",
+          "title": "The Paymentmethods",
+          "default": null,
+          "examples": [
+            null
+          ]
+        }
+      }
+    }
+  }
+}

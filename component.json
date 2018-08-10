@@ -59,6 +59,14 @@
         "out": "./lib/schemas/GLAccount/createGLAccount.out.json"
       }
     },
+    "createClassification": {
+      "main": "./lib/actions/createClassification.js",
+      "title": "Create Classification",
+      "metadata": {
+        "in": "./lib/schemas/Classification/createClassification.in.json",
+        "out": "./lib/schemas/Classification/createClassification.out.json"
+      }
+    },
     "createUpdateInvoice": {
       "main": "./lib/actions/createUpdateInvoice.js",
       "title": "Create Or Update Invoice",
