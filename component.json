@@ -27,12 +27,6 @@
      	}
 	},
 	"triggers": {
-		"getGetMineralTreeInvoiceDetails": {
-			"main": "./lib/triggers/getMineralTreeInvoiceDetails.js",
-			"type": "polling",
-			"title": "Get MineralTree Invoice Details",
-			"model": "InvoiceDetails"
-		},
 		"getVendorList": {
 			"main": "./lib/triggers/getVendorList.js",
 			"type": "polling",
@@ -40,7 +34,15 @@
       "metadata": {
         "out": {}
       }
-    }    
+    },
+    "getInvoiceList": {
+			"main": "./lib/triggers/getInvoiceList.js",
+			"type": "polling",
+      "title": "Get Invoice List",
+      "metadata": {
+        "out": {}
+      }
+    }        
 	},
   "actions": {
     "createUpdateVendor": {
