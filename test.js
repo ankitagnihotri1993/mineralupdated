@@ -11,7 +11,17 @@
 
 // console.log("body"+ JSON.stringify(body));
 
-var moment = require('moment');
-var now = new Date();
-var date= moment().format("YYYY-MM-DDTHH:mm:ssZ");
-console.log(date);
+// var moment = require('moment');
+// var now = new Date();
+// var date= moment().format("YYYY-MM-DDTHH:mm:ssZ");
+// console.log(date);
+
+var test={};
+if(test.id)
+{
+ console.log('exits');
+
+}
+else{
+    console.log('not exits');
+}
