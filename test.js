@@ -37,11 +37,11 @@
 // now.setDate(now.getDate() - 2);
 
 var filterDate = new Date();
-filterDate.setDate(filterDate.getDate() - 1);
+filterDate.setDate(filterDate.getDate());
 
 console.log(filterDate.toISOString());
 
-// console.log(parsedDate.toISOString());
+//  console.log(filterDate.toISOString());
 
 //2018-08-16T13:10:57Z
 //2018-08-16T15:45:05.610Z
