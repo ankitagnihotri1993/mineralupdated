@@ -42,7 +42,15 @@
       "metadata": {
         "out": {}
       }
-    }        
+    },
+    "getPaymentList": {
+			"main": "./lib/triggers/getPaymentList.js",
+			"type": "polling",
+      "title": "Get Payment List",
+      "metadata": {
+        "out": {}
+      }
+    }                
 	},
   "actions": {
     "createUpdateVendor": {
