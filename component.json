@@ -27,17 +27,22 @@
      	}
 	},
 	"triggers": {
-		"getGetMineralTreeInvoiceDetails": {
-			"main": "./lib/triggers/getMineralTreeInvoiceDetails.js",
-			"type": "polling",
-			"title": "Get MineralTree Invoice Details",
-			"model": "InvoiceDetails"
-		},
 		"getVendorList": {
 			"main": "./lib/triggers/getVendorList.js",
 			"type": "polling",
-			"title": "Get Vendor List"
-		}
+      "title": "Get Vendor List",
+      "metadata": {
+        "out": {}
+      }
+    },
+    "getInvoiceList": {
+			"main": "./lib/triggers/getInvoiceList.js",
+			"type": "polling",
+      "title": "Get Invoice List",
+      "metadata": {
+        "out": {}
+      }
+    }        
 	},
   "actions": {
     "createUpdateVendor": {
@@ -56,6 +61,14 @@
         "out": "./lib/schemas/GLAccount/createGLAccount.out.json"
       }
     },
+    "createClassification": {
+      "main": "./lib/actions/createClassification.js",
+      "title": "Create Classification",
+      "metadata": {
+        "in": "./lib/schemas/Classification/createClassification.in.json",
+        "out": "./lib/schemas/Classification/createClassification.out.json"
+      }
+    },
     "createUpdateInvoice": {
       "main": "./lib/actions/createUpdateInvoice.js",
       "title": "Create Or Update Invoice",
@@ -72,7 +85,6 @@
         "out": "./lib/schemas/Subsidiary/createSubsidiary.out.json"
       }
     },
-
     "createBulkSubsidiary": {
       "main": "./lib/actions/createBulkSubsidiary.js",
       "title": "create Bulk Subsidiary",
@@ -87,7 +99,23 @@
       "metadata": {
         "in": "./lib/schemas/SearchObject/searchObject.in.json",
         "out": "./lib/schemas/SearchObject/searchObject.out.json"
-      }
+       }
+      },
+      "createInvoicePayment": {
+        "main": "./lib/actions/createInvoicePayment.js",
+        "title": "Create Invoice Payment",
+        "metadata": {
+          "in": "./lib/schemas/Payment/Payment.in.json",
+          "out":"./lib/schemas/Payment/Payment.out.json"
+        }
+      },
+      "createPaymentMethod": {
+        "main": "./lib/actions/createPaymentMethod.js",
+        "title": "Create Payment Method",
+        "metadata": {
+          "in": "./lib/schemas/PaymentMethod/createPaymentMethod.in.json",
+          "out":"./lib/schemas/PaymentMethod/createPaymentMethod.out.json"
+        }
     }
   }
 }

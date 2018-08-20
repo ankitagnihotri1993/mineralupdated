@@ -1,0 +1,56 @@
+{
+    "type": "object",
+    "definitions": {},
+    "properties": {
+      "paymentMethod": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "title": "The Id",
+            "default": "",
+            "examples": [
+              "<Only for update>"
+            ]
+          },
+          "type": {
+            "type": "string",
+            "title": "The Type",
+            "default": "",
+            "examples": [
+              "UNKNOWN"
+            ]
+          },
+          "externalId": {
+            "type": "string",
+            "title": "The Externalid",
+            "default": "",
+            "examples": [
+              "external id"
+            ]
+          },
+          "status": {
+            "type": "string",
+            "title": "The Status",
+            "default": "",
+            "examples": [
+              "Active/Locked"
+            ]
+          },
+          "account": {
+            "type": "object",
+            "properties": {
+              "name": {
+                "type": "string",
+                "title": "The Name",
+                "default": "",
+                "examples": [
+                  "account name"
+                ]
+              }
+            }
+          }
+        }
+      }
+    }
+  }
