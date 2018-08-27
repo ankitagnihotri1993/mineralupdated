@@ -26,25 +26,33 @@
 		}
      	}
 	},
-	"triggers": {
+  "triggers": {
 
     "getInvoiceList": {
-			"main": "./lib/triggers/getInvoiceList.js",
-			"type": "polling",
+      "main": "./lib/triggers/getInvoiceList.js",
+      "type": "polling",
       "title": "Get Invoice List",
       "metadata": {
         "out": {}
       }
     },
     "getPaymentList": {
-			"main": "./lib/triggers/getPaymentList.js",
-			"type": "polling",
+      "main": "./lib/triggers/getPaymentList.js",
+      "type": "polling",
       "title": "Get Payment List",
       "metadata": {
         "out": {}
       }
-    }                
-	},
+    },
+    "getVendorList": {
+      "main": "./lib/triggers/getVendorList.js",
+      "type": "polling",
+      "title": "Get Vendor List",
+      "metadata": {
+        "out": {}
+      }
+    }
+  },
   "actions": {
     "createUpdateVendor": {
       "main": "./lib/actions/createUpdateVendor.js",
