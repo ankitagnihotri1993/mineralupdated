@@ -27,14 +27,7 @@
      	}
 	},
 	"triggers": {
-		"getVendorList": {
-			"main": "./lib/triggers/getVendorList.js",
-			"type": "polling",
-      "title": "Get Vendor List",
-      "metadata": {
-        "out": {}
-      }
-    },
+
     "getInvoiceList": {
 			"main": "./lib/triggers/getInvoiceList.js",
 			"type": "polling",
