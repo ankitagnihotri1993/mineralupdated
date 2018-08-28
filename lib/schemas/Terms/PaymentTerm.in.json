@@ -1,0 +1,74 @@
+{
+  "definitions": {},
+  "type": "object",
+  "title": "The Root",
+  "required": [
+    "term"
+  ],
+  "properties": {
+    "term": {
+      "type": "object",
+      "title": "The Term",
+      "required": [
+        "dueDays",
+        "discountDays",
+        "discountPercent",
+        "externalId",
+        "name",
+        "active"
+      ],
+      "properties": {
+        "dueDays": {
+          "type": "integer",
+          "title": "The Duedays",
+          "default": 0,
+          "examples": [
+            0
+          ]
+        },
+        "discountDays": {
+          "type": "integer",
+          "title": "The Discountdays",
+          "default": 0,
+          "examples": [
+            0
+          ]
+        },
+        "discountPercent": {
+          "type": "integer",
+          "title": "The Discountpercent",
+          "default": 0,
+          "examples": [
+            0
+          ]
+        },
+        "externalId": {
+          "type": "string",
+          "title": "The Externalid",
+          "default": "",
+          "examples": [
+            "10"
+          ],
+          "pattern": "^(.*)$"
+        },
+        "name": {
+          "type": "string",
+          "title": "The Name",
+          "default": "",
+          "examples": [
+            "Net 20"
+          ],
+          "pattern": "^(.*)$"
+        },
+        "active": {
+          "type": "boolean",
+          "title": "The Active",
+          "default": false,
+          "examples": [
+            true
+          ]
+        }
+      }
+    }
+  }
+}
