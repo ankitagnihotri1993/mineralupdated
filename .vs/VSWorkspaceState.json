@@ -1,8 +1,10 @@
 {
   "ExpandedNodes": [
     "",
-    "\\lib"
+    "\\lib",
+    "\\lib\\commons\\services",
+    "\\lib\\triggers"
   ],
-  "SelectedNode": "\\subsidiaries.js.exclude",
+  "SelectedNode": "\\lib\\triggers\\getVendorList.js",
   "PreviewInSolutionExplorer": false
 }
