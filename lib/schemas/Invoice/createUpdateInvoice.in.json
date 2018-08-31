@@ -7,6 +7,12 @@
       "title": "Invoice Details",
       "default": ""
 
+    },
+    "subsidiary": {
+      "type": "object",
+      "title": "Subsidiary Id",
+      "default": ""
+
     }
   }
 }
