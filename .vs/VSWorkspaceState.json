@@ -2,9 +2,13 @@
   "ExpandedNodes": [
     "",
     "\\lib",
+    "\\lib\\actions",
+    "\\lib\\commons",
     "\\lib\\commons\\services",
-    "\\lib\\triggers"
+    "\\lib\\triggers",
+    "\\UnitTest",
+    "\\UnitTest\\Action"
   ],
-  "SelectedNode": "\\lib\\triggers\\getVendorList.js",
+  "SelectedNode": "\\lib\\commons\\services\\commonsService.js",
   "PreviewInSolutionExplorer": false
 }
