@@ -9,39 +9,57 @@ var msg = {
 var cfg;
 msg.body.SubsidiaryId = "83ba591c-9662-4cda-8ec2-fbff0d498713";
 msg.body.InvoiceDetails = {
-
-      "LineItems": [
-            {
-                "LastModified": "2000-01-01T00:00:00",
-                "DateCreated": "2018-08-24T07:53:08.4",
-                "IsDeleted": false,
-                "PostingCodeID": 0,
-                "ROUnitID": 0,
-                "ROUnitAccountID": 0,
-                "LongDescription": "",
-                "ManualVendorCredit": false,
-                "RecNextAmount": 0,
-                "VendorCredit": false,
-                "GLTransactionID": 0,
-                "PostingDate": "2000-01-01T00:00:00",
-                "WorkOrderNumber": "",
-                "Adjustment": 0,
-                "Is1099Item": false,
-                "UnitPrice": 0,
-                "UnitOfMeasure": "",
-                "Quantity": 0,
-                "CostCenter": "2512 - MTReserve1",
-                "CostCenterID": 29,
-                "Amount": 60,
-                "ExpenseGLAccount": "1213 - MTFlorida GL#1s update",
-                "ExpenseGLAccountID": 9125,
-                "Description": "desc 60",
-                "VendorCode": "0",
-                "VendorCodeID": "392",
-                "InvoiceID": 1299,
-                "LineItemID": 1761
-            }
-        ],
+    
+"Links": [
+{
+"href": "/invoice/1299/lineitems",
+"rel": "Line Items"
+},
+{
+"href": "/invoice/1299/payments",
+"rel": "Payments"
+},
+{
+"href": "/invoice/1299/notes",
+"rel": "Notes"
+},
+{
+"href": "/invoice/1299/documents",
+"rel": "Documents"
+}
+],
+"LineItems": [
+{
+"LastModified": "2000-01-01T00:00:00",
+"DateCreated": "2018-08-24T07:53:08.4",
+"IsDeleted": false,
+"PostingCodeID": 0,
+"ROUnitID": 0,
+"ROUnitAccountID": 0,
+"LongDescription": "",
+"ManualVendorCredit": false,
+"RecNextAmount": 0,
+"VendorCredit": false,
+"GLTransactionID": 0,
+"PostingDate": "2000-01-01T00:00:00",
+"WorkOrderNumber": "",
+"Adjustment": 0,
+"Is1099Item": false,
+"UnitPrice": 0,
+"UnitOfMeasure": "",
+"Quantity": 0,
+"CostCenter": "2512 - MTReserve1",
+"CostCenterID": 29,
+"Amount": 60,
+"ExpenseGLAccount": "1213 - MTFlorida GL#1s update",
+"ExpenseGLAccountID": 9125,
+"Description": "desc 60",
+"VendorCode": "0",
+"VendorCodeID": "392",
+"InvoiceID": 1299,
+"LineItemID": 1761
+}
+],
 "Note": "",
 "PayeeName": "#test_6/8/2018_13",
 "APAccountID": 9125,
@@ -96,7 +114,7 @@ msg.body.InvoiceDetails = {
 "AcctTerm": "",
 "AcctTermID": 6,
 "PONumber": "",
-"Amount": null,
+"Amount": 60,
 "APBasis": 0,
 "InvoiceNumber": "MT#25",
 "ClientID": 43,
@@ -127,7 +145,7 @@ msg.body.InvoiceDetails = {
 "RefType": null,
 "RefID": null,
 "AddressID": 0
-    },
+},
 "Contact": "",
 "Payee": "#test_6/8/2018_13",
 "PayeeType": 14,
@@ -140,13 +158,12 @@ false,
 false,
 false,
 false
-    ]
+]
 
 }                                                                                                                                                                                                                                            
 
 
-                                                                                                                                                                                                                                                                                                
-
+                                                                                                                                                                                                                                                                                               
 cfg={
 companyId:"2f436ea7-427d-4a12-9af5-73c8975c545d",
 endPointURL:"https://test-f-mt.mineraltree.net",

@@ -5,10 +5,9 @@
     "\\lib\\actions",
     "\\lib\\commons",
     "\\lib\\commons\\services",
-    "\\lib\\triggers",
     "\\UnitTest",
     "\\UnitTest\\Action"
   ],
-  "SelectedNode": "\\lib\\commons\\services\\commonsService.js",
+  "SelectedNode": "\\lib\\actions\\createUpdateInvoice.js",
   "PreviewInSolutionExplorer": false
 }
