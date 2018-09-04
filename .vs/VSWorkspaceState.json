@@ -3,11 +3,11 @@
     "",
     "\\lib",
     "\\lib\\actions",
-    "\\lib\\commons",
     "\\lib\\commons\\services",
-    "\\UnitTest",
+    "\\lib\\schemas",
+    "\\lib\\schemas\\Subsidiary",
     "\\UnitTest\\Action"
   ],
-  "SelectedNode": "\\lib\\actions\\createUpdateInvoice.js",
+  "SelectedNode": "\\lib\\schemas\\Subsidiary\\createSubsidiary.in.json",
   "PreviewInSolutionExplorer": false
 }
