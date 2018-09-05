@@ -98,8 +98,8 @@
       "main": "./lib/actions/createUpdateInvoice.js",
       "title": "Update Caliber Bill Id",
       "metadata": {
-        "in": "./lib/schemas/Invoice/updateCaliberBillId.in.json",
-        "out": "./lib/schemas/Invoice/updateCaliberBillId.out.json"
+        "in": "./lib/schemas/Invoice/updateCaliberInvoiceBillId.in.json",
+        "out": "./lib/schemas/Invoice/createUpdateInvoice.out.json"
       }
     },
     "createSusidiary": {

@@ -1,0 +1,18 @@
+{
+  "type": "object",
+  "definitions": {},
+  "properties": {
+    "id": {
+      "type": "string",
+      "title": "Id",
+      "default": ""
+
+    },
+    "caliberInvoiceId": {
+      "type": "string",
+      "title": "Caliber Invoice Id",
+      "default": ""
+
+    }
+  }
+}
