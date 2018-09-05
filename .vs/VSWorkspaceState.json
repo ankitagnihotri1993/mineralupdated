@@ -2,12 +2,10 @@
   "ExpandedNodes": [
     "",
     "\\lib",
-    "\\lib\\actions",
-    "\\lib\\commons\\services",
     "\\lib\\schemas",
-    "\\lib\\schemas\\Subsidiary",
+    "\\lib\\triggers",
     "\\UnitTest\\Action"
   ],
-  "SelectedNode": "\\lib\\schemas\\Subsidiary\\createSubsidiary.in.json",
+  "SelectedNode": "\\lib\\triggers\\getVendorList.js",
   "PreviewInSolutionExplorer": false
 }
