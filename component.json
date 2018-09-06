@@ -95,7 +95,7 @@
       }
     },
     "updateCaliberInvoiceBillId": {
-      "main": "./lib/actions/createUpdateInvoice.js",
+      "main": "./lib/actions/updateCaliberBillId.js",
       "title": "Update Caliber Bill Id",
       "metadata": {
         "in": "./lib/schemas/Invoice/updateCaliberInvoiceBillId.in.json",
