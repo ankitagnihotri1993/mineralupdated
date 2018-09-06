@@ -2,10 +2,10 @@
   "ExpandedNodes": [
     "",
     "\\lib",
+    "\\lib\\actions",
     "\\lib\\schemas",
-    "\\lib\\triggers",
-    "\\UnitTest\\Action"
+    "\\lib\\triggers"
   ],
-  "SelectedNode": "\\lib\\triggers\\getVendorList.js",
+  "SelectedNode": "\\component.json",
   "PreviewInSolutionExplorer": false
 }
