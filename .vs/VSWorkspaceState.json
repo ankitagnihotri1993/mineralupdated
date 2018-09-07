@@ -3,9 +3,12 @@
     "",
     "\\lib",
     "\\lib\\actions",
+    "\\lib\\commons\\services",
     "\\lib\\schemas",
-    "\\lib\\triggers"
+    "\\lib\\triggers",
+    "\\UnitTest",
+    "\\UnitTest\\Action"
   ],
-  "SelectedNode": "\\component.json",
+  "SelectedNode": "\\lib\\actions\\searchObject.js",
   "PreviewInSolutionExplorer": false
 }
