@@ -1,18 +1,153 @@
 {
-  "type": "object",
   "definitions": {},
+  "type": "object",
+  "title": "The Root Schema",
+  "required": [
+    "PaymentCCID",
+    "DueDate",
+    "InvoiceDate",
+    "AcctTermID",
+    "PONumber",
+    "Amount",
+    "InvoiceNumber",
+    "ClientID",
+    "InvoiceID",
+    "PayeeID",
+    "LineItems"
+  ],
   "properties": {
-    "InvoiceDetails": {
-      "type": "object",
-      "title": "Invoice Details",
-      "default": ""
-
+    "PaymentCCID": {
+      "type": "integer",
+      "title": "The Paymentccid Schema",
+      "default": 0,
+      "examples": [
+        29
+      ]
     },
-    "subsidiary": {
-      "type": "object",
-      "title": "Subsidiary Id",
-      "default": ""
-
+    "DueDate": {
+      "type": "string",
+      "title": "The Duedate Schema",
+      "default": "",
+      "examples": [
+        "2018-08-26T00:00:00"
+      ],
+      "pattern": "^(.*)$"
+    },
+    "InvoiceDate": {
+      "type": "string",
+      "title": "The Invoicedate Schema",
+      "default": "",
+      "examples": [
+        "2018-08-25T00:00:00"
+      ],
+      "pattern": "^(.*)$"
+    },
+    "AcctTermID": {
+      "type": "integer",
+      "title": "The Accttermid Schema",
+      "default": 0,
+      "examples": [
+        6
+      ]
+    },
+    "PONumber": {
+      "type": "string",
+      "title": "The Ponumber Schema",
+      "default": "",
+      "examples": [
+        ""
+      ],
+      "pattern": "^(.*)$"
+    },
+    "Amount": {
+      "type": "integer",
+      "title": "The Amount Schema",
+      "default": 0,
+      "examples": [
+        60
+      ]
+    },
+    "InvoiceNumber": {
+      "type": "string",
+      "title": "The Invoicenumber Schema",
+      "default": "",
+      "examples": [
+        "MT#25"
+      ],
+      "pattern": "^(.*)$"
+    },
+    "ClientID": {
+      "type": "integer",
+      "title": "The Clientid Schema",
+      "default": 0,
+      "examples": [
+        43
+      ]
+    },
+    "InvoiceID": {
+      "type": "integer",
+      "title": "The Invoiceid Schema",
+      "default": 0,
+      "examples": [
+        1299
+      ]
+    },
+    "PayeeID": {
+      "type": "integer",
+      "title": "The Payeeid Schema",
+      "default": 0,
+      "examples": [
+        1627
+      ]
+    },
+    "LineItems": {
+      "type": "array",
+      "title": "The Lineitems Schema",
+      "items": {
+        "type": "object",
+        "title": "The Items Schema",
+        "required": [
+          "CostCenterID",
+          "Amount",
+          "ExpenseGLAccountID",
+          "Description"
+        ],
+        "properties": {
+          "CostCenterID": {
+            "type": "integer",
+            "title": "The Costcenterid Schema",
+            "default": 0,
+            "examples": [
+              29
+            ]
+          },
+          "Amount": {
+            "type": "integer",
+            "title": "The Amount Schema",
+            "default": 0,
+            "examples": [
+              60
+            ]
+          },
+          "ExpenseGLAccountID": {
+            "type": "integer",
+            "title": "The Expenseglaccountid Schema",
+            "default": 0,
+            "examples": [
+              9125
+            ]
+          },
+          "Description": {
+            "type": "string",
+            "title": "The Description Schema",
+            "default": "",
+            "examples": [
+              "desc 60"
+            ],
+            "pattern": "^(.*)$"
+          }
+        }
+      }
     }
   }
 }
