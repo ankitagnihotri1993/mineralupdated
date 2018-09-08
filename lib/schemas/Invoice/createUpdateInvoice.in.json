@@ -1,7 +1,7 @@
 {
   "definitions": {},
   "type": "object",
-  "title": "The Root Schema",
+  "title": "The Root",
   "required": [
     "PaymentCCID",
     "DueDate",
@@ -18,7 +18,7 @@
   "properties": {
     "PaymentCCID": {
       "type": "integer",
-      "title": "The Paymentccid Schema",
+      "title": "The Paymentccid",
       "default": 0,
       "examples": [
         29
@@ -26,7 +26,7 @@
     },
     "DueDate": {
       "type": "string",
-      "title": "The Duedate Schema",
+      "title": "The Duedate",
       "default": "",
       "examples": [
         "2018-08-26T00:00:00"
@@ -35,7 +35,7 @@
     },
     "InvoiceDate": {
       "type": "string",
-      "title": "The Invoicedate Schema",
+      "title": "The Invoicedate",
       "default": "",
       "examples": [
         "2018-08-25T00:00:00"
@@ -44,7 +44,7 @@
     },
     "AcctTermID": {
       "type": "integer",
-      "title": "The Accttermid Schema",
+      "title": "The Accttermid",
       "default": 0,
       "examples": [
         6
@@ -52,7 +52,7 @@
     },
     "PONumber": {
       "type": "string",
-      "title": "The Ponumber Schema",
+      "title": "The Ponumber",
       "default": "",
       "examples": [
         ""
@@ -61,7 +61,7 @@
     },
     "Amount": {
       "type": "integer",
-      "title": "The Amount Schema",
+      "title": "The Amount",
       "default": 0,
       "examples": [
         60
@@ -69,7 +69,7 @@
     },
     "InvoiceNumber": {
       "type": "string",
-      "title": "The Invoicenumber Schema",
+      "title": "The Invoicenumber",
       "default": "",
       "examples": [
         "MT#25"
@@ -78,7 +78,7 @@
     },
     "ClientID": {
       "type": "integer",
-      "title": "The Clientid Schema",
+      "title": "The Clientid",
       "default": 0,
       "examples": [
         43
@@ -86,7 +86,7 @@
     },
     "InvoiceID": {
       "type": "integer",
-      "title": "The Invoiceid Schema",
+      "title": "The Invoiceid",
       "default": 0,
       "examples": [
         1299
@@ -94,7 +94,7 @@
     },
     "PayeeID": {
       "type": "integer",
-      "title": "The Payeeid Schema",
+      "title": "The Payeeid",
       "default": 0,
       "examples": [
         1627
@@ -102,10 +102,10 @@
     },
     "LineItems": {
       "type": "array",
-      "title": "The Lineitems Schema",
+      "title": "The Lineitems",
       "items": {
         "type": "object",
-        "title": "The Items Schema",
+        "title": "The Items",
         "required": [
           "CostCenterID",
           "Amount",
@@ -115,7 +115,7 @@
         "properties": {
           "CostCenterID": {
             "type": "integer",
-            "title": "The Costcenterid Schema",
+            "title": "The Costcenterid",
             "default": 0,
             "examples": [
               29
@@ -123,7 +123,7 @@
           },
           "Amount": {
             "type": "integer",
-            "title": "The Amount Schema",
+            "title": "The Amount",
             "default": 0,
             "examples": [
               60
@@ -131,7 +131,7 @@
           },
           "ExpenseGLAccountID": {
             "type": "integer",
-            "title": "The Expenseglaccountid Schema",
+            "title": "The Expenseglaccountid",
             "default": 0,
             "examples": [
               9125
@@ -139,7 +139,7 @@
           },
           "Description": {
             "type": "string",
-            "title": "The Description Schema",
+            "title": "The Description",
             "default": "",
             "examples": [
               "desc 60"
