@@ -145,6 +145,14 @@
               "desc 60"
             ],
             "pattern": "^(.*)$"
+          },
+          "VendorCredit": {
+            "type": "boolean",
+            "title": "The Vendorcredit",
+            "default": false,
+            "examples": [
+              false
+            ]
           }
         }
       }
