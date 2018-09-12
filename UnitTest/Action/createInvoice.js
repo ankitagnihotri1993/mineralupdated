@@ -1,14 +1,13 @@
 
 const vendor = require('../../lib/actions/createUpdateInvoice');
 var msg = {
-    "body": {
-    "InvoiceDetails": "",
-    "SubsidiaryId": ""
-}
+    "body": ''
+   
+
 }
 var cfg;
-msg.body.SubsidiaryId = "83ba591c-9662-4cda-8ec2-fbff0d498713";
-msg.body.InvoiceDetails = {
+
+msg.body = {
     
 "Links": [
 {
@@ -39,7 +38,7 @@ msg.body.InvoiceDetails = {
 "LongDescription": "",
 "ManualVendorCredit": false,
 "RecNextAmount": 0,
-"VendorCredit": false,
+"VendorCredit": true,
 "GLTransactionID": 0,
 "PostingDate": "2000-01-01T00:00:00",
 "WorkOrderNumber": "",
@@ -116,9 +115,9 @@ msg.body.InvoiceDetails = {
 "PONumber": "",
 "Amount": 60,
 "APBasis": 0,
-"InvoiceNumber": "MT#25",
-"ClientID": 43,
-"InvoiceID": 1299,
+    "InvoiceNumber": "MT#6993",
+"ClientID": "83ba591c-9662-4cda-8ec2-fbff0d498713",
+"InvoiceID": 6993,
 "AllowedHistTypes": 0,
 "PaidDate": "0001-01-01T00:00:00",
 "CurrentStatusText": "Created",
