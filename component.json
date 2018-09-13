@@ -29,7 +29,7 @@
   "triggers": {
 
     "getInvoiceList": {
-      "main": "./lib/triggers/getInvoiceList.js",
+      "main": "./lib/triggers/invoice/getInvoiceList.js",
       "type": "polling",
       "title": "Get Invoice List",
       "metadata": {
@@ -37,7 +37,7 @@
       }
     },
     "getPaymentList": {
-      "main": "./lib/triggers/getPaymentList.js",
+      "main": "./lib/triggers/payment/getPaymentList.js",
       "type": "polling",
       "title": "Get Payment List",
       "metadata": {
@@ -45,7 +45,7 @@
       }
     },
     "getVendorList": {
-      "main": "./lib/triggers/getVendorList.js",
+      "main": "./lib/triggers/vendor/getVendorList.js",
       "type": "polling",
       "title": "Get Vendor List",
       "metadata": {
@@ -55,7 +55,7 @@
   },
   "actions": {
     "createUpdateVendor": {
-      "main": "./lib/actions/createUpdateVendor.js",
+      "main": "./lib/actions/vendor/createUpdateVendor.js",
       "title": "Create Or Update Vendor",
       "metadata": {
         "in": "./lib/schemas/Vendor/createVendor.in.json",
@@ -63,7 +63,7 @@
       }
     },
     "createGLAccount": {
-      "main": "./lib/actions/createGLAccount.js",
+      "main": "./lib/actions/glaccount/createGLAccount.js",
       "title": "Create GL Account",
       "metadata": {
         "in": "./lib/schemas/GLAccount/createGLAccount.in.json",
@@ -71,7 +71,7 @@
       }
     },
     "createPaymentTerm": {
-      "main": "./lib/actions/createPaymentTerm.js",
+      "main": "./lib/actions/payment/createPaymentTerm.js",
       "title": "Create Payment Term",
       "metadata": {
         "in": "./lib/schemas/Terms/PaymentTerm.in.json",
@@ -79,7 +79,7 @@
       }
     },
     "createClassification": {
-      "main": "./lib/actions/createClassification.js",
+      "main": "./lib/actions/classification/createClassification.js",
       "title": "Create Classification",
       "metadata": {
         "in": "./lib/schemas/Classification/createClassification.in.json",
@@ -87,7 +87,7 @@
       }
     },
     "createUpdateInvoice": {
-      "main": "./lib/actions/createUpdateInvoice.js",
+      "main": "./lib/actions/invoice/createUpdateInvoice.js",
       "title": "Create Or Update Invoice",
       "metadata": {
         "in": "./lib/schemas/Invoice/createUpdateInvoice.in.json",
@@ -95,7 +95,7 @@
       }
     },
     "updateCaliberInvoiceBillId": {
-      "main": "./lib/actions/updateCaliberBillId.js",
+      "main": "./lib/actions/invoice/updateCaliberBillId.js",
       "title": "Update Caliber Bill Id",
       "metadata": {
         "in": "./lib/schemas/Invoice/updateCaliberInvoiceBillId.in.json",
@@ -103,7 +103,7 @@
       }
     },
     "createSusidiary": {
-      "main": "./lib/actions/createSubsidiary.js",
+      "main": "./lib/actions/subsidiary/createSubsidiary.js",
       "title": "create Subsidiary",
       "metadata": {
         "in": "./lib/schemas/Subsidiary/createSubsidiary.in.json",
@@ -111,7 +111,7 @@
       }
     },
     "createBulkSubsidiary": {
-      "main": "./lib/actions/createBulkSubsidiary.js",
+      "main": "./lib/actions/subsidiary/createBulkSubsidiary.js",
       "title": "create Bulk Subsidiary",
       "metadata": {
         "in": "./lib/schemas/Subsidiary/createBulkSubsidiary.in.json",
@@ -119,7 +119,7 @@
       }
     },
     "searchObject": {
-      "main": "./lib/actions/searchObject.js",
+      "main": "./lib/actions/search/searchObject.js",
       "title": "Search Object",
       "metadata": {
         "in": "./lib/schemas/SearchObject/searchObject.in.json",
@@ -127,7 +127,7 @@
       }
     },
     "createInvoicePayment": {
-      "main": "./lib/actions/createInvoicePayment.js",
+      "main": "./lib/actions/payment/createInvoicePayment.js",
       "title": "Create Invoice Payment",
       "metadata": {
         "in": "./lib/schemas/Payment/Payment.in.json",
@@ -135,7 +135,7 @@
       }
     },
     "createPaymentMethod": {
-      "main": "./lib/actions/createPaymentMethod.js",
+      "main": "./lib/actions/payment/createPaymentMethod.js",
       "title": "Create Payment Method",
       "metadata": {
         "in": "./lib/schemas/PaymentMethod/createPaymentMethod.in.json",
