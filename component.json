@@ -141,6 +141,14 @@
         "in": "./lib/schemas/PaymentMethod/createPaymentMethod.in.json",
         "out": "./lib/schemas/PaymentMethod/createPaymentMethod.out.json"
       }
+    },
+    "createPurchaseOrder": {
+      "main": "./lib/actions/purchaseOrder/createPurchaseOrder.js",
+      "title": "Create Or Update Purchase Order",
+      "metadata": {
+        "in": "./lib/schemas/PurchaseOrder/createPurchaseOrder.in.json",
+        "out": "./lib/schemas/PurchaseOrder/createPurchaseOrder.out.json"
+      }
     }
   }
 }
