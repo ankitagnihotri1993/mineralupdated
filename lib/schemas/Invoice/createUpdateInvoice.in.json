@@ -18,6 +18,7 @@
   "properties": {
     "PaymentCCID": {
       "type": "integer",
+      "required":true,
       "title": "The Paymentccid",
       "default": 0,
       "examples": [
@@ -26,6 +27,7 @@
     },
     "DueDate": {
       "type": "string",
+      "required":true,
       "title": "The Duedate",
       "default": "",
       "examples": [
@@ -35,6 +37,7 @@
     },
     "InvoiceDate": {
       "type": "string",
+      "required":true,
       "title": "The Invoicedate",
       "default": "",
       "examples": [
@@ -44,6 +47,7 @@
     },
     "AcctTermID": {
       "type": "integer",
+      "required":true,
       "title": "The Accttermid",
       "default": 0,
       "examples": [
@@ -52,6 +56,7 @@
     },
     "PONumber": {
       "type": "string",
+      "required":true,
       "title": "The Ponumber",
       "default": "",
       "examples": [
@@ -61,6 +66,7 @@
     },
     "Amount": {
       "type": "integer",
+      "required":true,
       "title": "The Amount",
       "default": 0,
       "examples": [
@@ -69,6 +75,7 @@
     },
     "InvoiceNumber": {
       "type": "string",
+      "required":true,
       "title": "The Invoicenumber",
       "default": "",
       "examples": [
@@ -78,6 +85,7 @@
     },
     "ClientID": {
       "type": "integer",
+      "required":true,
       "title": "The Clientid",
       "default": 0,
       "examples": [
@@ -86,6 +94,7 @@
     },
     "InvoiceID": {
       "type": "integer",
+      "required":true,
       "title": "The Invoiceid",
       "default": 0,
       "examples": [
@@ -94,6 +103,7 @@
     },
     "PayeeID": {
       "type": "integer",
+      "required":true,
       "title": "The Payeeid",
       "default": 0,
       "examples": [
@@ -115,6 +125,7 @@
         "properties": {
           "CostCenterID": {
             "type": "integer",
+            "required":true,
             "title": "The Costcenterid",
             "default": 0,
             "examples": [
@@ -123,6 +134,7 @@
           },
           "Amount": {
             "type": "integer",
+            "required":true,
             "title": "The Amount",
             "default": 0,
             "examples": [
@@ -131,6 +143,7 @@
           },
           "ExpenseGLAccountID": {
             "type": "integer",
+            "required":true,
             "title": "The Expenseglaccountid",
             "default": 0,
             "examples": [
@@ -139,6 +152,7 @@
           },
           "Description": {
             "type": "string",
+            "required":true,
             "title": "The Description",
             "default": "",
             "examples": [
@@ -148,6 +162,7 @@
           },
           "VendorCredit": {
             "type": "boolean",
+            "required":true,
             "title": "The Vendorcredit",
             "default": false,
             "examples": [

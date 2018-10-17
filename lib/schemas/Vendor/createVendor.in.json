@@ -22,6 +22,7 @@
 				},
 				"externalId": {
 					"type": "string",
+					"required":true,
 					"title": "Externalid ",
 					"default": "",
 					"examples": [
@@ -50,6 +51,7 @@
 					"properties": {
 						"name": {
 							"type": "string",
+							"required":true,
 							"title": "Name",
 							"default": "",
 							"examples": [
@@ -58,6 +60,7 @@
 						},
 						"address1": {
 							"type": "string",
+							"required":true,
 							"title": "Address1 ",
 							"default": "",
 							"examples": [
@@ -66,6 +69,7 @@
 						},
 						"address2": {
 							"type": "string",
+							"required":true,
 							"title": "Address2 ",
 							"default": "",
 							"examples": [
@@ -74,6 +78,7 @@
 						},
 						"postalCode": {
 							"type": "string",
+							"required":true,
 							"title": "  Postalcode ",
 							"default": "",
 							"examples": [
@@ -82,6 +87,7 @@
 						},
 						"town": {
 							"type": "string",
+							"required":true,
 							"title": "  Town ",
 							"default": "",
 							"examples": [
@@ -90,6 +96,7 @@
 						},
 						"ctrySubDivision": {
 							"type": "string",
+							"required":true,
 							"title": "  Ctrysubdivision ",
 							"default": "",
 							"examples": [
@@ -98,6 +105,7 @@
 						},
 						"country": {
 							"type": "string",
+							"required":true,
 							"title": "Country ",
 							"default": "",
 							"examples": [
@@ -108,6 +116,7 @@
 				},
 				"legalName": {
 					"type": "string",
+					"required":true,
 					"title": "Legalname ",
 					"default": "",
 					"examples": [
@@ -116,6 +125,7 @@
 				},
 				"vendorType": {
 					"type": "string",
+					"required":true,
 					"title": "Vendortype",
 					"default": "",
 					"examples": [
@@ -129,6 +139,7 @@
 						"properties": {
 							"number": {
 								"type": "string",
+								"required":true,
 								"title": "Number ",
 								"default": "",
 								"examples": [
@@ -153,6 +164,7 @@
 						"properties": {
 							"type": {
 								"type": "string",
+								"required":true,
 								"title": "  Type ",
 								"default": "",
 								"examples": [
@@ -164,6 +176,7 @@
 								"properties": {
 									"accountNumber": {
 										"type": "string",
+										"required":true,
 										"title": "Accountnumber ",
 										"default": "",
 										"examples": [
@@ -172,6 +185,7 @@
 									},
 									"routingNumber": {
 										"type": "string",
+										"required":true,
 										"title": "Routingnumber ",
 										"default": "",
 										"examples": [
@@ -187,6 +201,7 @@
 					"type": "array",
 					"items": {
 						"type": "string",
+						"required":true,
 						"title": "  0th ",
 						"default": "",
 						"examples": [
@@ -196,6 +211,7 @@
 				},
 				"taxId": {
 					"type": "string",
+					"required":true,
 					"title": "  Taxid ",
 					"default": "",
 					"examples": [

@@ -14,6 +14,7 @@
           },
           "externalId": {
             "type": "string",
+            "required":true,
             "title": "The Externalid",
             "default": "",
             "examples": [
@@ -22,6 +23,7 @@
           },
           "name": {
             "type": "string",
+            "required":true,
             "title": "The Name",
             "default": "",
             "examples": [
@@ -30,6 +32,7 @@
           },
           "externalParentId": {
             "type": "string",
+            "required":true,
             "title": "The Externalparentid",
             "default": "",
             "examples": [

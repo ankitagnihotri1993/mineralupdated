@@ -1,0 +1,2016 @@
+{
+    "type": "object",
+    "title": "The Root Schema",
+    "required": [
+        "modified",
+        "created",
+        "id",
+        "externalId",
+        "memo",
+        "description",
+        "name",
+        "parent",
+        "state",
+        "started",
+        "ended",
+        "transactionDate",
+        "dueDate",
+        "invoiceNumber",
+        "expenseReport",
+        "active",
+        "dataSource",
+        "poNumber",
+        "popType",
+        "currency",
+        "status",
+        "dimensions",
+        "vendor",
+        "company",
+        "amount",
+        "balance",
+        "totalTaxAmount",
+        "discountAmount",
+        "appliedDiscountAmount",
+        "items",
+        "expenses",
+        "accountingPeriod",
+        "apAccount",
+        "classification",
+        "department",
+        "location",
+        "subsidiary",
+        "term",
+        "billCredits",
+        "purchaseOrders",
+        "appliedPaymentAmount"
+    ],
+    "properties": {
+        "modified": {
+            "type": "string",
+            "title": "The Modified Schema",
+            "default": "",
+            "examples": [
+                "2018-10-05T15:15:08Z"
+            ],
+            "pattern": "^(.*)$"
+        },
+        "created": {
+            "type": "string",
+            "title": "The Created Schema",
+            "default": "",
+            "examples": [
+                "2018-08-09T18:04:40Z"
+            ],
+            "pattern": "^(.*)$"
+        },
+        "id": {
+            "type": "string",
+            "title": "The Id Schema",
+            "default": "",
+            "examples": [
+                "89761a0b-bc50-44eb-8252-d265fdaef058"
+            ],
+            "pattern": "^(.*)$"
+        },
+        "externalId": {
+            "type": "string",
+            "title": "The Externalid Schema",
+            "default": "",
+            "examples": [
+                "1249"
+            ],
+            "pattern": "^(.*)$"
+        },
+        "memo": {
+            "type": "null",
+            "title": "The Memo Schema",
+            "default": null,
+            "examples": [
+                null
+            ]
+        },
+        "description": {
+            "type": "null",
+            "title": "The Description Schema",
+            "default": null,
+            "examples": [
+                null
+            ]
+        },
+        "name": {
+            "type": "null",
+            "title": "The Name Schema",
+            "default": null,
+            "examples": [
+                null
+            ]
+        },
+        "parent": {
+            "type": "null",
+            "title": "The Parent Schema",
+            "default": null,
+            "examples": [
+                null
+            ]
+        },
+        "state": {
+            "type": "null",
+            "title": "The State Schema",
+            "default": null,
+            "examples": [
+                null
+            ]
+        },
+        "started": {
+            "type": "null",
+            "title": "The Started Schema",
+            "default": null,
+            "examples": [
+                null
+            ]
+        },
+        "ended": {
+            "type": "null",
+            "title": "The Ended Schema",
+            "default": null,
+            "examples": [
+                null
+            ]
+        },
+        "transactionDate": {
+            "type": "string",
+            "title": "The Transactiondate Schema",
+            "default": "",
+            "examples": [
+                "2018-08-07T00:00:00Z"
+            ],
+            "pattern": "^(.*)$"
+        },
+        "dueDate": {
+            "type": "string",
+            "title": "The Duedate Schema",
+            "default": "",
+            "examples": [
+                "2018-08-07T00:00:00Z"
+            ],
+            "pattern": "^(.*)$"
+        },
+        "invoiceNumber": {
+            "type": "null",
+            "title": "The Invoicenumber Schema",
+            "default": null,
+            "examples": [
+                null
+            ]
+        },
+        "expenseReport": {
+            "type": "boolean",
+            "title": "The Expensereport Schema",
+            "default": false,
+            "examples": [
+                false
+            ]
+        },
+        "active": {
+            "type": "boolean",
+            "title": "The Active Schema",
+            "default": false,
+            "examples": [
+                true
+            ]
+        },
+        "dataSource": {
+            "type": "null",
+            "title": "The Datasource Schema",
+            "default": null,
+            "examples": [
+                null
+            ]
+        },
+        "poNumber": {
+            "type": "string",
+            "title": "The Ponumber Schema",
+            "default": "",
+            "examples": [
+                ""
+            ],
+            "pattern": "^(.*)$"
+        },
+        "popType": {
+            "type": "null",
+            "title": "The Poptype Schema",
+            "default": null,
+            "examples": [
+                null
+            ]
+        },
+        "currency": {
+            "type": "string",
+            "title": "The Currency Schema",
+            "default": "",
+            "examples": [
+                "USD"
+            ],
+            "pattern": "^(.*)$"
+        },
+        "status": {
+            "type": "string",
+            "title": "The Status Schema",
+            "default": "",
+            "examples": [
+                "Open"
+            ],
+            "pattern": "^(.*)$"
+        },
+        "dimensions": {
+            "type": "null",
+            "title": "The Dimensions Schema",
+            "default": null,
+            "examples": [
+                null
+            ]
+        },
+        "vendor": {
+            "type": "object",
+            "title": "The Vendor Schema",
+            "required": [
+                "modified",
+                "created",
+                "id",
+                "externalId",
+                "memo",
+                "description",
+                "name",
+                "legalName",
+                "dBAName",
+                "vendorType",
+                "emails",
+                "form1099Enabled",
+                "active",
+                "taxId",
+                "vatNumber",
+                "customerAccount",
+                "remittanceEnabled",
+                "remittanceEmails",
+                "primaryCurrency",
+                "currencies",
+                "address",
+                "phones",
+                "parent",
+                "defaultTerms",
+                "defaultExpenseAccount",
+                "defaultAPAccount",
+                "fundingMethods",
+                "primarySubsidiary",
+                "subsidiaries",
+                "vendorCompanyDefault",
+                "company"
+            ],
+            "properties": {
+                "modified": {
+                    "type": "null",
+                    "title": "The Modified Schema",
+                    "default": null,
+                    "examples": [
+                        null
+                    ]
+                },
+                "created": {
+                    "type": "null",
+                    "title": "The Created Schema",
+                    "default": null,
+                    "examples": [
+                        null
+                    ]
+                },
+                "id": {
+                    "type": "string",
+                    "title": "The Id Schema",
+                    "default": "",
+                    "examples": [
+                        "64bb26c3-b0a4-4752-b55b-1511c6ee80af"
+                    ],
+                    "pattern": "^(.*)$"
+                },
+                "externalId": {
+                    "type": "string",
+                    "title": "The Externalid Schema",
+                    "default": "",
+                    "examples": [
+                        "19"
+                    ],
+                    "pattern": "^(.*)$"
+                },
+                "memo": {
+                    "type": "null",
+                    "title": "The Memo Schema",
+                    "default": null,
+                    "examples": [
+                        null
+                    ]
+                },
+                "description": {
+                    "type": "null",
+                    "title": "The Description Schema",
+                    "default": null,
+                    "examples": [
+                        null
+                    ]
+                },
+                "name": {
+                    "type": "null",
+                    "title": "The Name Schema",
+                    "default": null,
+                    "examples": [
+                        null
+                    ]
+                },
+                "legalName": {
+                    "type": "null",
+                    "title": "The Legalname Schema",
+                    "default": null,
+                    "examples": [
+                        null
+                    ]
+                },
+                "dBAName": {
+                    "type": "null",
+                    "title": "The Dbaname Schema",
+                    "default": null,
+                    "examples": [
+                        null
+                    ]
+                },
+                "vendorType": {
+                    "type": "null",
+                    "title": "The Vendortype Schema",
+                    "default": null,
+                    "examples": [
+                        null
+                    ]
+                },
+                "emails": {
+                    "type": "null",
+                    "title": "The Emails Schema",
+                    "default": null,
+                    "examples": [
+                        null
+                    ]
+                },
+                "form1099Enabled": {
+                    "type": "null",
+                    "title": "The Form1099enabled Schema",
+                    "default": null,
+                    "examples": [
+                        null
+                    ]
+                },
+                "active": {
+                    "type": "null",
+                    "title": "The Active Schema",
+                    "default": null,
+                    "examples": [
+                        null
+                    ]
+                },
+                "taxId": {
+                    "type": "null",
+                    "title": "The Taxid Schema",
+                    "default": null,
+                    "examples": [
+                        null
+                    ]
+                },
+                "vatNumber": {
+                    "type": "null",
+                    "title": "The Vatnumber Schema",
+                    "default": null,
+                    "examples": [
+                        null
+                    ]
+                },
+                "customerAccount": {
+                    "type": "null",
+                    "title": "The Customeraccount Schema",
+                    "default": null,
+                    "examples": [
+                        null
+                    ]
+                },
+                "remittanceEnabled": {
+                    "type": "null",
+                    "title": "The Remittanceenabled Schema",
+                    "default": null,
+                    "examples": [
+                        null
+                    ]
+                },
+                "remittanceEmails": {
+                    "type": "null",
+                    "title": "The Remittanceemails Schema",
+                    "default": null,
+                    "examples": [
+                        null
+                    ]
+                },
+                "primaryCurrency": {
+                    "type": "null",
+                    "title": "The Primarycurrency Schema",
+                    "default": null,
+                    "examples": [
+                        null
+                    ]
+                },
+                "currencies": {
+                    "type": "null",
+                    "title": "The Currencies Schema",
+                    "default": null,
+                    "examples": [
+                        null
+                    ]
+                },
+                "address": {
+                    "type": "null",
+                    "title": "The Address Schema",
+                    "default": null,
+                    "examples": [
+                        null
+                    ]
+                },
+                "phones": {
+                    "type": "null",
+                    "title": "The Phones Schema",
+                    "default": null,
+                    "examples": [
+                        null
+                    ]
+                },
+                "parent": {
+                    "type": "null",
+                    "title": "The Parent Schema",
+                    "default": null,
+                    "examples": [
+                        null
+                    ]
+                },
+                "defaultTerms": {
+                    "type": "null",
+                    "title": "The Defaultterms Schema",
+                    "default": null,
+                    "examples": [
+                        null
+                    ]
+                },
+                "defaultExpenseAccount": {
+                    "type": "null",
+                    "title": "The Defaultexpenseaccount Schema",
+                    "default": null,
+                    "examples": [
+                        null
+                    ]
+                },
+                "defaultAPAccount": {
+                    "type": "null",
+                    "title": "The Defaultapaccount Schema",
+                    "default": null,
+                    "examples": [
+                        null
+                    ]
+                },
+                "fundingMethods": {
+                    "type": "null",
+                    "title": "The Fundingmethods Schema",
+                    "default": null,
+                    "examples": [
+                        null
+                    ]
+                },
+                "primarySubsidiary": {
+                    "type": "null",
+                    "title": "The Primarysubsidiary Schema",
+                    "default": null,
+                    "examples": [
+                        null
+                    ]
+                },
+                "subsidiaries": {
+                    "type": "null",
+                    "title": "The Subsidiaries Schema",
+                    "default": null,
+                    "examples": [
+                        null
+                    ]
+                },
+                "vendorCompanyDefault": {
+                    "type": "null",
+                    "title": "The Vendorcompanydefault Schema",
+                    "default": null,
+                    "examples": [
+                        null
+                    ]
+                },
+                "company": {
+                    "type": "null",
+                    "title": "The Company Schema",
+                    "default": null,
+                    "examples": [
+                        null
+                    ]
+                }
+            }
+        },
+        "company": {
+            "type": "object",
+            "title": "The Company Schema",
+            "required": [
+                "modified",
+                "created",
+                "id",
+                "externalId",
+                "memo",
+                "description",
+                "name",
+                "legalName",
+                "dBAName",
+                "vendorType",
+                "emails",
+                "externalParentId",
+                "address",
+                "phones",
+                "parent",
+                "subsidiaries",
+                "paymentMethods"
+            ],
+            "properties": {
+                "modified": {
+                    "type": "null",
+                    "title": "The Modified Schema",
+                    "default": null,
+                    "examples": [
+                        null
+                    ]
+                },
+                "created": {
+                    "type": "null",
+                    "title": "The Created Schema",
+                    "default": null,
+                    "examples": [
+                        null
+                    ]
+                },
+                "id": {
+                    "type": "string",
+                    "title": "The Id Schema",
+                    "default": "",
+                    "examples": [
+                        "2f436ea7-427d-4a12-9af5-73c8975c545d"
+                    ],
+                    "pattern": "^(.*)$"
+                },
+                "externalId": {
+                    "type": "null",
+                    "title": "The Externalid Schema",
+                    "default": null,
+                    "examples": [
+                        null
+                    ]
+                },
+                "memo": {
+                    "type": "null",
+                    "title": "The Memo Schema",
+                    "default": null,
+                    "examples": [
+                        null
+                    ]
+                },
+                "description": {
+                    "type": "null",
+                    "title": "The Description Schema",
+                    "default": null,
+                    "examples": [
+                        null
+                    ]
+                },
+                "name": {
+                    "type": "null",
+                    "title": "The Name Schema",
+                    "default": null,
+                    "examples": [
+                        null
+                    ]
+                },
+                "legalName": {
+                    "type": "null",
+                    "title": "The Legalname Schema",
+                    "default": null,
+                    "examples": [
+                        null
+                    ]
+                },
+                "dBAName": {
+                    "type": "null",
+                    "title": "The Dbaname Schema",
+                    "default": null,
+                    "examples": [
+                        null
+                    ]
+                },
+                "vendorType": {
+                    "type": "null",
+                    "title": "The Vendortype Schema",
+                    "default": null,
+                    "examples": [
+                        null
+                    ]
+                },
+                "emails": {
+                    "type": "null",
+                    "title": "The Emails Schema",
+                    "default": null,
+                    "examples": [
+                        null
+                    ]
+                },
+                "externalParentId": {
+                    "type": "null",
+                    "title": "The Externalparentid Schema",
+                    "default": null,
+                    "examples": [
+                        null
+                    ]
+                },
+                "address": {
+                    "type": "null",
+                    "title": "The Address Schema",
+                    "default": null,
+                    "examples": [
+                        null
+                    ]
+                },
+                "phones": {
+                    "type": "null",
+                    "title": "The Phones Schema",
+                    "default": null,
+                    "examples": [
+                        null
+                    ]
+                },
+                "parent": {
+                    "type": "null",
+                    "title": "The Parent Schema",
+                    "default": null,
+                    "examples": [
+                        null
+                    ]
+                },
+                "subsidiaries": {
+                    "type": "null",
+                    "title": "The Subsidiaries Schema",
+                    "default": null,
+                    "examples": [
+                        null
+                    ]
+                },
+                "paymentMethods": {
+                    "type": "null",
+                    "title": "The Paymentmethods Schema",
+                    "default": null,
+                    "examples": [
+                        null
+                    ]
+                }
+            }
+        },
+        "amount": {
+            "type": "object",
+            "title": "The Amount Schema",
+            "required": [
+                "modified",
+                "created",
+                "amount",
+                "precision",
+                "currency"
+            ],
+            "properties": {
+                "modified": {
+                    "type": "null",
+                    "title": "The Modified Schema",
+                    "default": null,
+                    "examples": [
+                        null
+                    ]
+                },
+                "created": {
+                    "type": "null",
+                    "title": "The Created Schema",
+                    "default": null,
+                    "examples": [
+                        null
+                    ]
+                },
+                "amount": {
+                    "type": "integer",
+                    "title": "The Amount Schema",
+                    "default": 0,
+                    "examples": [
+                        500
+                    ]
+                },
+                "precision": {
+                    "type": "integer",
+                    "title": "The Precision Schema",
+                    "default": 0,
+                    "examples": [
+                        2
+                    ]
+                },
+                "currency": {
+                    "type": "string",
+                    "title": "The Currency Schema",
+                    "default": "",
+                    "examples": [
+                        "USD"
+                    ],
+                    "pattern": "^(.*)$"
+                }
+            }
+        },
+        "balance": {
+            "type": "object",
+            "title": "The Balance Schema",
+            "required": [
+                "modified",
+                "created",
+                "amount",
+                "precision",
+                "currency"
+            ],
+            "properties": {
+                "modified": {
+                    "type": "null",
+                    "title": "The Modified Schema",
+                    "default": null,
+                    "examples": [
+                        null
+                    ]
+                },
+                "created": {
+                    "type": "null",
+                    "title": "The Created Schema",
+                    "default": null,
+                    "examples": [
+                        null
+                    ]
+                },
+                "amount": {
+                    "type": "integer",
+                    "title": "The Amount Schema",
+                    "default": 0,
+                    "examples": [
+                        500
+                    ]
+                },
+                "precision": {
+                    "type": "integer",
+                    "title": "The Precision Schema",
+                    "default": 0,
+                    "examples": [
+                        2
+                    ]
+                },
+                "currency": {
+                    "type": "string",
+                    "title": "The Currency Schema",
+                    "default": "",
+                    "examples": [
+                        "USD"
+                    ],
+                    "pattern": "^(.*)$"
+                }
+            }
+        },
+        "totalTaxAmount": {
+            "type": "object",
+            "title": "The Totaltaxamount Schema",
+            "required": [
+                "modified",
+                "created",
+                "amount",
+                "precision",
+                "currency"
+            ],
+            "properties": {
+                "modified": {
+                    "type": "null",
+                    "title": "The Modified Schema",
+                    "default": null,
+                    "examples": [
+                        null
+                    ]
+                },
+                "created": {
+                    "type": "null",
+                    "title": "The Created Schema",
+                    "default": null,
+                    "examples": [
+                        null
+                    ]
+                },
+                "amount": {
+                    "type": "integer",
+                    "title": "The Amount Schema",
+                    "default": 0,
+                    "examples": [
+                        0
+                    ]
+                },
+                "precision": {
+                    "type": "integer",
+                    "title": "The Precision Schema",
+                    "default": 0,
+                    "examples": [
+                        2
+                    ]
+                },
+                "currency": {
+                    "type": "string",
+                    "title": "The Currency Schema",
+                    "default": "",
+                    "examples": [
+                        "USD"
+                    ],
+                    "pattern": "^(.*)$"
+                }
+            }
+        },
+        "discountAmount": {
+            "type": "null",
+            "title": "The Discountamount Schema",
+            "default": null,
+            "examples": [
+                null
+            ]
+        },
+        "appliedDiscountAmount": {
+            "type": "null",
+            "title": "The Applieddiscountamount Schema",
+            "default": null,
+            "examples": [
+                null
+            ]
+        },
+        "items": {
+            "type": "array",
+            "title": "The Items Schema",
+            "items": {
+                "type": "object",
+                "title": "The Items Schema",
+                "required": [
+                    "modified",
+                    "created",
+                    "id",
+                    "externalId",
+                    "memo",
+                    "description",
+                    "name",
+                    "form1099Enabled",
+                    "lineNumber",
+                    "billable",
+                    "closed",
+                    "poItemStatus",
+                    "dimensions",
+                    "amountDue",
+                    "taxRate",
+                    "taxAmount",
+                    "netAmount",
+                    "vendor",
+                    "glAccount",
+                    "relatedPOExpenses",
+                    "amortization",
+                    "location",
+                    "department",
+                    "classification",
+                    "project",
+                    "purchaseOrder",
+                    "taxDetail",
+                    "companyItem",
+                    "cost",
+                    "quantity",
+                    "billedQuantity",
+                    "quantityReceived"
+                ],
+                "properties": {
+                    "modified": {
+                        "type": "null",
+                        "title": "The Modified Schema",
+                        "default": null,
+                        "examples": [
+                            null
+                        ]
+                    },
+                    "created": {
+                        "type": "null",
+                        "title": "The Created Schema",
+                        "default": null,
+                        "examples": [
+                            null
+                        ]
+                    },
+                    "id": {
+                        "type": "null",
+                        "title": "The Id Schema",
+                        "default": null,
+                        "examples": [
+                            null
+                        ]
+                    },
+                    "externalId": {
+                        "type": "null",
+                        "title": "The Externalid Schema",
+                        "default": null,
+                        "examples": [
+                            null
+                        ]
+                    },
+                    "memo": {
+                        "type": "null",
+                        "title": "The Memo Schema",
+                        "default": null,
+                        "examples": [
+                            null
+                        ]
+                    },
+                    "description": {
+                        "type": "string",
+                        "title": "The Description Schema",
+                        "default": "",
+                        "examples": [
+                            "Item description"
+                        ],
+                        "pattern": "^(.*)$"
+                    },
+                    "name": {
+                        "type": "string",
+                        "title": "The Name Schema",
+                        "default": "",
+                        "examples": [
+                            ""
+                        ],
+                        "pattern": "^(.*)$"
+                    },
+                    "form1099Enabled": {
+                        "type": "boolean",
+                        "title": "The Form1099enabled Schema",
+                        "default": false,
+                        "examples": [
+                            false
+                        ]
+                    },
+                    "lineNumber": {
+                        "type": "integer",
+                        "title": "The Linenumber Schema",
+                        "default": 0,
+                        "examples": [
+                            1
+                        ]
+                    },
+                    "billable": {
+                        "type": "boolean",
+                        "title": "The Billable Schema",
+                        "default": false,
+                        "examples": [
+                            false
+                        ]
+                    },
+                    "closed": {
+                        "type": "null",
+                        "title": "The Closed Schema",
+                        "default": null,
+                        "examples": [
+                            null
+                        ]
+                    },
+                    "poItemStatus": {
+                        "type": "null",
+                        "title": "The Poitemstatus Schema",
+                        "default": null,
+                        "examples": [
+                            null
+                        ]
+                    },
+                    "dimensions": {
+                        "type": "null",
+                        "title": "The Dimensions Schema",
+                        "default": null,
+                        "examples": [
+                            null
+                        ]
+                    },
+                    "amountDue": {
+                        "type": "object",
+                        "title": "The Amountdue Schema",
+                        "required": [
+                            "modified",
+                            "created",
+                            "amount",
+                            "precision",
+                            "currency"
+                        ],
+                        "properties": {
+                            "modified": {
+                                "type": "null",
+                                "title": "The Modified Schema",
+                                "default": null,
+                                "examples": [
+                                    null
+                                ]
+                            },
+                            "created": {
+                                "type": "null",
+                                "title": "The Created Schema",
+                                "default": null,
+                                "examples": [
+                                    null
+                                ]
+                            },
+                            "amount": {
+                                "type": "integer",
+                                "title": "The Amount Schema",
+                                "default": 0,
+                                "examples": [
+                                    10
+                                ]
+                            },
+                            "precision": {
+                                "type": "integer",
+                                "title": "The Precision Schema",
+                                "default": 0,
+                                "examples": [
+                                    2
+                                ]
+                            },
+                            "currency": {
+                                "type": "string",
+                                "title": "The Currency Schema",
+                                "default": "",
+                                "examples": [
+                                    "USD"
+                                ],
+                                "pattern": "^(.*)$"
+                            }
+                        }
+                    },
+                    "taxRate": {
+                        "type": "null",
+                        "title": "The Taxrate Schema",
+                        "default": null,
+                        "examples": [
+                            null
+                        ]
+                    },
+                    "taxAmount": {
+                        "type": "null",
+                        "title": "The Taxamount Schema",
+                        "default": null,
+                        "examples": [
+                            null
+                        ]
+                    },
+                    "netAmount": {
+                        "type": "null",
+                        "title": "The Netamount Schema",
+                        "default": null,
+                        "examples": [
+                            null
+                        ]
+                    },
+                    "vendor": {
+                        "type": "null",
+                        "title": "The Vendor Schema",
+                        "default": null,
+                        "examples": [
+                            null
+                        ]
+                    },
+                    "glAccount": {
+                        "type": "object",
+                        "title": "The Glaccount Schema",
+                        "required": [
+                            "modified",
+                            "created",
+                            "id",
+                            "externalId",
+                            "memo",
+                            "description",
+                            "name",
+                            "accountNumber",
+                            "accountTypeLabel",
+                            "classRequired",
+                            "customerRequired",
+                            "departmentRequired",
+                            "employeeRequired",
+                            "itemRequired",
+                            "locationRequired",
+                            "projectRequired",
+                            "vendorRequired",
+                            "status",
+                            "ledgerType",
+                            "active",
+                            "accountBalance",
+                            "subsidiaries",
+                            "company"
+                        ],
+                        "properties": {
+                            "modified": {
+                                "type": "null",
+                                "title": "The Modified Schema",
+                                "default": null,
+                                "examples": [
+                                    null
+                                ]
+                            },
+                            "created": {
+                                "type": "null",
+                                "title": "The Created Schema",
+                                "default": null,
+                                "examples": [
+                                    null
+                                ]
+                            },
+                            "id": {
+                                "type": "string",
+                                "title": "The Id Schema",
+                                "default": "",
+                                "examples": [
+                                    "1cbde88f-b2a0-4572-b8da-d918ab39985a"
+                                ],
+                                "pattern": "^(.*)$"
+                            },
+                            "externalId": {
+                                "type": "string",
+                                "title": "The Externalid Schema",
+                                "default": "",
+                                "examples": [
+                                    "8518"
+                                ],
+                                "pattern": "^(.*)$"
+                            },
+                            "memo": {
+                                "type": "null",
+                                "title": "The Memo Schema",
+                                "default": null,
+                                "examples": [
+                                    null
+                                ]
+                            },
+                            "description": {
+                                "type": "null",
+                                "title": "The Description Schema",
+                                "default": null,
+                                "examples": [
+                                    null
+                                ]
+                            },
+                            "name": {
+                                "type": "null",
+                                "title": "The Name Schema",
+                                "default": null,
+                                "examples": [
+                                    null
+                                ]
+                            },
+                            "accountNumber": {
+                                "type": "null",
+                                "title": "The Accountnumber Schema",
+                                "default": null,
+                                "examples": [
+                                    null
+                                ]
+                            },
+                            "accountTypeLabel": {
+                                "type": "null",
+                                "title": "The Accounttypelabel Schema",
+                                "default": null,
+                                "examples": [
+                                    null
+                                ]
+                            },
+                            "classRequired": {
+                                "type": "null",
+                                "title": "The Classrequired Schema",
+                                "default": null,
+                                "examples": [
+                                    null
+                                ]
+                            },
+                            "customerRequired": {
+                                "type": "null",
+                                "title": "The Customerrequired Schema",
+                                "default": null,
+                                "examples": [
+                                    null
+                                ]
+                            },
+                            "departmentRequired": {
+                                "type": "null",
+                                "title": "The Departmentrequired Schema",
+                                "default": null,
+                                "examples": [
+                                    null
+                                ]
+                            },
+                            "employeeRequired": {
+                                "type": "null",
+                                "title": "The Employeerequired Schema",
+                                "default": null,
+                                "examples": [
+                                    null
+                                ]
+                            },
+                            "itemRequired": {
+                                "type": "null",
+                                "title": "The Itemrequired Schema",
+                                "default": null,
+                                "examples": [
+                                    null
+                                ]
+                            },
+                            "locationRequired": {
+                                "type": "null",
+                                "title": "The Locationrequired Schema",
+                                "default": null,
+                                "examples": [
+                                    null
+                                ]
+                            },
+                            "projectRequired": {
+                                "type": "null",
+                                "title": "The Projectrequired Schema",
+                                "default": null,
+                                "examples": [
+                                    null
+                                ]
+                            },
+                            "vendorRequired": {
+                                "type": "null",
+                                "title": "The Vendorrequired Schema",
+                                "default": null,
+                                "examples": [
+                                    null
+                                ]
+                            },
+                            "status": {
+                                "type": "null",
+                                "title": "The Status Schema",
+                                "default": null,
+                                "examples": [
+                                    null
+                                ]
+                            },
+                            "ledgerType": {
+                                "type": "null",
+                                "title": "The Ledgertype Schema",
+                                "default": null,
+                                "examples": [
+                                    null
+                                ]
+                            },
+                            "active": {
+                                "type": "null",
+                                "title": "The Active Schema",
+                                "default": null,
+                                "examples": [
+                                    null
+                                ]
+                            },
+                            "accountBalance": {
+                                "type": "null",
+                                "title": "The Accountbalance Schema",
+                                "default": null,
+                                "examples": [
+                                    null
+                                ]
+                            },
+                            "subsidiaries": {
+                                "type": "null",
+                                "title": "The Subsidiaries Schema",
+                                "default": null,
+                                "examples": [
+                                    null
+                                ]
+                            },
+                            "company": {
+                                "type": "null",
+                                "title": "The Company Schema",
+                                "default": null,
+                                "examples": [
+                                    null
+                                ]
+                            }
+                        }
+                    },
+                    "relatedPOExpenses": {
+                        "type": "null",
+                        "title": "The Relatedpoexpenses Schema",
+                        "default": null,
+                        "examples": [
+                            null
+                        ]
+                    },
+                    "amortization": {
+                        "type": "null",
+                        "title": "The Amortization Schema",
+                        "default": null,
+                        "examples": [
+                            null
+                        ]
+                    },
+                    "location": {
+                        "type": "null",
+                        "title": "The Location Schema",
+                        "default": null,
+                        "examples": [
+                            null
+                        ]
+                    },
+                    "department": {
+                        "type": "null",
+                        "title": "The Department Schema",
+                        "default": null,
+                        "examples": [
+                            null
+                        ]
+                    },
+                    "classification": {
+                        "type": "null",
+                        "title": "The Classification Schema",
+                        "default": null,
+                        "examples": [
+                            null
+                        ]
+                    },
+                    "project": {
+                        "type": "null",
+                        "title": "The Project Schema",
+                        "default": null,
+                        "examples": [
+                            null
+                        ]
+                    },
+                    "purchaseOrder": {
+                        "type": "null",
+                        "title": "The Purchaseorder Schema",
+                        "default": null,
+                        "examples": [
+                            null
+                        ]
+                    },
+                    "taxDetail": {
+                        "type": "null",
+                        "title": "The Taxdetail Schema",
+                        "default": null,
+                        "examples": [
+                            null
+                        ]
+                    },
+                    "companyItem": {
+                        "type": "null",
+                        "title": "The Companyitem Schema",
+                        "default": null,
+                        "examples": [
+                            null
+                        ]
+                    },
+                    "cost": {
+                        "type": "object",
+                        "title": "The Cost Schema",
+                        "required": [
+                            "modified",
+                            "created",
+                            "amount",
+                            "precision",
+                            "currency"
+                        ],
+                        "properties": {
+                            "modified": {
+                                "type": "null",
+                                "title": "The Modified Schema",
+                                "default": null,
+                                "examples": [
+                                    null
+                                ]
+                            },
+                            "created": {
+                                "type": "null",
+                                "title": "The Created Schema",
+                                "default": null,
+                                "examples": [
+                                    null
+                                ]
+                            },
+                            "amount": {
+                                "type": "integer",
+                                "title": "The Amount Schema",
+                                "default": 0,
+                                "examples": [
+                                    2
+                                ]
+                            },
+                            "precision": {
+                                "type": "integer",
+                                "title": "The Precision Schema",
+                                "default": 0,
+                                "examples": [
+                                    1
+                                ]
+                            },
+                            "currency": {
+                                "type": "string",
+                                "title": "The Currency Schema",
+                                "default": "",
+                                "examples": [
+                                    "USD"
+                                ],
+                                "pattern": "^(.*)$"
+                            }
+                        }
+                    },
+                    "quantity": {
+                        "type": "object",
+                        "title": "The Quantity Schema",
+                        "required": [
+                            "value",
+                            "precision",
+                            "fieldOfMeasure"
+                        ],
+                        "properties": {
+                            "value": {
+                                "type": "integer",
+                                "title": "The Value Schema",
+                                "default": 0,
+                                "examples": [
+                                    25
+                                ]
+                            },
+                            "precision": {
+                                "type": "integer",
+                                "title": "The Precision Schema",
+                                "default": 0,
+                                "examples": [
+                                    2
+                                ]
+                            },
+                            "fieldOfMeasure": {
+                                "type": "null",
+                                "title": "The Fieldofmeasure Schema",
+                                "default": null,
+                                "examples": [
+                                    null
+                                ]
+                            }
+                        }
+                    },
+                    "billedQuantity": {
+                        "type": "null",
+                        "title": "The Billedquantity Schema",
+                        "default": null,
+                        "examples": [
+                            null
+                        ]
+                    },
+                    "quantityReceived": {
+                        "type": "null",
+                        "title": "The Quantityreceived Schema",
+                        "default": null,
+                        "examples": [
+                            null
+                        ]
+                    }
+                }
+            }
+        },
+        "expenses": {
+            "type": "null",
+            "title": "The Expenses Schema",
+            "default": null,
+            "examples": [
+                null
+            ]
+        },
+        "accountingPeriod": {
+            "type": "null",
+            "title": "The Accountingperiod Schema",
+            "default": null,
+            "examples": [
+                null
+            ]
+        },
+        "apAccount": {
+            "type": "null",
+            "title": "The Apaccount Schema",
+            "default": null,
+            "examples": [
+                null
+            ]
+        },
+        "classification": {
+            "type": "object",
+            "title": "The Classification Schema",
+            "required": [
+                "modified",
+                "created",
+                "id",
+                "externalId",
+                "memo",
+                "description",
+                "name",
+                "kind",
+                "required",
+                "active",
+                "range",
+                "status",
+                "uiclass",
+                "value",
+                "subsidiaries",
+                "company"
+            ],
+            "properties": {
+                "modified": {
+                    "type": "null",
+                    "title": "The Modified Schema",
+                    "default": null,
+                    "examples": [
+                        null
+                    ]
+                },
+                "created": {
+                    "type": "null",
+                    "title": "The Created Schema",
+                    "default": null,
+                    "examples": [
+                        null
+                    ]
+                },
+                "id": {
+                    "type": "string",
+                    "title": "The Id Schema",
+                    "default": "",
+                    "examples": [
+                        "820a2729-e6da-47d3-94f4-8ebc4706f82c"
+                    ],
+                    "pattern": "^(.*)$"
+                },
+                "externalId": {
+                    "type": "string",
+                    "title": "The Externalid Schema",
+                    "default": "",
+                    "examples": [
+                        "14"
+                    ],
+                    "pattern": "^(.*)$"
+                },
+                "memo": {
+                    "type": "null",
+                    "title": "The Memo Schema",
+                    "default": null,
+                    "examples": [
+                        null
+                    ]
+                },
+                "description": {
+                    "type": "null",
+                    "title": "The Description Schema",
+                    "default": null,
+                    "examples": [
+                        null
+                    ]
+                },
+                "name": {
+                    "type": "null",
+                    "title": "The Name Schema",
+                    "default": null,
+                    "examples": [
+                        null
+                    ]
+                },
+                "kind": {
+                    "type": "integer",
+                    "title": "The Kind Schema",
+                    "default": 0,
+                    "examples": [
+                        0
+                    ]
+                },
+                "required": {
+                    "type": "boolean",
+                    "title": "The Required Schema",
+                    "default": false,
+                    "examples": [
+                        false
+                    ]
+                },
+                "active": {
+                    "type": "null",
+                    "title": "The Active Schema",
+                    "default": null,
+                    "examples": [
+                        null
+                    ]
+                },
+                "range": {
+                    "type": "integer",
+                    "title": "The Range Schema",
+                    "default": 0,
+                    "examples": [
+                        0
+                    ]
+                },
+                "status": {
+                    "type": "null",
+                    "title": "The Status Schema",
+                    "default": null,
+                    "examples": [
+                        null
+                    ]
+                },
+                "uiclass": {
+                    "type": "null",
+                    "title": "The Uiclass Schema",
+                    "default": null,
+                    "examples": [
+                        null
+                    ]
+                },
+                "value": {
+                    "type": "null",
+                    "title": "The Value Schema",
+                    "default": null,
+                    "examples": [
+                        null
+                    ]
+                },
+                "subsidiaries": {
+                    "type": "null",
+                    "title": "The Subsidiaries Schema",
+                    "default": null,
+                    "examples": [
+                        null
+                    ]
+                },
+                "company": {
+                    "type": "null",
+                    "title": "The Company Schema",
+                    "default": null,
+                    "examples": [
+                        null
+                    ]
+                }
+            }
+        },
+        "department": {
+            "type": "null",
+            "title": "The Department Schema",
+            "default": null,
+            "examples": [
+                null
+            ]
+        },
+        "location": {
+            "type": "null",
+            "title": "The Location Schema",
+            "default": null,
+            "examples": [
+                null
+            ]
+        },
+        "subsidiary": {
+            "type": "object",
+            "title": "The Subsidiary Schema",
+            "required": [
+                "modified",
+                "created",
+                "id",
+                "externalId",
+                "memo",
+                "description",
+                "name",
+                "legalName",
+                "dBAName",
+                "vendorType",
+                "emails",
+                "externalParentId",
+                "address",
+                "phones",
+                "parent",
+                "subsidiaries",
+                "paymentMethods"
+            ],
+            "properties": {
+                "modified": {
+                    "type": "null",
+                    "title": "The Modified Schema",
+                    "default": null,
+                    "examples": [
+                        null
+                    ]
+                },
+                "created": {
+                    "type": "null",
+                    "title": "The Created Schema",
+                    "default": null,
+                    "examples": [
+                        null
+                    ]
+                },
+                "id": {
+                    "type": "string",
+                    "title": "The Id Schema",
+                    "default": "",
+                    "examples": [
+                        "685b0273-78f7-4f8c-82a6-744f9053ff80"
+                    ],
+                    "pattern": "^(.*)$"
+                },
+                "externalId": {
+                    "type": "string",
+                    "title": "The Externalid Schema",
+                    "default": "",
+                    "examples": [
+                        "15"
+                    ],
+                    "pattern": "^(.*)$"
+                },
+                "memo": {
+                    "type": "null",
+                    "title": "The Memo Schema",
+                    "default": null,
+                    "examples": [
+                        null
+                    ]
+                },
+                "description": {
+                    "type": "null",
+                    "title": "The Description Schema",
+                    "default": null,
+                    "examples": [
+                        null
+                    ]
+                },
+                "name": {
+                    "type": "null",
+                    "title": "The Name Schema",
+                    "default": null,
+                    "examples": [
+                        null
+                    ]
+                },
+                "legalName": {
+                    "type": "null",
+                    "title": "The Legalname Schema",
+                    "default": null,
+                    "examples": [
+                        null
+                    ]
+                },
+                "dBAName": {
+                    "type": "null",
+                    "title": "The Dbaname Schema",
+                    "default": null,
+                    "examples": [
+                        null
+                    ]
+                },
+                "vendorType": {
+                    "type": "null",
+                    "title": "The Vendortype Schema",
+                    "default": null,
+                    "examples": [
+                        null
+                    ]
+                },
+                "emails": {
+                    "type": "null",
+                    "title": "The Emails Schema",
+                    "default": null,
+                    "examples": [
+                        null
+                    ]
+                },
+                "externalParentId": {
+                    "type": "null",
+                    "title": "The Externalparentid Schema",
+                    "default": null,
+                    "examples": [
+                        null
+                    ]
+                },
+                "address": {
+                    "type": "null",
+                    "title": "The Address Schema",
+                    "default": null,
+                    "examples": [
+                        null
+                    ]
+                },
+                "phones": {
+                    "type": "null",
+                    "title": "The Phones Schema",
+                    "default": null,
+                    "examples": [
+                        null
+                    ]
+                },
+                "parent": {
+                    "type": "null",
+                    "title": "The Parent Schema",
+                    "default": null,
+                    "examples": [
+                        null
+                    ]
+                },
+                "subsidiaries": {
+                    "type": "null",
+                    "title": "The Subsidiaries Schema",
+                    "default": null,
+                    "examples": [
+                        null
+                    ]
+                },
+                "paymentMethods": {
+                    "type": "null",
+                    "title": "The Paymentmethods Schema",
+                    "default": null,
+                    "examples": [
+                        null
+                    ]
+                }
+            }
+        },
+        "term": {
+            "type": "object",
+            "title": "The Term Schema",
+            "required": [
+                "modified",
+                "created",
+                "id",
+                "externalId",
+                "memo",
+                "description",
+                "name",
+                "active",
+                "discountDays",
+                "discountPercent",
+                "discountAmount",
+                "dueDays",
+                "status",
+                "subsidiaries",
+                "company"
+            ],
+            "properties": {
+                "modified": {
+                    "type": "null",
+                    "title": "The Modified Schema",
+                    "default": null,
+                    "examples": [
+                        null
+                    ]
+                },
+                "created": {
+                    "type": "null",
+                    "title": "The Created Schema",
+                    "default": null,
+                    "examples": [
+                        null
+                    ]
+                },
+                "id": {
+                    "type": "string",
+                    "title": "The Id Schema",
+                    "default": "",
+                    "examples": [
+                        "91b0c584-40af-45ef-849c-555cb884ef9c"
+                    ],
+                    "pattern": "^(.*)$"
+                },
+                "externalId": {
+                    "type": "string",
+                    "title": "The Externalid Schema",
+                    "default": "",
+                    "examples": [
+                        "10"
+                    ],
+                    "pattern": "^(.*)$"
+                },
+                "memo": {
+                    "type": "null",
+                    "title": "The Memo Schema",
+                    "default": null,
+                    "examples": [
+                        null
+                    ]
+                },
+                "description": {
+                    "type": "null",
+                    "title": "The Description Schema",
+                    "default": null,
+                    "examples": [
+                        null
+                    ]
+                },
+                "name": {
+                    "type": "string",
+                    "title": "The Name Schema",
+                    "default": "",
+                    "examples": [
+                        "Net 20"
+                    ],
+                    "pattern": "^(.*)$"
+                },
+                "active": {
+                    "type": "boolean",
+                    "title": "The Active Schema",
+                    "default": false,
+                    "examples": [
+                        false
+                    ]
+                },
+                "discountDays": {
+                    "type": "integer",
+                    "title": "The Discountdays Schema",
+                    "default": 0,
+                    "examples": [
+                        0
+                    ]
+                },
+                "discountPercent": {
+                    "type": "integer",
+                    "title": "The Discountpercent Schema",
+                    "default": 0,
+                    "examples": [
+                        0
+                    ]
+                },
+                "discountAmount": {
+                    "type": "integer",
+                    "title": "The Discountamount Schema",
+                    "default": 0,
+                    "examples": [
+                        0
+                    ]
+                },
+                "dueDays": {
+                    "type": "integer",
+                    "title": "The Duedays Schema",
+                    "default": 0,
+                    "examples": [
+                        0
+                    ]
+                },
+                "status": {
+                    "type": "null",
+                    "title": "The Status Schema",
+                    "default": null,
+                    "examples": [
+                        null
+                    ]
+                },
+                "subsidiaries": {
+                    "type": "array",
+                    "title": "The Subsidiaries Schema"
+                },
+                "company": {
+                    "type": "null",
+                    "title": "The Company Schema",
+                    "default": null,
+                    "examples": [
+                        null
+                    ]
+                }
+            }
+        },
+        "billCredits": {
+            "type": "null",
+            "title": "The Billcredits Schema",
+            "default": null,
+            "examples": [
+                null
+            ]
+        },
+        "purchaseOrders": {
+            "type": "null",
+            "title": "The Purchaseorders Schema",
+            "default": null,
+            "examples": [
+                null
+            ]
+        },
+        "appliedPaymentAmount": {
+            "type": "null",
+            "title": "The Appliedpaymentamount Schema",
+            "default": null,
+            "examples": [
+                null
+            ]
+        }
+    }
+}

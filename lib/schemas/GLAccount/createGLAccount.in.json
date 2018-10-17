@@ -20,6 +20,7 @@
           "properties": {
             "id": {
               "type": "string", 
+              "required":true,
               "title": "The Id ", 
              "default": "", 
               "examples": [
@@ -95,6 +96,7 @@
       }, 
       "ledgerType": {
         "type": "string", 
+        "required":true,
        "title": "The Ledgertype ", 
         "default": "", 
         "examples": [
@@ -103,12 +105,14 @@
       }, 
       "accountNumber": {
        "type": "string", 
+       "required":true,
         "title": "The Accountnumber ", 
         "default": "", 
        "examples": [            "Account number"           ]
      }, 
       "externalId": {
         "type": "string", 
+        "required":true,
         "title": "The Externalid ", 
        "default": "", 
        "examples": [
@@ -117,6 +121,7 @@
       }, 
       "name": {
         "type": "string", 
+        "required":true,
         "title": "The Name ", 
        "default": "", 
         "examples": [

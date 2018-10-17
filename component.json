@@ -12,7 +12,7 @@
 			"password": {
 				"label": "Password",
 				"required": true,
-				"viewClass": "TextFieldWithNoteView"
+				"viewClass": "PasswordFieldView"
 			},
 			"endPointURL": {
 				"label": "End Point URL",
@@ -51,12 +51,20 @@
       "metadata": {
         "out": {}
       }
+    },
+    "getPurchaseOrder": {
+      "main": "./lib/triggers/purchaseOrder/getPurchaseOrder.js",
+      "type": "polling",
+      "title": "Get Purchase Order",
+      "metadata": {
+        "out": {}
+      }
     }
   },
   "actions": {
     "createUpdateVendor": {
       "main": "./lib/actions/vendor/createUpdateVendor.js",
-      "title": "Create Or Update Vendor",
+      "title": "create Or Update Vendor",
       "metadata": {
         "in": "./lib/schemas/Vendor/createVendor.in.json",
         "out": "./lib/schemas/Vendor/createVendor.out.json"
@@ -64,7 +72,7 @@
     },
     "createGLAccount": {
       "main": "./lib/actions/glaccount/createGLAccount.js",
-      "title": "Create GL Account",
+      "title": "create GL Account",
       "metadata": {
         "in": "./lib/schemas/GLAccount/createGLAccount.in.json",
         "out": "./lib/schemas/GLAccount/createGLAccount.out.json"
@@ -72,7 +80,7 @@
     },
     "createPaymentTerm": {
       "main": "./lib/actions/payment/createPaymentTerm.js",
-      "title": "Create Payment Term",
+      "title": "create Payment Term",
       "metadata": {
         "in": "./lib/schemas/Terms/PaymentTerm.in.json",
         "out": "./lib/schemas/Terms/PaymentTerm.out.json"
@@ -80,7 +88,7 @@
     },
     "createClassification": {
       "main": "./lib/actions/classification/createClassification.js",
-      "title": "Create Classification",
+      "title": "create Classification",
       "metadata": {
         "in": "./lib/schemas/Classification/createClassification.in.json",
         "out": "./lib/schemas/Classification/createClassification.out.json"
@@ -88,7 +96,7 @@
     },
     "createUpdateInvoice": {
       "main": "./lib/actions/invoice/createUpdateInvoice.js",
-      "title": "Create Or Update Invoice",
+      "title": "create Or Update Invoice",
       "metadata": {
         "in": "./lib/schemas/Invoice/createUpdateInvoice.in.json",
         "out": "./lib/schemas/Invoice/createUpdateInvoice.out.json"
@@ -128,7 +136,7 @@
     },
     "createInvoicePayment": {
       "main": "./lib/actions/payment/createInvoicePayment.js",
-      "title": "Create Invoice Payment",
+      "title": "create Invoice Payment",
       "metadata": {
         "in": "./lib/schemas/Payment/Payment.in.json",
         "out": "./lib/schemas/Payment/Payment.out.json"
@@ -136,7 +144,7 @@
     },
     "createPaymentMethod": {
       "main": "./lib/actions/payment/createPaymentMethod.js",
-      "title": "Create Payment Method",
+      "title": "create Payment Method",
       "metadata": {
         "in": "./lib/schemas/PaymentMethod/createPaymentMethod.in.json",
         "out": "./lib/schemas/PaymentMethod/createPaymentMethod.out.json"
@@ -148,6 +156,22 @@
       "metadata": {
         "in": "./lib/schemas/PurchaseOrder/createPurchaseOrder.in.json",
         "out": "./lib/schemas/PurchaseOrder/createPurchaseOrder.out.json"
+      }
+    },
+    "createItem": {
+      "main": "./lib/actions/item/createItem.js",
+      "title": "Create Item",
+      "metadata": {
+        "in": "./lib/schemas/item/createItem.in.json",
+        "out": "./lib/schemas/item/createItem.out.json"
+      }
+    },
+    "createSageInvoice": {
+      "main": "./lib/actions/sageInvoice/createSageInvoice.js",
+      "title": "Create or Update Purchase order invoice",
+      "metadata": {
+        "in": "./lib/schemas/sageInvoice/createSageInvoice.in.json",
+        "out": "./lib/schemas/sageInvoice/createSageInvoice.out.json"
       }
     }
   }

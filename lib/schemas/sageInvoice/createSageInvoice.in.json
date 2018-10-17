@@ -1,0 +1,882 @@
+{
+    "definitions": {},
+    "type": "object",
+    "title": "The Root",
+    "required": [
+      "bill"
+    ],
+    "properties": {
+      "bill": {
+        "type": "object",
+        "title": "The Bill",
+        "required": [
+          "id",
+          "externalId",
+          "term",
+          "currency",
+          "classification",
+          "department",
+          "location",
+          "subsidiary",
+          "dueDate",
+          "transactionDate",
+          "invoiceNumber",
+          "amount",
+          "balance",
+          "totalTaxAmount",
+          "memo",
+          "poNumber",
+          "state",
+          "vendor",
+          "expenses",
+          "items",
+          "purchaseOrders"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "title": "The Id",
+            "default": "",
+            "examples": [
+              "Unique ID of this bill <only required during update>"
+            ],
+            "pattern": "^(.*)$"
+          },
+          "externalId": {
+            "type": "string",
+            "required":true,
+            "title": "The Externalid",
+            "default": "",
+            "examples": [
+              "External ID that will help reference this bill with external system"
+            ],
+            "pattern": "^(.*)$"
+          },
+          "term": {
+            "type": "object",
+            "title": "The Term",
+            "required": [
+              "id"
+            ],
+            "properties": {
+              "id": {
+                "type": "string",
+                "title": "The Id",
+                "default": "",
+                "examples": [
+                  "Id of the term object"
+                ],
+                "pattern": "^(.*)$"
+              }
+            }
+          },
+          "currency": {
+            "type": "string",
+            "title": "The Currency",
+            "default": "",
+            "examples": [
+              "<Currency of the bill -  ISO currency code (Vendor currencies or company currency.)>"
+            ],
+            "pattern": "^(.*)$"
+          },
+          "classification": {
+            "type": "object",
+            "title": "The Classification",
+            "required": [
+              "id"
+            ],
+            "properties": {
+              "id": {
+                "type": "string",
+                "title": "The Id",
+                "default": "",
+                "examples": [
+                  "Id of the class object"
+                ],
+                "pattern": "^(.*)$"
+              }
+            }
+          },
+          "department": {
+            "type": "object",
+            "title": "The Department",
+            "required": [
+              "id"
+            ],
+            "properties": {
+              "id": {
+                "type": "string",
+                "title": "The Id",
+                "default": "",
+                "examples": [
+                  "Id of the department object"
+                ],
+                "pattern": "^(.*)$"
+              }
+            }
+          },
+          "location": {
+            "type": "object",
+            "title": "The Location",
+            "required": [
+              "id"
+            ],
+            "properties": {
+              "id": {
+                "type": "string",
+                "title": "The Id",
+                "default": "",
+                "examples": [
+                  "Id of the location object"
+                ],
+                "pattern": "^(.*)$"
+              }
+            }
+          },
+          "subsidiary": {
+            "type": "object",
+            "title": "The Subsidiary",
+            "required": [
+              "id"
+            ],
+            "properties": {
+              "id": {
+                "type": "string",
+                "title": "The Id",
+                "default": "",
+                "examples": [
+                  "Id of the subsidiary object"
+                ],
+                "pattern": "^(.*)$"
+              }
+            }
+          },
+          "dueDate": {
+            "type": "string",
+            "title": "The Duedate",
+            "default": "",
+            "examples": [
+              "<due date of this bill ex:2017-03-12>"
+            ],
+            "pattern": "^(.*)$"
+          },
+          "transactionDate": {
+            "type": "string",
+            "title": "The Transactiondate",
+            "default": "",
+            "examples": [
+              "<Invoice date of this bill ex:2017-03-12>"
+            ],
+            "pattern": "^(.*)$"
+          },
+          "invoiceNumber": {
+            "type": "string",
+            "title": "The Invoicenumber",
+            "default": "",
+            "examples": [
+              "Invoice number for this bill"
+            ],
+            "pattern": "^(.*)$"
+          },
+          "amount": {
+            "type": "object",
+            "title": "The Amount",
+            "required": [
+              "amount"
+            ],
+            "properties": {
+              "amount": {
+                "type": "integer",
+                "title": "The Amount",
+                "default": 0,
+                "examples": [
+                  0
+                ]
+              }
+            }
+          },
+          "balance": {
+            "type": "object",
+            "title": "The Balance",
+            "required": [
+              "amount"
+            ],
+            "properties": {
+              "amount": {
+                "type": "integer",
+                "title": "The Amount",
+                "default": 0,
+                "examples": [
+                  0
+                ]
+              }
+            }
+          },
+          "totalTaxAmount": {
+            "type": "object",
+            "title": "The Totaltaxamount",
+            "required": [
+              "amount"
+            ],
+            "properties": {
+              "amount": {
+                "type": "integer",
+                "title": "The Amount",
+                "default": 0,
+                "examples": [
+                  0
+                ]
+              }
+            }
+          },
+          "memo": {
+            "type": "string",
+            "title": "The Memo",
+            "default": "",
+            "examples": [
+              "string"
+            ],
+            "pattern": "^(.*)$"
+          },
+          "poNumber": {
+            "type": "string",
+            "title": "The Ponumber",
+            "default": "",
+            "examples": [
+              "ponumber1"
+            ],
+            "pattern": "^(.*)$"
+          },
+          "state": {
+            "type": "string",
+            "title": "The State",
+            "default": "",
+            "examples": [
+              "Open"
+            ],
+            "pattern": "^(.*)$"
+          },
+          "vendor": {
+            "type": "object",
+            "title": "The Vendor",
+            "required": [
+              "id"
+            ],
+            "properties": {
+              "id": {
+                "type": "string",
+                "title": "The Id",
+                "default": "",
+                "examples": [
+                  "Id of the vendor object"
+                ],
+                "pattern": "^(.*)$"
+              }
+            }
+          },
+          "expenses": {
+            "type": "array",
+            "title": "The Expenses",
+            "items": {
+              "type": "object",
+              "title": "The Items",
+              "required": [
+                "classification",
+                "department",
+                "location",
+                "glAccount",
+                "taxRate",
+                "taxAmount",
+                "netAmount",
+                "amountDue",
+                "taxDetail",
+                "lineNumber",
+                "closed",
+                "memo"
+              ],
+              "properties": {
+                "classification": {
+                  "type": "object",
+                  "title": "The Classification",
+                  "required": [
+                    "id"
+                  ],
+                  "properties": {
+                    "id": {
+                      "type": "string",
+                      "title": "The Id",
+                      "default": "",
+                      "examples": [
+                        "Id of the class object"
+                      ],
+                      "pattern": "^(.*)$"
+                    }
+                  }
+                },
+                "department": {
+                  "type": "object",
+                  "title": "The Department",
+                  "required": [
+                    "id"
+                  ],
+                  "properties": {
+                    "id": {
+                      "type": "string",
+                      "title": "The Id",
+                      "default": "",
+                      "examples": [
+                        "Id of the department object"
+                      ],
+                      "pattern": "^(.*)$"
+                    }
+                  }
+                },
+                "location": {
+                  "type": "object",
+                  "title": "The Location",
+                  "required": [
+                    "id"
+                  ],
+                  "properties": {
+                    "id": {
+                      "type": "string",
+                      "title": "The Id",
+                      "default": "",
+                      "examples": [
+                        "Id of the location object"
+                      ],
+                      "pattern": "^(.*)$"
+                    }
+                  }
+                },
+                "glAccount": {
+                  "type": "object",
+                  "title": "The Glaccount",
+                  "required": [
+                    "id"
+                  ],
+                  "properties": {
+                    "id": {
+                      "type": "string",
+                      "title": "The Id",
+                      "default": "",
+                      "examples": [
+                        "Id of the gl account object"
+                      ],
+                      "pattern": "^(.*)$"
+                    }
+                  }
+                },
+                "taxRate": {
+                  "type": "object",
+                  "title": "The Taxrate",
+                  "required": [
+                    "amount"
+                  ],
+                  "properties": {
+                    "amount": {
+                      "type": "integer",
+                      "title": "The Amount",
+                      "default": 0,
+                      "examples": [
+                        0
+                      ]
+                    }
+                  }
+                },
+                "taxAmount": {
+                  "type": "object",
+                  "title": "The Taxamount",
+                  "required": [
+                    "amount"
+                  ],
+                  "properties": {
+                    "amount": {
+                      "type": "integer",
+                      "title": "The Amount",
+                      "default": 0,
+                      "examples": [
+                        0
+                      ]
+                    }
+                  }
+                },
+                "netAmount": {
+                  "type": "object",
+                  "title": "The Netamount",
+                  "required": [
+                    "amount"
+                  ],
+                  "properties": {
+                    "amount": {
+                      "type": "integer",
+                      "title": "The Amount",
+                      "default": 0,
+                      "examples": [
+                        0
+                      ]
+                    }
+                  }
+                },
+                "amountDue": {
+                  "type": "object",
+                  "title": "The Amountdue",
+                  "required": [
+                    "amount"
+                  ],
+                  "properties": {
+                    "amount": {
+                      "type": "integer",
+                      "title": "The Amount",
+                      "default": 0,
+                      "examples": [
+                        0
+                      ]
+                    }
+                  }
+                },
+                "taxDetail": {
+                  "type": "object",
+                  "title": "The Taxdetail",
+                  "required": [
+                    "taxCode",
+                    "amount"
+                  ],
+                  "properties": {
+                    "taxCode": {
+                      "type": "object",
+                      "title": "The Taxcode",
+                      "required": [
+                        "id"
+                      ],
+                      "properties": {
+                        "id": {
+                          "type": "string",
+                          "title": "The Id",
+                          "default": "",
+                          "examples": [
+                            ""
+                          ],
+                          "pattern": "^(.*)$"
+                        }
+                      }
+                    },
+                    "amount": {
+                      "type": "object",
+                      "title": "The Amount",
+                      "required": [
+                        "amount"
+                      ],
+                      "properties": {
+                        "amount": {
+                          "type": "integer",
+                          "title": "The Amount",
+                          "default": 0,
+                          "examples": [
+                            0
+                          ]
+                        }
+                      }
+                    }
+                  }
+                },
+                "lineNumber": {
+                  "type": "integer",
+                  "title": "The Linenumber",
+                  "default": 0,
+                  "examples": [
+                    0
+                  ]
+                },
+                "closed": {
+                  "type": "boolean",
+                  "title": "The Closed",
+                  "default": false,
+                  "examples": [
+                    true
+                  ]
+                },
+                "memo": {
+                  "type": "string",
+                  "title": "The Memo",
+                  "default": "",
+                  "examples": [
+                    "e"
+                  ],
+                  "pattern": "^(.*)$"
+                }
+              }
+            }
+          },
+          "items": {
+            "type": "array",
+            "title": "The Items",
+            "items": {
+              "type": "object",
+              "title": "The Items",
+              "required": [
+                "purchaseOrder",
+                "companyItem",
+                "classification",
+                "department",
+                "location",
+                "glAccount",
+                "name",
+                "quantity",
+                "cost",
+                "taxRate",
+                "taxAmount",
+                "netAmount",
+                "amountDue",
+                "taxDetail",
+                "lineNumber",
+                "closed",
+                "description"
+              ],
+              "properties": {
+                "purchaseOrder": {
+                  "type": "object",
+                  "title": "The Purchaseorder",
+                  "required": [
+                    "id",
+                    "lineNo"
+                  ],
+                  "properties": {
+                    "id": {
+                      "type": "string",
+                      "title": "The Id",
+                      "default": "",
+                      "examples": [
+                        "Purchase order ID"
+                      ],
+                      "pattern": "^(.*)$"
+                    },
+                    "lineNo": {
+                      "type": "string",
+                      "title": "The Lineno",
+                      "default": "",
+                      "examples": [
+                        "line no to which the item should be linked"
+                      ],
+                      "pattern": "^(.*)$"
+                    }
+                  }
+                },
+                "companyItem": {
+                  "type": "object",
+                  "title": "The Companyitem",
+                  "required": [
+                    "id"
+                  ],
+                  "properties": {
+                    "id": {
+                      "type": "string",
+                      "title": "The Id",
+                      "default": "",
+                      "examples": [
+                        "Id of the company item object"
+                      ],
+                      "pattern": "^(.*)$"
+                    }
+                  }
+                },
+                "classification": {
+                  "type": "object",
+                  "title": "The Classification",
+                  "required": [
+                    "id"
+                  ],
+                  "properties": {
+                    "id": {
+                      "type": "string",
+                      "title": "The Id",
+                      "default": "",
+                      "examples": [
+                        "Id of the class object"
+                      ],
+                      "pattern": "^(.*)$"
+                    }
+                  }
+                },
+                "department": {
+                  "type": "object",
+                  "title": "The Department",
+                  "required": [
+                    "id"
+                  ],
+                  "properties": {
+                    "id": {
+                      "type": "string",
+                      "title": "The Id",
+                      "default": "",
+                      "examples": [
+                        "Id of the department object"
+                      ],
+                      "pattern": "^(.*)$"
+                    }
+                  }
+                },
+                "location": {
+                  "type": "object",
+                  "title": "The Location",
+                  "required": [
+                    "id"
+                  ],
+                  "properties": {
+                    "id": {
+                      "type": "string",
+                      "title": "The Id",
+                      "default": "",
+                      "examples": [
+                        "Id of the location object"
+                      ],
+                      "pattern": "^(.*)$"
+                    }
+                  }
+                },
+                "glAccount": {
+                  "type": "object",
+                  "title": "The Glaccount",
+                  "required": [
+                    "id"
+                  ],
+                  "properties": {
+                    "id": {
+                      "type": "string",
+                      "title": "The Id",
+                      "default": "",
+                      "examples": [
+                        "Id of the gl account object"
+                      ],
+                      "pattern": "^(.*)$"
+                    }
+                  }
+                },
+                "name": {
+                  "type": "string",
+                  "title": "The Name",
+                  "default": "",
+                  "examples": [
+                    "Name of the item if applicable"
+                  ],
+                  "pattern": "^(.*)$"
+                },
+                "quantity": {
+                  "type": "object",
+                  "title": "The Quantity",
+                  "required": [
+                    "value",
+                    "precision"
+                  ],
+                  "properties": {
+                    "value": {
+                      "type": "integer",
+                      "title": "The Value",
+                      "default": 0,
+                      "examples": [
+                        0
+                      ]
+                    },
+                    "precision": {
+                      "type": "integer",
+                      "title": "The Precision",
+                      "default": 0,
+                      "examples": [
+                        0
+                      ]
+                    }
+                  }
+                },
+                "cost": {
+                  "type": "object",
+                  "title": "The Cost",
+                  "required": [
+                    "amount",
+                    "precision"
+                  ],
+                  "properties": {
+                    "amount": {
+                      "type": "integer",
+                      "title": "The Amount",
+                      "default": 0,
+                      "examples": [
+                        0
+                      ]
+                    },
+                    "precision": {
+                      "type": "integer",
+                      "title": "The Precision",
+                      "default": 0,
+                      "examples": [
+                        0
+                      ]
+                    }
+                  }
+                },
+                "taxRate": {
+                  "type": "object",
+                  "title": "The Taxrate",
+                  "required": [
+                    "amount"
+                  ],
+                  "properties": {
+                    "amount": {
+                      "type": "integer",
+                      "title": "The Amount",
+                      "default": 0,
+                      "examples": [
+                        0
+                      ]
+                    }
+                  }
+                },
+                "taxAmount": {
+                  "type": "object",
+                  "title": "The Taxamount",
+                  "required": [
+                    "amount"
+                  ],
+                  "properties": {
+                    "amount": {
+                      "type": "integer",
+                      "title": "The Amount",
+                      "default": 0,
+                      "examples": [
+                        0
+                      ]
+                    }
+                  }
+                },
+                "netAmount": {
+                  "type": "object",
+                  "title": "The Netamount",
+                  "required": [
+                    "amount"
+                  ],
+                  "properties": {
+                    "amount": {
+                      "type": "integer",
+                      "title": "The Amount",
+                      "default": 0,
+                      "examples": [
+                        0
+                      ]
+                    }
+                  }
+                },
+                "amountDue": {
+                  "type": "object",
+                  "title": "The Amountdue",
+                  "required": [
+                    "amount"
+                  ],
+                  "properties": {
+                    "amount": {
+                      "type": "integer",
+                      "title": "The Amount",
+                      "default": 0,
+                      "examples": [
+                        0
+                      ]
+                    }
+                  }
+                },
+                "taxDetail": {
+                  "type": "object",
+                  "title": "The Taxdetail",
+                  "required": [
+                    "taxCode",
+                    "amount"
+                  ],
+                  "properties": {
+                    "taxCode": {
+                      "type": "object",
+                      "title": "The Taxcode",
+                      "required": [
+                        "id"
+                      ],
+                      "properties": {
+                        "id": {
+                          "type": "string",
+                          "title": "The Id",
+                          "default": "",
+                          "examples": [
+                            "09b93b72-7675-4b19-a2c6-91fc09035f49"
+                          ],
+                          "pattern": "^(.*)$"
+                        }
+                      }
+                    },
+                    "amount": {
+                      "type": "object",
+                      "title": "The Amount",
+                      "required": [
+                        "amount"
+                      ],
+                      "properties": {
+                        "amount": {
+                          "type": "integer",
+                          "title": "The Amount",
+                          "default": 0,
+                          "examples": [
+                            0
+                          ]
+                        }
+                      }
+                    }
+                  }
+                },
+                "lineNumber": {
+                  "type": "integer",
+                  "title": "The Linenumber",
+                  "default": 0,
+                  "examples": [
+                    0
+                  ]
+                },
+                "closed": {
+                  "type": "boolean",
+                  "title": "The Closed",
+                  "default": false,
+                  "examples": [
+                    true
+                  ]
+                },
+                "description": {
+                  "type": "string",
+                  "title": "The Description",
+                  "default": "",
+                  "examples": [
+                    "Item description"
+                  ],
+                  "pattern": "^(.*)$"
+                }
+              }
+            }
+          },
+          "purchaseOrders": {
+            "type": "array",
+            "title": "The Purchaseorders",
+            "items": {
+              "type": "object",
+              "title": "The Items",
+              "required": [
+                "id"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string",
+                  "title": "The Id",
+                  "default": "",
+                  "examples": [
+                    "Id of the purchase order to be linked"
+                  ],
+                  "pattern": "^(.*)$"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }

@@ -1,6 +1,4 @@
 "use strict";
-const request = require('request-promise');
-const messages = require('elasticio-node').messages;
 module.exports = verify;
 const accountService = require("./lib/commons/services/accountService.js");
 /***

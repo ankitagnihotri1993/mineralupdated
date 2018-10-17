@@ -11,6 +11,7 @@
             "properties": {
               "id": {
                 "type": "string",
+                "required":true,
                 "title": "The Id Schema ",
                 "default": "",
                 "examples": [
@@ -24,6 +25,7 @@
             "properties": {
               "type": {
                 "type": "string",
+                "required":true,
                 "title": "The Type",
                 "default": "",
                 "examples": [
@@ -39,6 +41,7 @@
               "properties": {
                 "id": {
                   "type": "string",
+                  "required":true,
                   "title": "The Id",
                   "default": "",
                   "examples": [
@@ -50,6 +53,7 @@
                   "properties": {
                     "amount": {
                       "type": "string",
+                      "required":true,
                       "title": "The Amount",
                       "default": "",
                       "examples": [
@@ -66,6 +70,7 @@
             "properties": {
               "amount": {
                 "type": "string",
+                "required":true,
                 "title": "The Amount",
                 "default": "",
                 "examples": [
@@ -89,6 +94,7 @@
           },
           "transactionDate": {
             "type": "string",
+            "required":true,
             "title": "The Transactiondate",
             "default": "",
             "examples": [
@@ -97,6 +103,7 @@
           },
           "externalId": {
             "type": "string",
+            "required":true,
             "title": "The Externalid",
             "default": "",
             "examples": [
@@ -105,6 +112,7 @@
           },
           "checkNumber": {
             "type": "string",
+            "required":true,
             "title": "The Checknumber",
             "default": "",
             "examples": [
