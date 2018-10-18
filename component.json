@@ -102,8 +102,8 @@
       "main": "./lib/actions/payment/upsertPaymentTerm.js",
       "title": "Upsert Payment Term",
       "metadata": {
-        "in": "./lib/schemas/terms/upsertPaymentTerm.in.json",
-        "out": "./lib/schemas/terms/upsertPaymentTerm.out.json"
+        "in": "./lib/schemas/terms/PaymentTerm.in.json",
+        "out": "./lib/schemas/terms/PaymentTerm.out.json"
       }
     },
     "upsertClassification": {
