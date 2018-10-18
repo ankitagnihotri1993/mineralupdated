@@ -114,32 +114,16 @@
         "out": "./lib/schemas/Classification/createClassification.out.json"
       }
     },
-    "createUpdateInvoice": {
-      "main": "./lib/actions/invoice/createUpdateInvoice.js",
-      "title": "create Or Update Invoice",
-      "metadata": {
-        "in": "./lib/schemas/Invoice/createUpdateInvoice.in.json",
-        "out": "./lib/schemas/Invoice/createUpdateInvoice.out.json"
-      }
-    },
-    "updateCaliberInvoiceBillId": {
-      "main": "./lib/actions/invoice/updateCaliberBillId.js",
-      "title": "Update Caliber Bill Id",
-      "metadata": {
-        "in": "./lib/schemas/Invoice/updateCaliberInvoiceBillId.in.json",
-        "out": "./lib/schemas/Invoice/createUpdateInvoice.out.json"
-      }
-    },
-    "createSusidiary": {
-      "main": "./lib/actions/subsidiary/createSubsidiary.js",
+    "upsertSubsidiary": {
+      "main": "./lib/actions/subsidiary/upsertSubsidiary.js",
       "title": "create Subsidiary",
       "metadata": {
         "in": "./lib/schemas/Subsidiary/createSubsidiary.in.json",
         "out": "./lib/schemas/Subsidiary/createSubsidiary.out.json"
       }
     },
-    "createBulkSubsidiary": {
-      "main": "./lib/actions/subsidiary/createBulkSubsidiary.js",
+    "upsertBulkSubsidiary": {
+      "main": "./lib/actions/subsidiary/upsertBulkSubsidiary.js",
       "title": "create Bulk Subsidiary",
       "metadata": {
         "in": "./lib/schemas/Subsidiary/createBulkSubsidiary.in.json",
@@ -154,44 +138,28 @@
         "out": "./lib/schemas/SearchObject/searchObject.out.json"
       }
     },
-    "createInvoicePayment": {
-      "main": "./lib/actions/payment/createInvoicePayment.js",
-      "title": "create Invoice Payment",
+    "upsertPayment": {
+      "main": "./lib/actions/payment/upsertPayment.js",
+      "title": "Upsert Invoice Payment",
       "metadata": {
         "in": "./lib/schemas/Payment/Payment.in.json",
         "out": "./lib/schemas/Payment/Payment.out.json"
       }
     },
-    "createPaymentMethod": {
-      "main": "./lib/actions/payment/createPaymentMethod.js",
+    "upsertPaymentMethod": {
+      "main": "./lib/actions/payment/upsertPaymentMethod.js",
       "title": "create Payment Method",
       "metadata": {
         "in": "./lib/schemas/PaymentMethod/createPaymentMethod.in.json",
         "out": "./lib/schemas/PaymentMethod/createPaymentMethod.out.json"
       }
     },
-    "createPurchaseOrder": {
-      "main": "./lib/actions/purchaseOrder/createPurchaseOrder.js",
-      "title": "Create Or Update Purchase Order",
-      "metadata": {
-        "in": "./lib/schemas/PurchaseOrder/createPurchaseOrder.in.json",
-        "out": "./lib/schemas/PurchaseOrder/createPurchaseOrder.out.json"
-      }
-    },
-    "createItem": {
-      "main": "./lib/actions/item/createItem.js",
+    "upsertItem": {
+      "main": "./lib/actions/item/upsertItem.js",
       "title": "Create Item",
       "metadata": {
         "in": "./lib/schemas/item/createItem.in.json",
         "out": "./lib/schemas/item/createItem.out.json"
-      }
-    },
-    "createSageInvoice": {
-      "main": "./lib/actions/sageInvoice/createSageInvoice.js",
-      "title": "Create or Update Purchase order invoice",
-      "metadata": {
-        "in": "./lib/schemas/sageInvoice/createSageInvoice.in.json",
-        "out": "./lib/schemas/sageInvoice/createSageInvoice.out.json"
       }
     }
   }
