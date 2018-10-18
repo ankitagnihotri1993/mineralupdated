@@ -7,6 +7,7 @@
       "properties": {
         "id": {
           "type": "string",
+          "required":true,
           "title": "The Id",
           "default": "",
           "examples": [
@@ -20,6 +21,7 @@
             "properties": {
               "id": {
                 "type": "string",
+                "required":true,
                 "title": "The Id",
                 "default": "",
                 "examples": [
@@ -31,6 +33,7 @@
         },
         "externalId": {
           "type": "string",
+          "required":true,
           "title": "The Externalid",
           "default": "",
           "examples": [
@@ -39,6 +42,7 @@
         },
         "name": {
           "type": "string",
+          "required":true,
           "title": "The Name",
           "default": "",
           "examples": [
@@ -47,6 +51,7 @@
         },
         "active": {
           "type": "boolean",
+          "required":true,
           "title": "The Active",
           "default": false,
           "examples": [

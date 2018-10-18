@@ -15,6 +15,7 @@
           },
           "type": {
             "type": "string",
+            "required":true,
             "title": "The Type",
             "default": "",
             "examples": [
@@ -23,6 +24,7 @@
           },
           "externalId": {
             "type": "string",
+            "required":true,
             "title": "The Externalid",
             "default": "",
             "examples": [
@@ -31,6 +33,7 @@
           },
           "status": {
             "type": "string",
+            "required":true,
             "title": "The Status",
             "default": "",
             "examples": [
@@ -42,6 +45,7 @@
             "properties": {
               "name": {
                 "type": "string",
+                "required":true,
                 "title": "The Name",
                 "default": "",
                 "examples": [

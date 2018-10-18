@@ -1,0 +1,634 @@
+{
+    "type": "object",
+    "title": "The Root ",
+    "required": [
+        "modified",
+        "created",
+        "id",
+        "externalId",
+        "memo",
+        "description",
+        "name",
+        "type",
+        "active",
+        "cost",
+        "accounts",
+        "residual",
+        "amortization",
+        "subsidiaries",
+        "company"
+    ],
+    "properties": {
+        "modified": {
+            "type": "string",
+            "title": "The Modified ",
+            "default": "",
+            "examples": [
+                "2018-10-03T09:35:14Z"
+            ],
+            "pattern": "^(.*)$"
+        },
+        "created": {
+            "type": "string",
+            "title": "The Created ",
+            "default": "",
+            "examples": [
+                "2018-10-03T09:34:11Z"
+            ],
+            "pattern": "^(.*)$"
+        },
+        "id": {
+            "type": "string",
+            "title": "The Id ",
+            "default": "",
+            "examples": [
+                "917aa1c6-6389-4869-8427-36543b777d00"
+            ],
+            "pattern": "^(.*)$"
+        },
+        "externalId": {
+            "type": "string",
+            "title": "The Externalid ",
+            "default": "",
+            "examples": [
+                "3653610"
+            ],
+            "pattern": "^(.*)$"
+        },
+        "memo": {
+            "type": "null",
+            "title": "The Memo ",
+            "default": null,
+            "examples": [
+                null
+            ]
+        },
+        "description": {
+            "type": "null",
+            "title": "The Description ",
+            "default": null,
+            "examples": [
+                null
+            ]
+        },
+        "name": {
+            "type": "string",
+            "title": "The Name ",
+            "default": "",
+            "examples": [
+                "sageItem"
+            ],
+            "pattern": "^(.*)$"
+        },
+        "type": {
+            "type": "string",
+            "title": "The Type ",
+            "default": "",
+            "examples": [
+                "NONE"
+            ],
+            "pattern": "^(.*)$"
+        },
+        "active": {
+            "type": "boolean",
+            "title": "The Active ",
+            "default": false,
+            "examples": [
+                true
+            ]
+        },
+        "cost": {
+            "type": "object",
+            "title": "The Cost ",
+            "required": [
+                "modified",
+                "created",
+                "amount",
+                "precision",
+                "currency"
+            ],
+            "properties": {
+                "modified": {
+                    "type": "null",
+                    "title": "The Modified ",
+                    "default": null,
+                    "examples": [
+                        null
+                    ]
+                },
+                "created": {
+                    "type": "null",
+                    "title": "The Created ",
+                    "default": null,
+                    "examples": [
+                        null
+                    ]
+                },
+                "amount": {
+                    "type": "integer",
+                    "title": "The Amount ",
+                    "default": 0,
+                    "examples": [
+                        0
+                    ]
+                },
+                "precision": {
+                    "type": "integer",
+                    "title": "The Precision ",
+                    "default": 0,
+                    "examples": [
+                        1
+                    ]
+                },
+                "currency": {
+                    "type": "null",
+                    "title": "The Currency ",
+                    "default": null,
+                    "examples": [
+                        null
+                    ]
+                }
+            }
+        },
+        "accounts": {
+            "type": "null",
+            "title": "The Accounts ",
+            "default": null,
+            "examples": [
+                null
+            ]
+        },
+        "residual": {
+            "type": "object",
+            "title": "The Residual ",
+            "required": [
+                "modified",
+                "created",
+                "amount",
+                "precision",
+                "currency"
+            ],
+            "properties": {
+                "modified": {
+                    "type": "null",
+                    "title": "The Modified ",
+                    "default": null,
+                    "examples": [
+                        null
+                    ]
+                },
+                "created": {
+                    "type": "null",
+                    "title": "The Created ",
+                    "default": null,
+                    "examples": [
+                        null
+                    ]
+                },
+                "amount": {
+                    "type": "integer",
+                    "title": "The Amount ",
+                    "default": 0,
+                    "examples": [
+                        15
+                    ]
+                },
+                "precision": {
+                    "type": "integer",
+                    "title": "The Precision ",
+                    "default": 0,
+                    "examples": [
+                        2
+                    ]
+                },
+                "currency": {
+                    "type": "string",
+                    "title": "The Currency ",
+                    "default": "",
+                    "examples": [
+                        "USD"
+                    ],
+                    "pattern": "^(.*)$"
+                }
+            }
+        },
+        "amortization": {
+            "type": "null",
+            "title": "The Amortization ",
+            "default": null,
+            "examples": [
+                null
+            ]
+        },
+        "subsidiaries": {
+            "type": "null",
+            "title": "The Subsidiaries ",
+            "default": null,
+            "examples": [
+                null
+            ]
+        },
+        "company": {
+            "type": "object",
+            "title": "The Company ",
+            "required": [
+                "modified",
+                "created",
+                "id",
+                "externalId",
+                "memo",
+                "description",
+                "name",
+                "legalName",
+                "dBAName",
+                "vendorType",
+                "emails",
+                "externalParentId",
+                "address",
+                "phones",
+                "parent",
+                "subsidiaries",
+                "paymentMethods"
+            ],
+            "properties": {
+                "modified": {
+                    "type": "string",
+                    "title": "The Modified ",
+                    "default": "",
+                    "examples": [
+                        "2018-08-06T13:08:02Z"
+                    ],
+                    "pattern": "^(.*)$"
+                },
+                "created": {
+                    "type": "string",
+                    "title": "The Created ",
+                    "default": "",
+                    "examples": [
+                        "2018-08-06T13:01:46Z"
+                    ],
+                    "pattern": "^(.*)$"
+                },
+                "id": {
+                    "type": "string",
+                    "title": "The Id ",
+                    "default": "",
+                    "examples": [
+                        "b1437587-acf2-46fe-9846-739dbc996310"
+                    ],
+                    "pattern": "^(.*)$"
+                },
+                "externalId": {
+                    "type": "null",
+                    "title": "The Externalid ",
+                    "default": null,
+                    "examples": [
+                        null
+                    ]
+                },
+                "memo": {
+                    "type": "null",
+                    "title": "The Memo ",
+                    "default": null,
+                    "examples": [
+                        null
+                    ]
+                },
+                "description": {
+                    "type": "null",
+                    "title": "The Description ",
+                    "default": null,
+                    "examples": [
+                        null
+                    ]
+                },
+                "name": {
+                    "type": "string",
+                    "title": "The Name ",
+                    "default": "",
+                    "examples": [
+                        "Sage 50 US Magic"
+                    ],
+                    "pattern": "^(.*)$"
+                },
+                "legalName": {
+                    "type": "null",
+                    "title": "The Legalname ",
+                    "default": null,
+                    "examples": [
+                        null
+                    ]
+                },
+                "dBAName": {
+                    "type": "string",
+                    "title": "The Dbaname ",
+                    "default": "",
+                    "examples": [
+                        "Sage 50 US Magic"
+                    ],
+                    "pattern": "^(.*)$"
+                },
+                "vendorType": {
+                    "type": "null",
+                    "title": "The Vendortype ",
+                    "default": null,
+                    "examples": [
+                        null
+                    ]
+                },
+                "emails": {
+                    "type": "null",
+                    "title": "The Emails ",
+                    "default": null,
+                    "examples": [
+                        null
+                    ]
+                },
+                "externalParentId": {
+                    "type": "null",
+                    "title": "The Externalparentid ",
+                    "default": null,
+                    "examples": [
+                        null
+                    ]
+                },
+                "address": {
+                    "type": "object",
+                    "title": "The Address ",
+                    "required": [
+                        "modified",
+                        "created",
+                        "id",
+                        "externalId",
+                        "memo",
+                        "description",
+                        "name",
+                        "address1",
+                        "address2",
+                        "address3",
+                        "address4",
+                        "address5",
+                        "postalCode",
+                        "town",
+                        "ctrySubDivision",
+                        "country"
+                    ],
+                    "properties": {
+                        "modified": {
+                            "type": "null",
+                            "title": "The Modified ",
+                            "default": null,
+                            "examples": [
+                                null
+                            ]
+                        },
+                        "created": {
+                            "type": "null",
+                            "title": "The Created ",
+                            "default": null,
+                            "examples": [
+                                null
+                            ]
+                        },
+                        "id": {
+                            "type": "null",
+                            "title": "The Id ",
+                            "default": null,
+                            "examples": [
+                                null
+                            ]
+                        },
+                        "externalId": {
+                            "type": "null",
+                            "title": "The Externalid ",
+                            "default": null,
+                            "examples": [
+                                null
+                            ]
+                        },
+                        "memo": {
+                            "type": "null",
+                            "title": "The Memo ",
+                            "default": null,
+                            "examples": [
+                                null
+                            ]
+                        },
+                        "description": {
+                            "type": "null",
+                            "title": "The Description ",
+                            "default": null,
+                            "examples": [
+                                null
+                            ]
+                        },
+                        "name": {
+                            "type": "null",
+                            "title": "The Name ",
+                            "default": null,
+                            "examples": [
+                                null
+                            ]
+                        },
+                        "address1": {
+                            "type": "string",
+                            "title": "The Address1 ",
+                            "default": "",
+                            "examples": [
+                                "125 Cambridgepark Drive "
+                            ],
+                            "pattern": "^(.*)$"
+                        },
+                        "address2": {
+                            "type": "null",
+                            "title": "The Address2 ",
+                            "default": null,
+                            "examples": [
+                                null
+                            ]
+                        },
+                        "address3": {
+                            "type": "null",
+                            "title": "The Address3 ",
+                            "default": null,
+                            "examples": [
+                                null
+                            ]
+                        },
+                        "address4": {
+                            "type": "null",
+                            "title": "The Address4 ",
+                            "default": null,
+                            "examples": [
+                                null
+                            ]
+                        },
+                        "address5": {
+                            "type": "null",
+                            "title": "The Address5 ",
+                            "default": null,
+                            "examples": [
+                                null
+                            ]
+                        },
+                        "postalCode": {
+                            "type": "string",
+                            "title": "The Postalcode ",
+                            "default": "",
+                            "examples": [
+                                "02140"
+                            ],
+                            "pattern": "^(.*)$"
+                        },
+                        "town": {
+                            "type": "string",
+                            "title": "The Town ",
+                            "default": "",
+                            "examples": [
+                                "Cambridge"
+                            ],
+                            "pattern": "^(.*)$"
+                        },
+                        "ctrySubDivision": {
+                            "type": "string",
+                            "title": "The Ctrysubdivision ",
+                            "default": "",
+                            "examples": [
+                                "Massachusetts"
+                            ],
+                            "pattern": "^(.*)$"
+                        },
+                        "country": {
+                            "type": "string",
+                            "title": "The Country ",
+                            "default": "",
+                            "examples": [
+                                "US"
+                            ],
+                            "pattern": "^(.*)$"
+                        }
+                    }
+                },
+                "phones": {
+                    "type": "array",
+                    "title": "The Phones ",
+                    "items": {
+                        "type": "object",
+                        "title": "The Items ",
+                        "required": [
+                            "modified",
+                            "created",
+                            "id",
+                            "externalId",
+                            "name",
+                            "location",
+                            "number",
+                            "countryCode",
+                            "fax"
+                        ],
+                        "properties": {
+                            "modified": {
+                                "type": "null",
+                                "title": "The Modified ",
+                                "default": null,
+                                "examples": [
+                                    null
+                                ]
+                            },
+                            "created": {
+                                "type": "null",
+                                "title": "The Created ",
+                                "default": null,
+                                "examples": [
+                                    null
+                                ]
+                            },
+                            "id": {
+                                "type": "null",
+                                "title": "The Id ",
+                                "default": null,
+                                "examples": [
+                                    null
+                                ]
+                            },
+                            "externalId": {
+                                "type": "null",
+                                "title": "The Externalid ",
+                                "default": null,
+                                "examples": [
+                                    null
+                                ]
+                            },
+                            "name": {
+                                "type": "null",
+                                "title": "The Name ",
+                                "default": null,
+                                "examples": [
+                                    null
+                                ]
+                            },
+                            "location": {
+                                "type": "null",
+                                "title": "The Location ",
+                                "default": null,
+                                "examples": [
+                                    null
+                                ]
+                            },
+                            "number": {
+                                "type": "string",
+                                "title": "The Number ",
+                                "default": "",
+                                "examples": [
+                                    "6172993399"
+                                ],
+                                "pattern": "^(.*)$"
+                            },
+                            "countryCode": {
+                                "type": "string",
+                                "title": "The Countrycode ",
+                                "default": "",
+                                "examples": [
+                                    "US"
+                                ],
+                                "pattern": "^(.*)$"
+                            },
+                            "fax": {
+                                "type": "boolean",
+                                "title": "The Fax ",
+                                "default": false,
+                                "examples": [
+                                    false
+                                ]
+                            }
+                        }
+                    }
+                },
+                "parent": {
+                    "type": "null",
+                    "title": "The Parent ",
+                    "default": null,
+                    "examples": [
+                        null
+                    ]
+                },
+                "subsidiaries": {
+                    "type": "null",
+                    "title": "The Subsidiaries ",
+                    "default": null,
+                    "examples": [
+                        null
+                    ]
+                },
+                "paymentMethods": {
+                    "type": "null",
+                    "title": "The Paymentmethods ",
+                    "default": null,
+                    "examples": [
+                        null
+                    ]
+                }
+            }
+        }
+    }
+}

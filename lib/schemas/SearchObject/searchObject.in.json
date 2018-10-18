@@ -4,6 +4,7 @@
   "properties": {
     "view": {
       "type": "string",
+      "required":true,
       "title": "The View",
       "default": "",
       "examples": [
@@ -12,6 +13,7 @@
     },
     "query": {
       "type": "string",
+      "required":true,
       "title": "The Query",
       "default": "",
       "examples": [

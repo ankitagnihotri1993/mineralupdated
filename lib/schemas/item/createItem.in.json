@@ -1,0 +1,134 @@
+{
+    "type": "object",
+    "title": "The Root ",
+    "required": [
+        "item"
+    ],
+    "properties": {
+        "item": {
+            "type": "object",
+            "title": "The Item ",
+            "required": [
+                "id",
+                "subsidiaries",
+                "type",
+                "cost",
+                "residual",
+                "name",
+                "active",
+                "externalId"
+            ],
+            "properties": {
+                "id": {
+                    "type": "string",
+                    "title": "The Id ",
+                    "default": "",
+                    "examples": [
+                        "Id of the company item - only for update"
+                    ],
+                    "pattern": "^(.*)$"
+                },
+                "subsidiaries": {
+                    "type": "array",
+                    "title": "The Subsidiaries ",
+                    "items": {
+                        "type": "object",
+                        "title": "The Items ",
+                        "required": [
+                            "id"
+                        ],
+                        "properties": {
+                            "id": {
+                                "type": "string",
+                                "title": "The Id ",
+                                "default": "",
+                                "examples": [
+                                    "List of the subsidiaries"
+                                ],
+                                "pattern": "^(.*)$"
+                            }
+                        }
+                    }
+                },
+                "type": {
+                    "type": "string",
+                    "title": "The Type ",
+                    "default": "",
+                    "examples": [
+                        "NONE "
+                    ],
+                    "pattern": "^(.*)$"
+                },
+                "cost": {
+                    "type": "object",
+                    "title": "The Cost ",
+                    "required": [
+                        "amount",
+                        "precision"
+                    ],
+                    "properties": {
+                        "amount": {
+                            "type": "integer",
+                            "title": "The Amount ",
+                            "default": 0,
+                            "examples": [
+                                0
+                            ]
+                        },
+                        "precision": {
+                            "type": "integer",
+                            "title": "The Precision ",
+                            "default": 0,
+                            "examples": [
+                                2
+                            ]
+                        }
+                    }
+                },
+                "residual": {
+                    "type": "object",
+                    "title": "The Residual ",
+                    "required": [
+                        "amount"
+                    ],
+                    "properties": {
+                        "amount": {
+                            "type": "integer",
+                            "title": "The Amount ",
+                            "default": 0,
+                            "examples": [
+                                0
+                            ]
+                        }
+                    }
+                },
+                "name": {
+                    "type": "string",
+                    "title": "The Name ",
+                    "default": "",
+                    "examples": [
+                        "Name of the item"
+                    ],
+                    "pattern": "^(.*)$"
+                },
+                "active": {
+                    "type": "boolean",
+                    "title": "The Active ",
+                    "default": false,
+                    "examples": [
+                        true
+                    ]
+                },
+                "externalId": {
+                    "type": "string",
+                    "title": "The Externalid ",
+                    "default": "",
+                    "examples": [
+                        "External id of the item - cannot be updated"
+                    ],
+                    "pattern": "^(.*)$"
+                }
+            }
+        }
+    }
+}

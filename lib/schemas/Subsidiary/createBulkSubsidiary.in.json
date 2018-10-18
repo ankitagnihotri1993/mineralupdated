@@ -20,6 +20,7 @@
               },
               "externalId": {
                 "type": "string",
+                "required":true,
                 "title": "The Externalid Schema ",
                 "default": "",
                 "examples": [
@@ -28,6 +29,7 @@
               },
               "name": {
                 "type": "string",
+                "required":true,
                 "title": "The Name Schema ",
                 "default": "",
                 "examples": [
@@ -36,6 +38,7 @@
               },
               "externalParentId": {
                 "type": "string",
+                "required":true,
                 "title": "The Externalparentid Schema ",
                 "default": "",
                 "examples": [

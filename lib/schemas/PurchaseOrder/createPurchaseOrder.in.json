@@ -1,0 +1,616 @@
+{
+  "type": "object",
+  "title": "The Root",
+  "required": [
+    "purchaseOrder"
+  ],
+  "properties": {
+    "purchaseOrder": {
+      "type": "object",
+      "title": "The Purchaseorder",
+      "required": [
+        "externalId",
+        "vendor",
+        "classification",
+        "department",
+        "location",
+        "subsidiary",
+        "terms",
+        "dueDate",
+        "poNumber",
+        "memo",
+        "state",
+        "poType",
+        "expenses",
+        "items"
+      ],
+      "properties": {
+        "externalId": {
+          "type": "string",
+          "title": "The Externalid",
+          "required": true,
+          "default": "",
+          "examples": [
+            ""
+          ],
+          "pattern": "^(.*)$"
+        },
+        "vendor": {
+          "type": "object",
+          "title": "The Vendor",
+          "required": [
+            "id"
+          ],
+          "properties": {
+            "id": {
+              "type": "string",
+              "title": "The Id",
+              "default": "",
+              "examples": [
+                ""
+              ],
+              "pattern": "^(.*)$"
+            }
+          }
+        },
+        "classification": {
+          "type": "object",
+          "title": "The Classification",
+          "required": [
+            "id"
+          ],
+          "properties": {
+            "id": {
+              "type": "string",
+              "title": "The Id",
+              "default": "",
+              "examples": [
+                ""
+              ],
+              "pattern": "^(.*)$"
+            }
+          }
+        },
+        "department": {
+          "type": "object",
+          "title": "The Department",
+          "required": [
+            "id"
+          ],
+          "properties": {
+            "id": {
+              "type": "string",
+              "title": "The Id",
+              "default": "",
+              "examples": [
+                ""
+              ],
+              "pattern": "^(.*)$"
+            }
+          }
+        },
+        "location": {
+          "type": "object",
+          "title": "The Location",
+          "required": [
+            "id"
+          ],
+          "properties": {
+            "id": {
+              "type": "string",
+              "title": "The Id",
+              "default": "",
+              "examples": [
+                ""
+              ],
+              "pattern": "^(.*)$"
+            }
+          }
+        },
+        "subsidiary": {
+          "type": "object",
+          "title": "The Subsidiary",
+          "required": [
+            "id"
+          ],
+          "properties": {
+            "id": {
+              "type": "string",
+              "title": "The Id",
+              "default": "",
+              "examples": [
+                ""
+              ],
+              "pattern": "^(.*)$"
+            }
+          }
+        },
+        "terms": {
+          "type": "object",
+          "title": "The Terms",
+          "required": [
+            "id"
+          ],
+          "properties": {
+            "id": {
+              "type": "string",
+              "title": "The Id",
+              "default": "",
+              "examples": [
+                ""
+              ],
+              "pattern": "^(.*)$"
+            }
+          }
+        },
+        "dueDate": {
+          "type": "string",
+
+          "title": "The Duedate",
+          "required": true,
+          "default": "",
+          "examples": [
+            ""
+          ],
+          "pattern": "^(.*)$"
+        },
+        "poNumber": {
+          "type": "string",
+          "title": "The Ponumber",
+          "required": true,
+          "default": "",
+          "examples": [
+            "po number"
+          ],
+          "pattern": "^(.*)$"
+        },
+        "memo": {
+          "type": "string",
+          "title": "The Memo",
+          "default": "",
+          "examples": [
+            "memo"
+          ],
+          "pattern": "^(.*)$"
+        },
+        "state": {
+          "type": "string",
+          "title": "The State",
+          "default": "",
+          "examples": [
+            "Closed"
+          ],
+          "pattern": "^(.*)$"
+        },
+        "poType": {
+          "type": "string",
+          "title": "The Potype",
+          "required":  true,
+          "default": "",
+          "examples": [
+            "Standard"
+          ],
+          "pattern": "^(.*)$"
+        },
+        "expenses": {
+          "type": "array",
+          "title": "The Expenses",
+          "items": {
+            "type": "object",
+            "title": "The Items",
+            "required": [
+              "classification",
+              "department",
+              "location",
+              "glAccount",
+              "amountDue",
+              "lineNumber",
+              "closed",
+              "memo"
+            ],
+            "properties": {
+              "classification": {
+                "type": "object",
+                "title": "The Classification",
+                "required": [
+                  "id"
+                ],
+                "properties": {
+                  "id": {
+                    "type": "string",
+                    "title": "The Id",
+                    "default": "",
+                    "examples": [
+                      "Id of the class object"
+                    ],
+                    "pattern": "^(.*)$"
+                  }
+                }
+              },
+              "department": {
+                "type": "object",
+                "title": "The Department",
+                "required": [
+                  "id"
+                ],
+                "properties": {
+                  "id": {
+                    "type": "string",
+                    "title": "The Id",
+                    "default": "",
+                    "examples": [
+                      "Id of the department object"
+                    ],
+                    "pattern": "^(.*)$"
+                  }
+                }
+              },
+              "location": {
+                "type": "object",
+                "title": "The Location",
+                "required": [
+                  "id"
+                ],
+                "properties": {
+                  "id": {
+                    "type": "string",
+                    "title": "The Id",
+                    "default": "",
+                    "examples": [
+                      "Id of the location object"
+                    ],
+                    "pattern": "^(.*)$"
+                  }
+                }
+              },
+              "glAccount": {
+                "type": "object",
+                "title": "The Glaccount",
+                "required": [
+                  "id"
+                ],
+                "properties": {
+                  "id": {
+                    "type": "string",
+                    "title": "The Id",
+                    "default": "",
+                    "examples": [
+                      "Id of the gl account object"
+                    ],
+                    "pattern": "^(.*)$"
+                  }
+                }
+              },
+              "amountDue": {
+                "type": "object",
+                "title": "The Amountdue",
+                "required": [
+                  "amount"
+                ],
+                "properties": {
+                  "amount": {
+                    "type": "integer",
+                    "title": "The Amount",
+                    "default": 0,
+                    "examples": [
+                      0
+                    ]
+                  }
+                }
+              },
+              "lineNumber": {
+                "type": "integer",
+                "title": "The Linenumber",
+                "default": 0,
+                "examples": [
+                  1
+                ]
+              },
+              "closed": {
+                "type": "boolean",
+                "title": "The Closed",
+                "default": false,
+                "examples": [
+                  true
+                ]
+              },
+              "memo": {
+                "type": "string",
+                "title": "The Memo",
+                "default": "",
+                "examples": [
+                  "Memo for the expense"
+                ],
+                "pattern": "^(.*)$"
+              }
+            }
+          }
+        },
+        "items": {
+          "type": "array",
+          "title": "The Items",
+          "items": {
+            "type": "object",
+            "title": "The Items",
+            "required": [
+              "companyItem",
+              "classification",
+              "department",
+              "location",
+              "glAccount",
+              "name",
+              "quantity",
+              "quantityReceived",
+              "billedQuantity",
+              "cost",
+              "amountDue",
+              "lineNumber",
+              "closed",
+              "description",
+              "poItemStatus"
+            ],
+            "properties": {
+              "companyItem": {
+                "type": "object",
+                "title": "The Companyitem",
+                "required": [
+                  "id"
+                ],
+                "properties": {
+                  "id": {
+                    "type": "string",
+                    "title": "The Id",
+                    "default": "",
+                    "examples": [
+                      "Id of the company item object"
+                    ],
+                    "pattern": "^(.*)$"
+                  }
+                }
+              },
+              "classification": {
+                "type": "object",
+                "title": "The Classification",
+                "required": [
+                  "id"
+                ],
+                "properties": {
+                  "id": {
+                    "type": "string",
+                    "title": "The Id",
+                    "default": "",
+                    "examples": [
+                      "Id of the class object"
+                    ],
+                    "pattern": "^(.*)$"
+                  }
+                }
+              },
+              "department": {
+                "type": "object",
+                "title": "The Department",
+                "required": [
+                  "id"
+                ],
+                "properties": {
+                  "id": {
+                    "type": "string",
+                    "title": "The Id",
+                    "default": "",
+                    "examples": [
+                      "Id of the department object"
+                    ],
+                    "pattern": "^(.*)$"
+                  }
+                }
+              },
+              "location": {
+                "type": "object",
+                "title": "The Location",
+                "required": [
+                  "id"
+                ],
+                "properties": {
+                  "id": {
+                    "type": "string",
+                    "title": "The Id",
+                    "default": "",
+                    "examples": [
+                      "Id of the location object"
+                    ],
+                    "pattern": "^(.*)$"
+                  }
+                }
+              },
+              "glAccount": {
+                "type": "object",
+                "title": "The Glaccount",
+                "required": [
+                  "id"
+                ],
+                "properties": {
+                  "id": {
+                    "type": "string",
+                    "title": "The Id",
+                    "default": "",
+                    "examples": [
+                      "Id of the gl account object"
+                    ],
+                    "pattern": "^(.*)$"
+                  }
+                }
+              },
+              "name": {
+                "type": "string",
+                "title": "The Name",
+                "default": "",
+                "examples": [
+                  "Name of the item required"
+                ],
+                "pattern": "^(.*)$"
+              },
+              "quantity": {
+                "type": "object",
+                "title": "The Quantity",
+                "required": [
+                  "value",
+                  "precision"
+                ],
+                "properties": {
+                  "value": {
+                    "type": "string",
+                    "title": "The Value",
+                    "default": "",
+                    "examples": [
+                      ""
+                    ],
+                    "pattern": "^(.*)$"
+                  },
+                  "precision": {
+                    "type": "integer",
+                    "title": "The Precision",
+                    "default": 0,
+                    "examples": [
+                      2
+                    ]
+                  }
+                }
+              },
+              "quantityReceived": {
+                "type": "object",
+                "title": "The Quantityreceived",
+                "required": [
+                  "value",
+                  "precision"
+                ],
+                "properties": {
+                  "value": {
+                    "type": "string",
+                    "title": "The Value",
+                    "default": "",
+                    "examples": [
+                      ""
+                    ],
+                    "pattern": "^(.*)$"
+                  },
+                  "precision": {
+                    "type": "integer",
+                    "title": "The Precision",
+                    "default": 0,
+                    "examples": [
+                      2
+                    ]
+                  }
+                }
+              },
+              "billedQuantity": {
+                "type": "object",
+                "title": "The Billedquantity",
+                "required": [
+                  "value",
+                  "precision"
+                ],
+                "properties": {
+                  "value": {
+                    "type": "string",
+                    "title": "The Value",
+                    "default": "",
+                    "examples": [
+                      ""
+                    ],
+                    "pattern": "^(.*)$"
+                  },
+                  "precision": {
+                    "type": "integer",
+                    "title": "The Precision",
+                    "default": 0,
+                    "examples": [
+                      2
+                    ]
+                  }
+                }
+              },
+              "cost": {
+                "type": "object",
+                "title": "The Cost",
+                "required": [
+                  "amount",
+                  "precision"
+                ],
+                "properties": {
+                  "amount": {
+                    "type": "integer",
+                    "title": "The Amount",
+                    "default": 0,
+                    "examples": [
+                      0
+                    ]
+                  },
+                  "precision": {
+                    "type": "integer",
+                    "title": "The Precision",
+                    "default": 0,
+                    "examples": [
+                      2
+                    ]
+                  }
+                }
+              },
+              "amountDue": {
+                "type": "object",
+                "title": "The Amountdue",
+                "required": [
+                  "amount"
+                ],
+                "properties": {
+                  "amount": {
+                    "type": "integer",
+                    "title": "The Amount",
+                    "default": 0,
+                    "examples": [
+                      0
+                    ]
+                  }
+                }
+              },
+              "lineNumber": {
+                "type": "integer",
+                "title": "The Linenumber",
+                "default": 0,
+                "examples": [
+                  1
+                ]
+              },
+              "closed": {
+                "type": "boolean",
+                "title": "The Closed",
+                "default": false,
+                "examples": [
+                  true
+                ]
+              },
+              "description": {
+                "type": "string",
+                "title": "The Description",
+                "default": "",
+                "examples": [
+                  "Item description"
+                ],
+                "pattern": "^(.*)$"
+              },
+              "poItemStatus": {
+                "type": "string",
+                "title": "The Poitemstatus",
+                "default": "",
+                "examples": [
+                  "New"
+                ],
+                "pattern": "^(.*)$"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

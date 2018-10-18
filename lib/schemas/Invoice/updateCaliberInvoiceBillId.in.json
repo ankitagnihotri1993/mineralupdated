@@ -1,0 +1,39 @@
+{
+  "definitions": {},
+  "type": "object",
+  "title": "The Root",
+  "required": [
+    "bill"
+  ],
+  "properties": {
+    "bill": {
+      "type": "object",
+      "title": "The Bill",
+      "required": [
+        "id",
+        "externalId"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "required":true,
+          "title": "The Id",
+          "default": "",
+          "examples": [
+            "e4ef85d4-7cce-4643-a7a3-29d54a8ea917"
+          ],
+          "pattern": "^(.*)$"
+        },
+        "externalId": {
+          "type": "integer",
+          "required":true,
+          "title": "The Externalid",
+          "default": 0,
+          "examples": [
+            1318
+          ]
+        }
+      }
+    }
+  }
+}

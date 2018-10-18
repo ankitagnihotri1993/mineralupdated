@@ -1,0 +1,232 @@
+{
+	"type": "object",
+	"properties": {
+		"vendor": {
+			"type": "object",
+			"properties": {
+				"id": {
+					"type": "string",
+					"title": "Id",
+					"default": "",
+					"examples": [
+						"Unique ID of this vendor <only required during update>"
+					]
+				},
+				"form1099Enabled": {
+					"type": "boolean",
+					"title": "Form1099enabled ",
+					"default": false,
+					"examples": [
+						true
+					]
+				},
+				"externalId": {
+					"type": "string",
+					"required":true,
+					"title": "Externalid ",
+					"default": "",
+					"examples": [
+						"Reference id that can be used to reference back to calling system"
+					]
+				},
+				"name": {
+					"type": "string",
+					"title": "  Name ",
+					"required": true,
+					"default": "",
+					"examples": [
+						"Name of vendor"
+					]
+				},
+				"active": {
+					"type": "boolean",
+					"title": "  Active ",
+					"default": false,
+					"examples": [
+						true
+					]
+				},
+				"address": {
+					"type": "object",
+					"properties": {
+						"name": {
+							"type": "string",
+							"required":true,
+							"title": "Name",
+							"default": "",
+							"examples": [
+								"address name"
+							]
+						},
+						"address1": {
+							"type": "string",
+							"required":true,
+							"title": "Address1 ",
+							"default": "",
+							"examples": [
+								"Address line 1"
+							]
+						},
+						"address2": {
+							"type": "string",
+							"required":true,
+							"title": "Address2 ",
+							"default": "",
+							"examples": [
+								"Address line 2"
+							]
+						},
+						"postalCode": {
+							"type": "string",
+							"required":true,
+							"title": "  Postalcode ",
+							"default": "",
+							"examples": [
+								"Postal or Zipcode"
+							]
+						},
+						"town": {
+							"type": "string",
+							"required":true,
+							"title": "  Town ",
+							"default": "",
+							"examples": [
+								"City or Town"
+							]
+						},
+						"ctrySubDivision": {
+							"type": "string",
+							"required":true,
+							"title": "  Ctrysubdivision ",
+							"default": "",
+							"examples": [
+								"State/Region"
+							]
+						},
+						"country": {
+							"type": "string",
+							"required":true,
+							"title": "Country ",
+							"default": "",
+							"examples": [
+								"Country"
+							]
+						}
+					}
+				},
+				"legalName": {
+					"type": "string",
+					"required":true,
+					"title": "Legalname ",
+					"default": "",
+					"examples": [
+						"Vendor name on check"
+					]
+				},
+				"vendorType": {
+					"type": "string",
+					"required":true,
+					"title": "Vendortype",
+					"default": "",
+					"examples": [
+						"NONPROFIT, CORPORATION, SOLE_PROPRIETORSHIP, INDIVIDUAL, DICISION, SUBSIDIARY"
+					]
+				},
+				"phones": {
+					"type": "array",
+					"items": {
+						"type": "object",
+						"properties": {
+							"number": {
+								"type": "string",
+								"required":true,
+								"title": "Number ",
+								"default": "",
+								"examples": [
+									"Phone number - only one supported now"
+								]
+							},
+							"isFax": {
+								"type": "boolean",
+								"title": "  Isfax ",
+								"default": false,
+								"examples": [
+									false
+								]
+							}
+						}
+					}
+				},
+				"fundingMethods": {
+					"type": "array",
+					"items": {
+						"type": "object",
+						"properties": {
+							"type": {
+								"type": "string",
+								"required":true,
+								"title": "  Type ",
+								"default": "",
+								"examples": [
+									"ACH"
+								]
+							},
+							"bankAccount": {
+								"type": "object",
+								"properties": {
+									"accountNumber": {
+										"type": "string",
+										"required":true,
+										"title": "Accountnumber ",
+										"default": "",
+										"examples": [
+											"accno <optional>"
+										]
+									},
+									"routingNumber": {
+										"type": "string",
+										"required":true,
+										"title": "Routingnumber ",
+										"default": "",
+										"examples": [
+											"routing number in us | sort code in UK"
+										]
+									}
+								}
+							}
+						}
+					}
+				},
+				"emails": {
+					"type": "array",
+					"items": {
+						"type": "string",
+						"required":true,
+						"title": "  0th ",
+						"default": "",
+						"examples": [
+							"Vendor emails. Only 1 is supported right now."
+						]
+					}
+				},
+				"taxId": {
+					"type": "string",
+					"required":true,
+					"title": "  Taxid ",
+					"default": "",
+					"examples": [
+						"Tax ID"
+					]
+				},
+				"vatNumber": {
+					"type": "string",
+					"title": "  Vatnumber ",
+					"default": "",
+					"examples": [
+						"Vat Number"
+					]
+				}
+			}
+		}
+	}
+}
