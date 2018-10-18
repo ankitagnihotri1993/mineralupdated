@@ -57,18 +57,6 @@
           "viewClass": "TextFieldView",
           "prompt": "0",
           "note": "Object Name"
-        },
-        "sortField": {
-          "label": "Sort Field",
-          "viewClass": "TextFieldView",
-          "prompt": "PAYMENT_METHOD",
-          "note": "Object Name"
-        },
-        "sortAsc": {
-          "label": "Sort Asc",
-          "viewClass": "TextFieldView",
-          "prompt": "true/false",
-          "note": "Object Name"
         }
       },
       "metadata": {
