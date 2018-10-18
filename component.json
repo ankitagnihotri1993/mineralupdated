@@ -43,35 +43,30 @@
         "query": {
           "label": "Query",
           "viewClass": "TextFieldView",
-          "required": true,
           "prompt": "QUERY STRING",
           "note": "QUERY STRING"
         },
         "page": {
           "label": "Page",
           "viewClass": "TextFieldView",
-          "required": true,
           "prompt": "PAYMENT_METHOD",
           "note": "Object Name"
         },
         "count": {
           "label": "Count",
           "viewClass": "TextFieldView",
-          "required": true,
           "prompt": "0",
           "note": "Object Name"
         },
         "sortField": {
           "label": "Sort Field",
           "viewClass": "TextFieldView",
-          "required": true,
           "prompt": "PAYMENT_METHOD",
           "note": "Object Name"
         },
         "sortAsc": {
           "label": "Sort Asc",
           "viewClass": "TextFieldView",
-          "required": true,
           "prompt": "true/false",
           "note": "Object Name"
         }
