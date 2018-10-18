@@ -1,6 +1,14 @@
 {
   "ExpandedNodes": [
-    "\\lib\\commons\\services"
+    "",
+    "\\lib",
+    "\\lib\\actions",
+    "\\lib\\commons\\services",
+    "\\lib\\schemas",
+    "\\lib\\triggers",
+    "\\UnitTest",
+    "\\UnitTest\\Action"
   ],
+  "SelectedNode": "\\lib\\actions\\searchObject.js",
   "PreviewInSolutionExplorer": false
 }
