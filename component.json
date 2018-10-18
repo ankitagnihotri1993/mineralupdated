@@ -94,8 +94,8 @@
       "main": "./lib/actions/glaccount/upsertGLAccount.js",
       "title": "Upsert GL Account",
       "metadata": {
-        "in": "./lib/schemas/glaccount/upsertGLAccount.in.json",
-        "out": "./lib/schemas/glaccount/upsertGLAccount.out.json"
+        "in": "./lib/schemas/glaccount/glAccount.in.json",
+        "out": "./lib/schemas/glaccount/glAccount.out.json"
       }
     },
     "upsertPaymentTerm": {
