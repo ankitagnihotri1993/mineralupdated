@@ -1,14 +1,11 @@
 {
   "ExpandedNodes": [
     "",
-    "\\lib",
     "\\lib\\actions",
-    "\\lib\\commons\\services",
-    "\\lib\\schemas",
-    "\\lib\\triggers",
-    "\\UnitTest",
+    "\\lib\\actions\\invoice",
+    "\\lib\\actions\\vendor",
     "\\UnitTest\\Action"
   ],
-  "SelectedNode": "\\lib\\actions\\searchObject.js",
+  "SelectedNode": "\\lib",
   "PreviewInSolutionExplorer": false
 }

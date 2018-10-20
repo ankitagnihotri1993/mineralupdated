@@ -144,6 +144,27 @@
         "in": "./lib/schemas/item/createItem.in.json",
         "out": "./lib/schemas/item/createItem.out.json"
       }
+    },
+    "upsertInvoice": {
+      "main": "./lib/actions/getPetsByStatusWithGenerators.js",
+      "title": "upsertInvoice",
+      "fields": {
+        "status": {
+          "label": "Source",
+          "required": true,
+          "viewClass": "SelectView",
+          "model": {
+            "caliber": "Caliber",
+            "sage": "Sage50"
+
+          },
+          "prompt": "Select Source"
+        }
+      },
+      "metadata": {
+        "in": "./lib/schemas/Invoice/upsertInvoice.in.json",
+        "out": "./lib/schemas/Invoice/upsertInvoice.out.json"
+      }
     }
   }
 }
