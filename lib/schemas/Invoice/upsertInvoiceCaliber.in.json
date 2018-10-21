@@ -1,0 +1,176 @@
+{
+  "definitions": {},
+  "type": "object",
+  "title": "The Root",
+  "required": [
+    "PaymentCCID",
+    "DueDate",
+    "InvoiceDate",
+    "AcctTermID",
+    "PONumber",
+    "Amount",
+    "InvoiceNumber",
+    "ClientID",
+    "InvoiceID",
+    "PayeeID",
+    "LineItems"
+  ],
+  "properties": {
+    "PaymentCCID": {
+      "type": "integer",
+      "required":true,
+      "title": "The Paymentccid",
+      "default": 0,
+      "examples": [
+        29
+      ]
+    },
+    "DueDate": {
+      "type": "string",
+      "required":true,
+      "title": "The Duedate",
+      "default": "",
+      "examples": [
+        "2018-08-26T00:00:00"
+      ],
+      "pattern": "^(.*)$"
+    },
+    "InvoiceDate": {
+      "type": "string",
+      "required":true,
+      "title": "The Invoicedate",
+      "default": "",
+      "examples": [
+        "2018-08-25T00:00:00"
+      ],
+      "pattern": "^(.*)$"
+    },
+    "AcctTermID": {
+      "type": "integer",
+      "required":true,
+      "title": "The Accttermid",
+      "default": 0,
+      "examples": [
+        6
+      ]
+    },
+    "PONumber": {
+      "type": "string",
+      "required":true,
+      "title": "The Ponumber",
+      "default": "",
+      "examples": [
+        ""
+      ],
+      "pattern": "^(.*)$"
+    },
+    "Amount": {
+      "type": "integer",
+      "required":true,
+      "title": "The Amount",
+      "default": 0,
+      "examples": [
+        60
+      ]
+    },
+    "InvoiceNumber": {
+      "type": "string",
+      "required":true,
+      "title": "The Invoicenumber",
+      "default": "",
+      "examples": [
+        "MT#25"
+      ],
+      "pattern": "^(.*)$"
+    },
+    "ClientID": {
+      "type": "integer",
+      "required":true,
+      "title": "The Clientid",
+      "default": 0,
+      "examples": [
+        43
+      ]
+    },
+    "InvoiceID": {
+      "type": "integer",
+      "required":true,
+      "title": "The Invoiceid",
+      "default": 0,
+      "examples": [
+        1299
+      ]
+    },
+    "PayeeID": {
+      "type": "integer",
+      "required":true,
+      "title": "The Payeeid",
+      "default": 0,
+      "examples": [
+        1627
+      ]
+    },
+    "LineItems": {
+      "type": "array",
+      "title": "The Lineitems",
+      "items": {
+        "type": "object",
+        "title": "The Items",
+        "required": [
+          "CostCenterID",
+          "Amount",
+          "ExpenseGLAccountID",
+          "Description"
+        ],
+        "properties": {
+          "CostCenterID": {
+            "type": "integer",
+            "required":true,
+            "title": "The Costcenterid",
+            "default": 0,
+            "examples": [
+              29
+            ]
+          },
+          "Amount": {
+            "type": "integer",
+            "required":true,
+            "title": "The Amount",
+            "default": 0,
+            "examples": [
+              60
+            ]
+          },
+          "ExpenseGLAccountID": {
+            "type": "integer",
+            "required":true,
+            "title": "The Expenseglaccountid",
+            "default": 0,
+            "examples": [
+              9125
+            ]
+          },
+          "Description": {
+            "type": "string",
+            "required":true,
+            "title": "The Description",
+            "default": "",
+            "examples": [
+              "desc 60"
+            ],
+            "pattern": "^(.*)$"
+          },
+          "VendorCredit": {
+            "type": "boolean",
+            "required":true,
+            "title": "The Vendorcredit",
+            "default": false,
+            "examples": [
+              false
+            ]
+          }
+        }
+      }
+    }
+  }
+}

@@ -99,7 +99,7 @@
     },
     "upsertSubsidiary": {
       "main": "./lib/actions/subsidiary/upsertSubsidiary.js",
-      "title": "create Subsidiary",
+      "title": "Upsert Subsidiary",
       "metadata": {
         "in": "./lib/schemas/Subsidiary/createSubsidiary.in.json",
         "out": "./lib/schemas/Subsidiary/createSubsidiary.out.json"
@@ -107,7 +107,7 @@
     },
     "upsertBulkSubsidiary": {
       "main": "./lib/actions/subsidiary/upsertBulkSubsidiary.js",
-      "title": "create Bulk Subsidiary",
+      "title": "Upsert Bulk Subsidiary",
       "metadata": {
         "in": "./lib/schemas/Subsidiary/createBulkSubsidiary.in.json",
         "out": "./lib/schemas/Subsidiary/createBulkSubsidiary.out.json"
@@ -131,7 +131,7 @@
     },
     "upsertPaymentMethod": {
       "main": "./lib/actions/payment/upsertPaymentMethod.js",
-      "title": "create Payment Method",
+      "title": "Upsert Payment Method",
       "metadata": {
         "in": "./lib/schemas/PaymentMethod/createPaymentMethod.in.json",
         "out": "./lib/schemas/PaymentMethod/createPaymentMethod.out.json"
@@ -139,32 +139,35 @@
     },
     "upsertItem": {
       "main": "./lib/actions/item/upsertItem.js",
-      "title": "Create Item",
+      "title": "Upsert Item",
       "metadata": {
         "in": "./lib/schemas/item/createItem.in.json",
         "out": "./lib/schemas/item/createItem.out.json"
       }
     },
     "upsertInvoice": {
-      "main": "./lib/actions/getPetsByStatusWithGenerators.js",
-      "title": "upsertInvoice",
-      "fields": {
-        "status": {
-          "label": "Source",
-          "required": true,
-          "viewClass": "SelectView",
-          "model": {
-            "caliber": "Caliber",
-            "sage": "Sage50"
-
-          },
-          "prompt": "Select Source"
-        }
-      },
+      "main": "./lib/actions/invoice/upsertInvoice.js",
+      "title": "Upsert Invoice",
       "metadata": {
-        "in": "./lib/schemas/Invoice/upsertInvoice.in.json",
-        "out": "./lib/schemas/Invoice/upsertInvoice.out.json"
+        "in": "./lib/schemas/invoice/upsertInvoice.in.json",
+        "out": "./lib/schemas/invoice/upsertInvoice.out.json"
       }
+    },
+    "upsertInvoiceSage50": {
+      "main": "./lib/actions/invoice/upsertInvoiceSage50.js",
+      "title": "Upsert Invoice Sage50",
+      "metadata": {
+        "in": "./lib/schemas/invoice/upsertInvoice.in.json",
+        "out": "./lib/schemas/invoice/upsertInvoice.out.json"
+      }
+    },    
+    "upsertInvoiceCaliber": {
+      "main": "./lib/actions/invoice/upsertInvoiceCaliber.js",
+      "title": "Upsert Invoice Caliber",
+      "metadata": {
+        "in": "./lib/schemas/invoice/upsertInvoiceCaliber.in.json",
+        "out": "./lib/schemas/invoice/upsertInvoice.out.json"
+      } 
     }
   }
 }
