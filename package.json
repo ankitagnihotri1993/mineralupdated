@@ -21,6 +21,7 @@
     "crc": "^3.8.0",
     "elasticio-node": "^0.0.9",
     "elasticio-sailor-nodejs": "^2.2.1",
+    "joi": "^14.0.1",
     "request": "^2.88.0",
     "underscore": "^1.9.1"
   },
