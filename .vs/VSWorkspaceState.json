@@ -1,11 +1,9 @@
 {
   "ExpandedNodes": [
     "",
-    "\\lib\\actions",
-    "\\lib\\actions\\invoice",
-    "\\lib\\actions\\vendor",
-    "\\UnitTest\\Action"
+    "\\spec-integration",
+    "\\UnitTest"
   ],
-  "SelectedNode": "\\lib",
+  "SelectedNode": "\\spec-integration",
   "PreviewInSolutionExplorer": false
 }
