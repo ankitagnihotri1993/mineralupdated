@@ -65,6 +65,14 @@
     }
   },
   "actions": {
+    "createPurchaseOrder": {
+      "main": "./lib/actions/purchaseOrder/createPurchaseOrder.js",
+      "title": "Create Or Update Purchase Order",
+      "metadata": {
+        "in": "./lib/schemas/PurchaseOrder/createPurchaseOrder.in.json",
+        "out": "./lib/schemas/PurchaseOrder/createPurchaseOrder.out.json"
+      }
+    },
     "upsertVendor": {
       "main": "./lib/actions/vendor/upsertVendor.js",
       "title": "Upsert Vendor",
@@ -160,16 +168,16 @@
         "in": "./lib/schemas/Invoice/upsertInvoice.in.json",
         "out": "./lib/schemas/Invoice/upsertInvoice.out.json"
       }
-    },    
+    },
 
-    
+
     "upsertInvoiceCaliber": {
       "main": "./lib/actions/invoice/upsertInvoiceCaliber.js",
       "title": "Upsert Invoice Caliber",
       "metadata": {
         "in": "./lib/schemas/Invoice/upsertInvoiceCaliber.in.json",
         "out": "./lib/schemas/Invoice/upsertInvoice.out.json"
-      } 
+      }
     }
   }
 }
