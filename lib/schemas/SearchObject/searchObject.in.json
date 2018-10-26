@@ -13,7 +13,6 @@
     },
     "query": {
       "type": "string",
-      "required":true,
       "title": "The Query",
       "default": "",
       "examples": [
