@@ -1,11 +1,14 @@
 {
   "ExpandedNodes": [
     "",
+    "\\lib",
     "\\lib\\actions",
+    "\\lib\\actions\\classification",
     "\\lib\\actions\\invoice",
-    "\\lib\\actions\\vendor",
-    "\\UnitTest\\Action"
+    "\\lib\\triggers",
+    "\\spec",
+    "\\spec-integration"
   ],
-  "SelectedNode": "\\lib",
+  "SelectedNode": "\\lib\\actions\\invoice\\upsertInvoice.js",
   "PreviewInSolutionExplorer": false
 }
