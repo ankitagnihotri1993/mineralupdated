@@ -42,7 +42,7 @@ describe('Integration Test', function GetEntryTest() {
                 const authResult = await verifyCredentials.call({}, cfg);
                 expect(authResult).to.be.true;
             });
-   
+
             it('Incorrect Password', async function IncorrectPasswordTest() {
                 const wrongCfg = JSON.parse(JSON.stringify(cfg));
                 wrongCfg.password = 'WrongPassword';
@@ -73,7 +73,7 @@ describe('Schema Test', function GetEntryTest() {
                 username: 'brunoluiz',
                 rating: 5,
                 email: 'contact@brunoluiz.net',
-                password: 'brunoluiz',
+                password: 'brunoluiz'
             });
 
             expect(!result.error).to.be.true;
@@ -85,17 +85,17 @@ describe('Schema Test', function GetEntryTest() {
                 view: 'brunoluiz',
                 rating: 5,
                 count: 1,
-                password: 'brunoluiz',
+                password: 'brunoluiz'
             });
             if (result.error) {
-                console.log(result.error.details)
+                console.log(result.error.details);
             } else {
-                console.log(result)
+                console.log(result);
 
             }
 
             expect(!result.error).to.be.true;
         });
     });
-   
+
 });
