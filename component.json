@@ -129,6 +129,25 @@
         "out": "./lib/schemas/SearchObject/searchObject.out.json"
       }
     },
+
+    "getPaymentMethod": {
+      "main": "./lib/actions/payment/getPaymentMethod.js",
+      "title": "Get Payment Method By ExternalId",
+      "metadata": {
+        "in": {
+          "type": "object",
+          "properties": {
+            "query": {
+              "maxLength": "10",
+              "title": "External Id",
+              "type": "string",
+              "required": "true"
+            }
+          }
+        },
+        "out": {}
+      }
+    },
     "upsertPayment": {
       "main": "./lib/actions/payment/upsertPayment.js",
       "title": "Upsert Invoice Payment",
