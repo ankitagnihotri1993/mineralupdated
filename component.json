@@ -137,7 +137,7 @@
         "in": {
           "type": "object",
           "properties": {
-            "query": {
+            "externalId": {
               "maxLength": "10",
               "title": "External Id",
               "type": "string",
