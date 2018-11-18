@@ -65,6 +65,74 @@
     }
   },
   "actions": {
+    "searchObject": {
+      "main": "./lib/actions/search/searchObject.js",
+      "title": "Search Object",
+      "metadata": {
+        "in": "./lib/schemas/SearchObject/searchObject.in.json",
+        "out": "./lib/schemas/SearchObject/searchObject.out.json"
+      }
+    },
+    "getPaymentMethod": {
+      "main": "./lib/actions/payment/getPaymentMethod.js",
+      "title": "Get Payment Method By ExternalId",
+      "metadata": {
+        "in": {
+          "type": "object",
+          "properties": {
+            "externalId": {
+              "maxLength": "2000",
+              "title": "External Id",
+              "type": "string",
+              "required": "true"
+            }
+          }
+        },
+        "out": {}
+      }
+    },
+    "getExternalObjectsbyExternalId": {
+      "main": "./lib/actions/getExternalObjectsbyExternalId.js",
+      "title": "Get External Objects by ExternalId",
+      "metadata": {
+        "in": {
+          "type": "object",
+          "properties": {
+            "term_externalId": {
+              "maxLength": "2000",
+              "title": "Term ExternalId",
+              "type": "string"
+            },
+            "glaccount_externalId": {
+              "maxLength": "2000",
+              "title": "Glaccount externalId",
+              "type": "string"
+            },
+            "bill_externalId": {
+              "maxLength": "2000",
+              "title": "Bill externalId",
+              "type": "string"
+            },
+            "class_externalId": {
+              "maxLength": "2000",
+              "title": "Class externalId",
+              "type": "string"
+            },
+            "vendor_externalId": {
+              "maxLength": "2000",
+              "title": "Vendor externalId",
+              "type": "string"
+            },
+            "payment_externalId": {
+              "maxLength": "2000",
+              "title": "Payment externalId",
+              "type": "string"
+            }
+          }
+        },
+        "out": {}
+      }
+    },
     "createPurchaseOrder": {
       "main": "./lib/actions/purchaseOrder/createPurchaseOrder.js",
       "title": "Create Or Update Purchase Order",
@@ -121,33 +189,7 @@
         "out": "./lib/schemas/Subsidiary/createBulkSubsidiary.out.json"
       }
     },
-    "searchObject": {
-      "main": "./lib/actions/search/searchObject.js",
-      "title": "Search Object",
-      "metadata": {
-        "in": "./lib/schemas/SearchObject/searchObject.in.json",
-        "out": "./lib/schemas/SearchObject/searchObject.out.json"
-      }
-    },
 
-    "getPaymentMethod": {
-      "main": "./lib/actions/payment/getPaymentMethod.js",
-      "title": "Get Payment Method By ExternalId",
-      "metadata": {
-        "in": {
-          "type": "object",
-          "properties": {
-            "externalId": {
-              "maxLength": "10",
-              "title": "External Id",
-              "type": "string",
-              "required": "true"
-            }
-          }
-        },
-        "out": {}
-      }
-    },
     "upsertPayment": {
       "main": "./lib/actions/payment/upsertPayment.js",
       "title": "Upsert Invoice Payment",
