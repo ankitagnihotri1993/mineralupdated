@@ -85,7 +85,7 @@ module.exports = {
         'yoda': ERROR,
         'max-len': [
             ERROR,
-            150
+            550
         ],
         'camelcase': [
             ERROR,
