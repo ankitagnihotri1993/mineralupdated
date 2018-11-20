@@ -1,46 +1,49 @@
 
 var body = {
-    "paymentMethod": {
-        "type": "ACH",
-        "externalId": "test4331",
-        "status": "Active",
-        "subsidiary": {
-            "id": "83ba591c-9662-4cda-8ec2-fbff0d498713"
-        },
-        "bankAccount": {
-            "name": "ankit credit account",
-            "accountNumber": "10101",
+    
+        "paymentMethod": {
+          "type": "CREDITCARD",
+          "externalId": 8516,
+          "status": "Active",
+          "subsidiary": {
+            "id": "ffd53ba9-a225-43b6-9404-47c930648181"
+          },
+          "card": {
+            "name": "David COA"
+          },
+          "bankAccount": {
+            "name": "David COA",
+            "accountNumber": "0003",
             "accountBalance": {
-                "availableBalance": {
-                    "amount": 0
-                }
+              "availableBalance": {
+                "amount": 0
+              }
             }
-        },
-        "ss": null
-    }
-}
+          }
+        }
+      }
+
 
 
 var paymentMethod = body.paymentMethod;
 Object.keys(paymentMethod).forEach(function (key) {
 
+   
 
-    if (paymentMethod.type === "ACH" && key === "card" || (key === "account"))
+    if ((paymentMethod.type === "ACH") && (key === "card" || (key === "account")))
     {
         delete paymentMethod[key];
-      
     }
-    if (paymentMethod.type === "CREDITCARD" && (key === "bankAccount") || (key === "account")) {
+    if ((paymentMethod.type === "CREDITCARD") && ((key === "bankAccount") || (key === "account"))) 
+    {
         delete paymentMethod[key];
-
     }
-    if (paymentMethod.type === "UNKNOWN" && (key === "bankAccount") || (key === "card")) {
+    if ((paymentMethod.type === "UNKNOWN") && ((key === "bankAccount") || (key === "card"))) {
         delete paymentMethod[key];
-
     }
       
 });
 
 
 
-console.log(paymentMethod);
+console.log( JSON.stringify(paymentMethod));
