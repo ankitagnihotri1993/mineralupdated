@@ -239,6 +239,16 @@
         "in": "./lib/schemas/Invoice/upsertInvoiceCaliber.in.json",
         "out": "./lib/schemas/Invoice/upsertInvoice.out.json"
       }
-    }
+    },
+    "upsertInvoiceByExternalObject": {
+      "main": "./lib/actions/invoice/upsertInvoiceByExternalObjectdetail.js",
+      "title": "Upsert Invoice Caliber",
+      "metadata": {
+        "in": "./lib/schemas/Invoice/upsertInvoiceCaliber.in.json",
+        "out": "./lib/schemas/Invoice/upsertInvoice.out.json"
+      }
+    },
+
+    ""
   }
 }
