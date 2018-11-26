@@ -3,12 +3,12 @@
     "",
     "\\lib",
     "\\lib\\actions",
-    "\\lib\\actions\\classification",
-    "\\lib\\actions\\invoice",
-    "\\lib\\triggers",
-    "\\spec",
-    "\\spec-integration"
+    "\\lib\\actions\\payment",
+    "\\lib\\actions\\purchaseOrder",
+    "\\lib\\actions\\search",
+    "\\lib\\actions\\vendor",
+    "\\lib\\triggers"
   ],
-  "SelectedNode": "\\lib\\actions\\invoice\\upsertInvoice.js",
+  "SelectedNode": "\\lib\\actions\\payment\\upsertPaymentTerm.js",
   "PreviewInSolutionExplorer": false
 }

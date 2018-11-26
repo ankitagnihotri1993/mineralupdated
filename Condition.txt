@@ -1,0 +1,38 @@
+﻿/**
+ *
+ * case 1 if invoiceTOtalAmount=>0 && vendorcredit=0 then create the bill without credit --------------------Create Bill only
+ * case 2 if invoicetotalAmount=>0 then create invoice with vendor check line and without check line item --- Create bill only
+ * case 3 if invoiceTotalAmount<0 with vendor credit check in all lines create the credit only ---- create Credit only
+ * case 4
+ *
+    1. When the invoice in caliber has Positive Balance(With all positive lines)
+        We need to create that as INVOICE (* BILL API *)
+
+    2. When the invoice in caliber has Positive Balance(With Positive lines and With few Negative Lines - Vendor Credit)
+       We need to create that as INVOICE.Because the Negative Line amount automatically
+       deducts the balance from invoice and make the invoice with only Positive balance
+    eg: $100  Invoice with
+    (a) $150 Positive line(Vendor credit flag unchecked),
+    (b) $50 Negative Line(Vendor Credit flag Checked)(* BILL API *)
+    Balance is automatically adjusted and remaining will be available for payment.
+
+
+    3. When then invoice in caliber has Negative Balance(With one or more Negative Lines - vendor credit flag checked at all the lines)..We need to create that as CREDIT * (CREDIT API)*
+
+
+    4. When the invoice in caliber has Negative Balance(With Positive Lines and With few Negative Lines - Vendor Credit) � We need to create that as CREDIT.Because the Negative Line amount automatically deducts the balance from invoice and make the invoice with only Negative balance
+    eg: -($100)  Invoice with (a) $50 Positive line(Vendor credit flag unchecked), (b) - ($150) Negative Line(Vendor Credit flag Checked)
+
+
+   Balance is automatically adjusted and remaining will be available for Credit payment to be applied to some other invoices. (CREDIT API)
+
+    About #3 and #4, since we don�t have a credit application concept in MT we may not need to sync the CREDITS / Negative Balance Invoices(Also known as Open Vendor Credits) that are not applied or used to any Positive Balance invoice
+
+    So Sync #1 and #2 cases as Open invoices(Bill API), just as simple Invoices with both Positive and Negative Balance lines.-- Total balance to be Positive
+
+    and for Cases #3 and #4 sync them only if they are applied to any other Positive Invoices as a Credit Payments - Which is equivalent to applying Credits to a Invoices using Bill Credits API
+
+    Is this clear..?
+
+if you can not distinguish or separate the #3 and #4 cases and filter to get only the ones that are applied to Positive invoices.That should be fine as well..They will be just displayed in MT as Open CREDITS(Credits API)
+*/
