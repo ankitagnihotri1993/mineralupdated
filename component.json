@@ -157,6 +157,14 @@
         "out": "./lib/schemas/glaccount/glAccount.out.json"
       }
     },
+    "upsertBulkGLAccount": {
+      "main": "./lib/actions/glaccount/upsertBulkGLAccount.js",
+      "title": "Upsert Bulk GL Account",
+      "metadata": {
+        "in": "./lib/schemas/glaccount/glAccount.in.json",
+        "out": "./lib/schemas/glaccount/glAccount.out.json"
+      }
+    },
     "upsertPaymentTerm": {
       "main": "./lib/actions/payment/upsertPaymentTerm.js",
       "title": "Upsert Payment Term",
@@ -201,6 +209,14 @@
     "upsertPaymentMethod": {
       "main": "./lib/actions/payment/upsertPaymentMethod.js",
       "title": "Upsert Payment Method",
+      "metadata": {
+        "in": "./lib/schemas/PaymentMethod/createPaymentMethod.in.json",
+        "out": "./lib/schemas/PaymentMethod/createPaymentMethod.out.json"
+      }
+    },
+    "upsertBulkPaymentMethod": {
+      "main": "./lib/actions/payment/upsertBulkPaymentMethod.js",
+      "title": "Upsert Bulk Payment Method",
       "metadata": {
         "in": "./lib/schemas/PaymentMethod/createPaymentMethod.in.json",
         "out": "./lib/schemas/PaymentMethod/createPaymentMethod.out.json"

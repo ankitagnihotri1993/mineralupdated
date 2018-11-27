@@ -1,0 +1,150 @@
+{
+  "type": "object",
+  "definitions": {},
+  "properties": {
+    "glAccounts": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "glAccount": {
+            "type": "object",
+            "properties": {
+              "id": {
+                "type": "string",
+                "title": "The Id ",
+                "default": "",
+                "examples": [
+                  "Id of the gl account - only for update"
+                ]
+              },
+              "subsidiaries": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "id": {
+                      "type": "string",
+                      "required": true,
+                      "title": "The Id ",
+                      "default": "",
+                      "examples": [
+                        "List of the subsidiaries."
+                      ]
+                    }
+                  }
+                }
+              },
+              "departmentRequired": {
+                "type": "boolean",
+                "title": "The Departmentrequired ",
+                "default": false,
+                "examples": [
+                  true
+                ]
+              },
+              "locationRequired": {
+                "type": "boolean",
+                "title": "The Locationrequired ",
+                "default": false,
+                "examples": [
+                  true
+                ]
+              },
+              "projectRequired": {
+                "type": "boolean",
+                "title": "The Projectrequired ",
+                "default": false,
+                "examples": [
+                  true
+                ]
+              },
+              "customerRequired": {
+                "type": "boolean",
+                "title": "The Customerrequired ",
+                "default": false,
+                "examples": [
+                  true
+                ]
+              },
+              "vendorRequired": {
+                "type": "boolean",
+                "title": "The Vendorrequired ",
+                "default": false,
+                "examples": [
+                  true
+                ]
+              },
+              "employeeRequired": {
+                "type": "boolean",
+                "title": "The Employeerequired ",
+                "default": false,
+                "examples": [
+                  true
+                ]
+              },
+              "itemRequired": {
+                "type": "boolean",
+                "title": "The Itemrequired ",
+                "default": false,
+                "examples": [
+                  true
+                ]
+              },
+              "classRequired": {
+                "type": "boolean",
+                "title": "The Classrequired ",
+                "default": false,
+                "examples": [
+                  true
+                ]
+              },
+              "ledgerType": {
+                "type": "string",
+                "required": true,
+                "title": "The Ledgertype ",
+                "default": "",
+                "examples": [
+                  "EXPENSE_ACCOUNT"
+                ]
+              },
+              "accountNumber": {
+                "type": "string",
+                "required": true,
+                "title": "The Accountnumber ",
+                "default": "",
+                "examples": [ "Account number" ]
+              },
+              "externalId": {
+                "type": "string",
+                "required": true,
+                "title": "The Externalid ",
+                "default": "",
+                "examples": [
+                  "External id of glaccount - cannot be updated"
+                ]
+              },
+              "name": {
+                "type": "string",
+                "required": true,
+                "title": "The Name ",
+                "default": "",
+                "examples": [
+                  "Name of gl account"
+                ]
+              },
+              "active": {
+                "type": "boolean",
+                "title": "The Active ",
+                "default": false,
+                "examples": [
+                  true
+                ]
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
