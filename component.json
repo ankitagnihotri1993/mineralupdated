@@ -246,19 +246,9 @@
         "out": "./lib/schemas/Invoice/upsertInvoice.out.json"
       }
     },
-
-
-    "upsertInvoiceCaliber": {
-      "main": "./lib/actions/invoice/upsertInvoiceCaliber.js",
-      "title": "Upsert Invoice Caliber",
-      "metadata": {
-        "in": "./lib/schemas/Invoice/upsertInvoiceCaliber.in.json",
-        "out": "./lib/schemas/Invoice/upsertInvoice.out.json"
-      }
-    },
     "upsertInvoiceByExternalObject": {
       "main": "./lib/actions/invoice/upsertInvoiceByExternalObjectdetail.js",
-      "title": "Upsert Invoice Caliber",
+      "title": "Upsert Invoice by External Object Id",
       "metadata": {
         "in": "./lib/schemas/Invoice/upsertInvoiceCaliber.in.json",
         "out": "./lib/schemas/Invoice/upsertInvoice.out.json"
