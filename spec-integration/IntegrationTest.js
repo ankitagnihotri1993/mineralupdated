@@ -5,6 +5,9 @@ const TestEmitter = require('./TestEmitter');
 const verifyCredentials = require('../verifyCredentials');
 
 const upsertInvoiceCaliber = require('../lib/actions/invoice/upsertInvoiceCaliber');
+const upsertInvoiceSage50 = require('../lib/actions/invoice/upsertInvoiceSage50');
+
+
 const searchAPI = require('../lib/actions/search/searchObject');
 const paymentMethod = require('../lib/actions/payment/getPaymentMethod');
 const actionGetExternalObjectsbyId = require('../lib/actions/getExternalObjectsbyExternalId');
@@ -23,7 +26,7 @@ describe('Integration Test', function GetEntryTest() {
         username_mt: 'msaifullah+api@magicsoftware.com',
         password_mt: 'Key@MagicSoftware1',
         endPointURL_mt: 'https://test-f-mt.mineraltree.net',
-        companyId_mt: '2f436ea7-427d-4a12-9af5-73c8975c545d'
+        companyId_mt: 'b1437587-acf2-46fe-9846-739dbc996310'//'2f436ea7-427d-4a12-9af5-73c8975c545d'
     };
 
     this.timeout(100000);
@@ -76,37 +79,61 @@ describe('Integration Test', function GetEntryTest() {
         //    });
 
         //});
-        describe('upsertPaymentMethod Tests', function VerifyCredentialsTests() {
-            it('getPaymentMethod test', async function getPaymentMethod() {
+
+
+
+
+
+        describe('upsertInvoiceSage50 Tests', function VerifyCredentialsTests() {
+            it('upsertInvoiceSage50Method', async function upsertInvoiceSage50Method() {
                 const emitter = new TestEmitter();
                 const msg = {
-                    body: {
-                        paymentMethod: {
-                            type: 'CREDITCARD',
-                            externalId: 851654545,
-                            status: 'Active',
-                            subsidiary: {
-                                id: 'ffd53ba9-a225-43b6-9404-47c930648181'
+                    body:{
+                        
+                        "bill": {
+                            "externalId": "816",
+                            "poNumber": "816",
+                            "invoiceNumber": "121212",
+                            "term": {
+                              "id": "507d852f-461f-4868-b577-fbe9002f751f"
                             },
-                            bankAccount: {
-                                name: 'David COA',
-                                accountNumber: '0003',
-                                accountBalance: {
-                                    availableBalance: {
-                                        amount: 0
-                                    }
-                                }
+                            "dueDate": "2019-04-14",
+                            "transactionDate": "2018-10-15 13:15:44.0",
+                            "vendor": {
+                              "id": "9cff6bed-d35a-4a13-9295-18c2cbd59ac8"
                             },
-                            card:
-                            {
-
-                                name: 'sfdf'
-                            }
-                        }
-                    }
+                            "glAccount": {
+                              "id": "507d852f-461f-4868-b577-fbe9002f751f"
+                            },
+                            "items": [
+                              {
+                        
+                                "companyItem": {
+                                  "id": "148"
+                                },
+                                "quantity": {
+                                  "value": 1
+                                },
+                                "amountDue": {
+                                  "amount": 100
+                                },
+                                "cost": {
+                                  "amount": 100
+                                },
+                                "netAmount": {
+                                  "amount": 100       
+                                                 },
+                                "glAccount": {
+                                  "id": "10"
+                                },
+                                "lineNumber": "148",
+                                "description": "Prefabricated Birdhouse-Large Castle"
+                              }
+                            ]
+                     } }
                 };
 
-                await actionupsertPaymentMethod.process.call(emitter, msg, cfg);
+                await upsertInvoiceSage50.process.call(emitter, msg, cfg);
                 console.log('responce' + JSON.stringify(emitter.data[0].body));
 
                 expect(emitter.data.length).to.equal(1);
@@ -114,6 +141,47 @@ describe('Integration Test', function GetEntryTest() {
             });
 
         });
+
+
+
+        // describe('upsertPaymentMethod Tests', function VerifyCredentialsTests() {
+        //     it('getPaymentMethod test', async function getPaymentMethod() {
+        //         const emitter = new TestEmitter();
+        //         const msg = {
+        //             body: {
+        //                 paymentMethod: {
+        //                     type: 'CREDITCARD',
+        //                     externalId: 851654545,
+        //                     status: 'Active',
+        //                     subsidiary: {
+        //                         id: 'ffd53ba9-a225-43b6-9404-47c930648181'
+        //                     },
+        //                     bankAccount: {
+        //                         name: 'David COA',
+        //                         accountNumber: '0003',
+        //                         accountBalance: {
+        //                             availableBalance: {
+        //                                 amount: 0
+        //                             }
+        //                         }
+        //                     },
+        //                     card:
+        //                     {
+
+        //                         name: 'sfdf'
+        //                     }
+        //                 }
+        //             }
+        //         };
+
+        //         await actionupsertPaymentMethod.process.call(emitter, msg, cfg);
+        //         console.log('responce' + JSON.stringify(emitter.data[0].body));
+
+        //         expect(emitter.data.length).to.equal(1);
+        //         //expect(emitter.data[0].body.name).to.be.equal('Fred Jones');
+        //     });
+
+        // });
 
 
         //describe('getExternalObjectsbyId Tests', function VerifyCredentialsTests() {
