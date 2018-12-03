@@ -65,5 +65,5 @@ cfg = {
 
 
 };
-debugger;
+
 upsertInvoiceSage50.process(msg, cfg,snapshot);

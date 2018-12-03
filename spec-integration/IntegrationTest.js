@@ -3,15 +3,19 @@
 const expect = require('chai').expect;
 const TestEmitter = require('./TestEmitter');
 const verifyCredentials = require('../verifyCredentials');
-
 const upsertInvoiceCaliber = require('../lib/actions/invoice/upsertInvoiceCaliber');
 const upsertInvoiceSage50 = require('../lib/actions/invoice/upsertInvoiceSage50');
-
-
 const searchAPI = require('../lib/actions/search/searchObject');
 const paymentMethod = require('../lib/actions/payment/getPaymentMethod');
 const actionGetExternalObjectsbyId = require('../lib/actions/getExternalObjectsbyExternalId');
 const actionupsertPaymentMethod = require('../lib/actions/payment/upsertPaymentMethod');
+
+const createPurchaseOrder = require('../lib/actions/purchaseOrder/createPurchaseOrder');
+
+
+
+
+
 
 
 const schema = require('../lib/schema');
@@ -80,67 +84,150 @@ describe('Integration Test', function GetEntryTest() {
 
         //});
 
+        describe('createPurchaseOrder Tests', function VerifyCredentialsTests() {
+          it('createPurchaseOrderMethod', async function createPurchaseOrderMethod() {
+              const emitter = new TestEmitter();
+              const msg = {
+                  body:{
+                      
+                    "purchaseOrder": {
+                      "externalId": "812",
+                      "vendor": {
+                        "id": "49ddc960-83fb-4734-a224-9af3fbb1717a"
+                      },
+                      "poNumber": "656565",
+                      "poType": "Standard",
+                      "dueDate": "N/A",
+                      "items": [
+                        {
+                          "companyItem": {
+                            "id": "167"
+                          },
+                          "name": "TOOL-35620",
+                          "quantity": {
+                            "value": 2,
+                            "precision": 2
+                          },
+                          "quantityReceived": {
+                            "value": 2,
+                            "precision": 2
+                          },
+                          "amountDue": {
+                            "amount": 12
+                          },
+                          "cost": {
+                            "amount": 6
+                          },
+                          "glAccount": {
+                            "id": "167"
+                          },
+                          "lineNumber": "167",
+                          "closed": "false",
+                          "description": "Water-Tank"
+                        }
+                      ]
+                    }
+                   }
+              };
+
+              await createPurchaseOrder.process.call(emitter, msg, cfg);
+              console.log('responce' + JSON.stringify(emitter.data[0].body));
+
+              expect(emitter.data.length).to.equal(1);
+              //expect(emitter.data[0].body.name).to.be.equal('Fred Jones');
+          });
+
+      });
 
 
 
+// Upsert Invoice sage50
 
-        describe('upsertInvoiceSage50 Tests', function VerifyCredentialsTests() {
-            it('upsertInvoiceSage50Method', async function upsertInvoiceSage50Method() {
-                const emitter = new TestEmitter();
-                const msg = {
-                    body:{
+        // describe('upsertInvoiceSage50 Tests', function VerifyCredentialsTests() {
+        //     it('upsertInvoiceSage50Method', async function upsertInvoiceSage50Method() {
+        //         const emitter = new TestEmitter();
+        //         const msg = {
+        //             body:{
                         
-                        "bill": {
-                            "externalId": "816",
-                            "poNumber": "816",
-                            "invoiceNumber": "121212",
-                            "term": {
-                              "id": "507d852f-461f-4868-b577-fbe9002f751f"
-                            },
-                            "dueDate": "2019-04-14",
-                            "transactionDate": "2018-10-15 13:15:44.0",
-                            "vendor": {
-                              "id": "9cff6bed-d35a-4a13-9295-18c2cbd59ac8"
-                            },
-                            "glAccount": {
-                              "id": "507d852f-461f-4868-b577-fbe9002f751f"
-                            },
-                            "items": [
-                              {
-                        
-                                "companyItem": {
-                                  "id": "148"
-                                },
-                                "quantity": {
-                                  "value": 1
-                                },
-                                "amountDue": {
-                                  "amount": 100
-                                },
-                                "cost": {
-                                  "amount": 100
-                                },
-                                "netAmount": {
-                                  "amount": 100       
-                                                 },
-                                "glAccount": {
-                                  "id": "10"
-                                },
-                                "lineNumber": "148",
-                                "description": "Prefabricated Birdhouse-Large Castle"
-                              }
-                            ]
-                     } }
-                };
+        //               "bill": {
+        //                 "externalId": "787",
+        //                 "term": {
+        //                   "id": "507d852f-461f-4868-b577-fbe9002f751f"
+        //                 },
+        //                 "currency": "USD",
+        //                 "dueDate": "2019-04-14",
+        //                 "transactionDate": "2019-03-15",
+        //                 "invoiceNumber": "2170",
+        //                 "amount": {
+        //                   "amount": -279.5
+        //                 },
+        //                 "balance": {
+        //                   "amount": -279.5
+        //                 },
+        //                 "poNumber": "787",
+        //                 "vendor": {
+        //                   "id": "9cff6bed-d35a-4a13-9295-18c2cbd59ac8"
+        //                 },
+        //                 "items": [
+        //                   {
+        //                     "companyItem": {
+        //                       "id": "138"
+        //                     },
+        //                     "quantity": {
+        //                       "value": 5
+        //                     },
+        //                     "glAccount": {
+        //                       "id": "10"
+        //                     },
+        //                     "amountDue": {
+        //                       "amount": 279.5
+        //                     },
+        //                     "netAmount": {
+        //                       "amount": 279.5
+        //                     },
+        //                     "cost": {
+        //                       "amount": 55.9
+        //                     },
+        //                     "lineNumber": "138",
+        //                     "closed": false,
+        //                     "description": "Assembled Redwood 12-Room Bird House on 14 ft. pole.  Attracts Purple Martins, Bluebirds and Wrens"
+        //                   },
+        //                   {
+        //                     "companyItem": {
+        //                       "id": "138"
+        //                     },
+        //                     "quantity": {
+        //                       "value": 5
+        //                     },
+        //                     "glAccount": {
+        //                       "id": "10"
+        //                     },
+        //                     "amountDue": {
+        //                       "amount": 279.5
+        //                     },
+        //                     "netAmount": {
+        //                       "amount": 279.5
+        //                     },
+        //                     "cost": {
+        //                       "amount": 55.9
+        //                     },
+        //                     "lineNumber": "138",
+        //                     "closed": false,
+        //                     "description": "Assembled Redwood 12-Room Bird House on 14 ft. pole.  Attracts Purple Martins, Bluebirds and Wrens"
+        //                   }
+        //                 ]
+        //               }
+        //             }
+        //         };
 
-                await upsertInvoiceSage50.process.call(emitter, msg, cfg);
-                console.log('responce' + JSON.stringify(emitter.data[0].body));
+        //         await upsertInvoiceSage50.process.call(emitter, msg, cfg);
+        //         console.log('responce' + JSON.stringify(emitter.data[0].body));
 
-                expect(emitter.data.length).to.equal(1);
-                //expect(emitter.data[0].body.name).to.be.equal('Fred Jones');
-            });
+        //         expect(emitter.data.length).to.equal(1);
+        //         //expect(emitter.data[0].body.name).to.be.equal('Fred Jones');
+        //     });
 
-        });
+        // });
 
 
 
