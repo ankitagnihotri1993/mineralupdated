@@ -91,6 +91,24 @@
         "out": {}
       }
     },
+    "getPaymentMethodById": {
+      "main": "./lib/actions/payment/getPaymentMethodById.js",
+      "title": "Get Payment Method By Id",
+      "metadata": {
+        "in": {
+          "type": "object",
+          "properties": {
+            "pmid": {
+              "maxLength": "2000",
+              "title": "PM Id",
+              "type": "string",
+              "required": "true"
+            }
+          }
+        },
+        "out": {}
+      }
+    },
     "getExternalObjectsbyExternalId": {
       "main": "./lib/actions/getExternalObjectsbyExternalId.js",
       "title": "Get External Objects by ExternalId",
