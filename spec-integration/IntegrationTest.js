@@ -9,8 +9,8 @@ const searchAPI = require('../lib/actions/search/searchObject');
 const paymentMethod = require('../lib/actions/payment/getPaymentMethod');
 const actionGetExternalObjectsbyId = require('../lib/actions/getExternalObjectsbyExternalId');
 const actionupsertPaymentMethod = require('../lib/actions/payment/upsertPaymentMethod');
-
 const createPurchaseOrder = require('../lib/actions/purchaseOrder/createPurchaseOrder');
+const getPaymentMethodById = require('../lib/actions/payment/getPaymentMethodById');
 
 
 
@@ -53,6 +53,45 @@ describe('Integration Test', function GetEntryTest() {
     cfgs.forEach(cfg => {
 
         cfg.etag = '7d3e89d0a83d7c15387e16c00210e8011ad35ee2627147ddc7aa462a3a26d0b38e026bb2d80fbf3c01511861bbb8c72dec43eebe9684d0e5e9ce1daa34e4c425';
+      
+      
+      
+      
+      
+      
+      
+        describe('ActiongetPaymentMethodById Tests', function VerifyCredentialsTests() {
+          it('ActiongetPaymentMethodById', async function ActiongetPaymentMethodById() {
+              const emitter = new TestEmitter();
+              const msg = {
+                  body:{
+                    "pmid": "c2468ca1-1ee8-43fa-8eb6-a8c79f343581"
+                  }
+                }
+
+              await getPaymentMethodById.process.call(emitter, msg, cfg);
+              console.log('responce' + JSON.stringify(emitter.data[0].body));
+
+              expect(emitter.data.length).to.equal(1);
+              //expect(emitter.data[0].body.name).to.be.equal('Fred Jones');
+          });
+
+      });
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
         //describe('Verify Credentials Tests', function VerifyCredentialsTests() {
         //    it('Correct Password', async function CorrectPasswordTest() {
         //        const authResult = await verifyCredentials.call({}, cfg);
@@ -84,62 +123,60 @@ describe('Integration Test', function GetEntryTest() {
 
         //});
 
-        describe('createPurchaseOrder Tests', function VerifyCredentialsTests() {
-          it('createPurchaseOrderMethod', async function createPurchaseOrderMethod() {
-              const emitter = new TestEmitter();
-              const msg = {
-                  body:{
+      //   describe('createPurchaseOrder Tests', function VerifyCredentialsTests() {
+      //     it('createPurchaseOrderMethod', async function createPurchaseOrderMethod() {
+      //         const emitter = new TestEmitter();
+      //         const msg = {
+      //             body:{
                       
-                    "purchaseOrder": {
-                      "externalId": "812",
-                      "vendor": {
-                        "id": "49ddc960-83fb-4734-a224-9af3fbb1717a"
-                      },
-                      "poNumber": "656565",
-                      "poType": "Standard",
-                      "dueDate": "N/A",
-                      "items": [
-                        {
-                          "companyItem": {
-                            "id": "167"
-                          },
-                          "name": "TOOL-35620",
-                          "quantity": {
-                            "value": 2,
-                            "precision": 2
-                          },
-                          "quantityReceived": {
-                            "value": 2,
-                            "precision": 2
-                          },
-                          "amountDue": {
-                            "amount": 12
-                          },
-                          "cost": {
-                            "amount": 6
-                          },
-                          "glAccount": {
-                            "id": "167"
-                          },
-                          "lineNumber": "167",
-                          "closed": "false",
-                          "description": "Water-Tank"
-                        }
-                      ]
-                    }
-                   }
-              };
+      //               "purchaseOrder": {
+      //                 "externalId": "812",
+      //                 "vendor": {
+      //                   "id": "49ddc960-83fb-4734-a224-9af3fbb1717a"
+      //                 },
+      //                 "poNumber": "656565",
+      //                 "poType": "Standard",
+      //                 "dueDate": "N/A",
+      //                 "items": [
+      //                   {
+      //                     "companyItem": {
+      //                       "id": "167"
+      //                     },
+      //                     "name": "TOOL-35620",
+      //                     "quantity": {
+      //                       "value": 2,
+      //                       "precision": 2
+      //                     },
+      //                     "quantityReceived": {
+      //                       "value": 2,
+      //                       "precision": 2
+      //                     },
+      //                     "amountDue": {
+      //                       "amount": 12
+      //                     },
+      //                     "cost": {
+      //                       "amount": 6
+      //                     },
+      //                     "glAccount": {
+      //                       "id": "167"
+      //                     },
+      //                     "lineNumber": "167",
+      //                     "closed": "false",
+      //                     "description": "Water-Tank"
+      //                   }
+      //                 ]
+      //               }
+      //              }
+      //         };
 
-              await createPurchaseOrder.process.call(emitter, msg, cfg);
-              console.log('responce' + JSON.stringify(emitter.data[0].body));
+      //         await createPurchaseOrder.process.call(emitter, msg, cfg);
+      //         console.log('responce' + JSON.stringify(emitter.data[0].body));
 
-              expect(emitter.data.length).to.equal(1);
-              //expect(emitter.data[0].body.name).to.be.equal('Fred Jones');
-          });
+      //         expect(emitter.data.length).to.equal(1);
+      //         //expect(emitter.data[0].body.name).to.be.equal('Fred Jones');
+      //     });
 
-      });
-
-
+      // });
 
 // Upsert Invoice sage50
 
