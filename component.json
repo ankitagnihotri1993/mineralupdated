@@ -73,6 +73,30 @@
         "out": "./lib/schemas/SearchObject/searchObject.out.json"
       }
     },
+    "upsertDepartment": {
+      "main": "./lib/actions/department/upsertDepartment.js",
+      "title": "Upsert Department",
+      "metadata": {
+        "in": "./lib/schemas/Department/createDepartment.in.json",
+        "out": "./lib/schemas/Department/createDepartment.out.json"
+      }
+    },
+    "upsertLocaton": {
+      "main": "./lib/actions/location/upsertLocaton.js",
+      "title": "Upsert Location",
+      "metadata": {
+        "in": "./lib/schemas/Location/createLocation.in.json",
+        "out": "./lib/schemas/Location/createLocation.out.json"
+      }
+    },
+    "upsertProject": {
+      "main": "./lib/actions/project/upsertProject.js",
+      "title": "Upsert Project",
+      "metadata": {
+        "in": "./lib/schemas/Project/createProject.in.json",
+        "out": "./lib/schemas/Project/createProject.out.json"
+      }
+    },
     "getPaymentMethod": {
       "main": "./lib/actions/payment/getPaymentMethod.js",
       "title": "Get Payment Method By ExternalId",

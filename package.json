@@ -9,7 +9,8 @@
   "scripts": {
     "pretest": "eslint verifyCredentials.js lib spec spec-integration --fix",
     "test": "mocha spec",
-    "integration-test": "mocha spec-integration"
+    "integration-test": "mocha spec-integration",
+    "project":"mocha location"
   },
   "repository": {
     "type": "git",

@@ -1,0 +1,602 @@
+{
+    
+    "type": "object",
+    "title": "The Root Schema",
+    "required": [
+      "modified",
+      "created",
+      "id",
+      "externalId",
+      "memo",
+      "description",
+      "name",
+      "kind",
+      "required",
+      "active",
+      "range",
+      "status",
+      "uiclass",
+      "value",
+      "subsidiaries",
+      "company"
+    ],
+    "properties": {
+      "modified": {
+        "type": "null",
+        "title": "The Modified Schema",
+        "default": null,
+        "examples": [
+          null
+        ]
+      },
+      "created": {
+        "type": "string",
+        "title": "The Created Schema",
+        "default": "",
+        "examples": [
+          "2018-12-17T14:13:56Z"
+        ],
+        "pattern": "^(.*)$"
+      },
+      "id": {
+        "type": "string",
+        "title": "The Id Schema",
+        "default": "",
+        "examples": [
+          "1835946c-81cd-444f-a3d1-2ef7d0af0792"
+        ],
+        "pattern": "^(.*)$"
+      },
+      "externalId": {
+        "type": "string",
+        "title": "The Externalid Schema",
+        "default": "",
+        "examples": [
+          ""
+        ],
+        "pattern": "^(.*)$"
+      },
+      "memo": {
+        "type": "null",
+        "title": "The Memo Schema",
+        "default": null,
+        "examples": [
+          null
+        ]
+      },
+      "description": {
+        "type": "null",
+        "title": "The Description Schema",
+        "default": null,
+        "examples": [
+          null
+        ]
+      },
+      "name": {
+        "type": "string",
+        "title": "The Name Schema",
+        "default": "",
+        "examples": [
+          "Department"
+        ],
+        "pattern": "^(.*)$"
+      },
+      "kind": {
+        "type": "integer",
+        "title": "The Kind Schema",
+        "default": 0,
+        "examples": [
+          0
+        ]
+      },
+      "required": {
+        "type": "boolean",
+        "title": "The Required Schema",
+        "default": false,
+        "examples": [
+          false
+        ]
+      },
+      "active": {
+        "type": "boolean",
+        "title": "The Active Schema",
+        "default": false,
+        "examples": [
+          true
+        ]
+      },
+      "range": {
+        "type": "integer",
+        "title": "The Range Schema",
+        "default": 0,
+        "examples": [
+          0
+        ]
+      },
+      "status": {
+        "type": "string",
+        "title": "The Status Schema",
+        "default": "",
+        "examples": [
+          "ACTIVE"
+        ],
+        "pattern": "^(.*)$"
+      },
+      "uiclass": {
+        "type": "null",
+        "title": "The Uiclass Schema",
+        "default": null,
+        "examples": [
+          null
+        ]
+      },
+      "value": {
+        "type": "null",
+        "title": "The Value Schema",
+        "default": null,
+        "examples": [
+          null
+        ]
+      },
+      "subsidiaries": {
+        "type": "array",
+        "title": "The Subsidiaries Schema",
+        "items": {
+          "type": "object",
+          "title": "The Items Schema",
+          "required": [
+            "modified",
+            "created",
+            "id",
+            "externalId",
+            "memo",
+            "description",
+            "name",
+            "legalName",
+            "dBAName",
+            "vendorType",
+            "emails",
+            "externalParentId",
+            "address",
+            "phones",
+            "parent",
+            "subsidiaries",
+            "paymentMethods"
+          ],
+          "properties": {
+            "modified": {
+              "type": "string",
+              "title": "The Modified Schema",
+              "default": "",
+              "examples": [
+                "2018-11-13T10:07:58Z"
+              ],
+              "pattern": "^(.*)$"
+            },
+            "created": {
+              "type": "string",
+              "title": "The Created Schema",
+              "default": "",
+              "examples": [
+                "2018-07-19T10:59:44Z"
+              ],
+              "pattern": "^(.*)$"
+            },
+            "id": {
+              "type": "string",
+              "title": "The Id Schema",
+              "default": "",
+              "examples": [
+                "685b0273-78f7-4f8c-82a6-744f9053ff80"
+              ],
+              "pattern": "^(.*)$"
+            },
+            "externalId": {
+              "type": "string",
+              "title": "The Externalid Schema",
+              "default": "",
+              "examples": [
+                "15"
+              ],
+              "pattern": "^(.*)$"
+            },
+            "memo": {
+              "type": "null",
+              "title": "The Memo Schema",
+              "default": null,
+              "examples": [
+                null
+              ]
+            },
+            "description": {
+              "type": "null",
+              "title": "The Description Schema",
+              "default": null,
+              "examples": [
+                null
+              ]
+            },
+            "name": {
+              "type": "string",
+              "title": "The Name Schema",
+              "default": "",
+              "examples": [
+                "Boulder Mountain HOA"
+              ],
+              "pattern": "^(.*)$"
+            },
+            "legalName": {
+              "type": "null",
+              "title": "The Legalname Schema",
+              "default": null,
+              "examples": [
+                null
+              ]
+            },
+            "dBAName": {
+              "type": "null",
+              "title": "The Dbaname Schema",
+              "default": null,
+              "examples": [
+                null
+              ]
+            },
+            "vendorType": {
+              "type": "null",
+              "title": "The Vendortype Schema",
+              "default": null,
+              "examples": [
+                null
+              ]
+            },
+            "emails": {
+              "type": "null",
+              "title": "The Emails Schema",
+              "default": null,
+              "examples": [
+                null
+              ]
+            },
+            "externalParentId": {
+              "type": "string",
+              "title": "The Externalparentid Schema",
+              "default": "",
+              "examples": [
+                "15"
+              ],
+              "pattern": "^(.*)$"
+            },
+            "address": {
+              "type": "null",
+              "title": "The Address Schema",
+              "default": null,
+              "examples": [
+                null
+              ]
+            },
+            "phones": {
+              "type": "null",
+              "title": "The Phones Schema",
+              "default": null,
+              "examples": [
+                null
+              ]
+            },
+            "parent": {
+              "type": "object",
+              "title": "The Parent Schema",
+              "required": [
+                "modified",
+                "created",
+                "id",
+                "externalId",
+                "memo",
+                "description",
+                "name",
+                "legalName",
+                "dBAName",
+                "vendorType",
+                "emails",
+                "address",
+                "phones",
+                "parent"
+              ],
+              "properties": {
+                "modified": {
+                  "type": "null",
+                  "title": "The Modified Schema",
+                  "default": null,
+                  "examples": [
+                    null
+                  ]
+                },
+                "created": {
+                  "type": "null",
+                  "title": "The Created Schema",
+                  "default": null,
+                  "examples": [
+                    null
+                  ]
+                },
+                "id": {
+                  "type": "string",
+                  "title": "The Id Schema",
+                  "default": "",
+                  "examples": [
+                    "2f436ea7-427d-4a12-9af5-73c8975c545d"
+                  ],
+                  "pattern": "^(.*)$"
+                },
+                "externalId": {
+                  "type": "null",
+                  "title": "The Externalid Schema",
+                  "default": null,
+                  "examples": [
+                    null
+                  ]
+                },
+                "memo": {
+                  "type": "null",
+                  "title": "The Memo Schema",
+                  "default": null,
+                  "examples": [
+                    null
+                  ]
+                },
+                "description": {
+                  "type": "null",
+                  "title": "The Description Schema",
+                  "default": null,
+                  "examples": [
+                    null
+                  ]
+                },
+                "name": {
+                  "type": "null",
+                  "title": "The Name Schema",
+                  "default": null,
+                  "examples": [
+                    null
+                  ]
+                },
+                "legalName": {
+                  "type": "null",
+                  "title": "The Legalname Schema",
+                  "default": null,
+                  "examples": [
+                    null
+                  ]
+                },
+                "dBAName": {
+                  "type": "null",
+                  "title": "The Dbaname Schema",
+                  "default": null,
+                  "examples": [
+                    null
+                  ]
+                },
+                "vendorType": {
+                  "type": "null",
+                  "title": "The Vendortype Schema",
+                  "default": null,
+                  "examples": [
+                    null
+                  ]
+                },
+                "emails": {
+                  "type": "null",
+                  "title": "The Emails Schema",
+                  "default": null,
+                  "examples": [
+                    null
+                  ]
+                },
+                "address": {
+                  "type": "null",
+                  "title": "The Address Schema",
+                  "default": null,
+                  "examples": [
+                    null
+                  ]
+                },
+                "phones": {
+                  "type": "null",
+                  "title": "The Phones Schema",
+                  "default": null,
+                  "examples": [
+                    null
+                  ]
+                },
+                "parent": {
+                  "type": "null",
+                  "title": "The Parent Schema",
+                  "default": null,
+                  "examples": [
+                    null
+                  ]
+                }
+              }
+            },
+            "subsidiaries": {
+              "type": "null",
+              "title": "The Subsidiaries Schema",
+              "default": null,
+              "examples": [
+                null
+              ]
+            },
+            "paymentMethods": {
+              "type": "null",
+              "title": "The Paymentmethods Schema",
+              "default": null,
+              "examples": [
+                null
+              ]
+            }
+          }
+        }
+      },
+      "company": {
+        "type": "object",
+        "title": "The Company Schema",
+        "required": [
+          "modified",
+          "created",
+          "id",
+          "externalId",
+          "memo",
+          "description",
+          "name",
+          "legalName",
+          "dBAName",
+          "vendorType",
+          "emails",
+          "externalParentId",
+          "address",
+          "phones",
+          "parent",
+          "subsidiaries",
+          "paymentMethods"
+        ],
+        "properties": {
+          "modified": {
+            "type": "null",
+            "title": "The Modified Schema",
+            "default": null,
+            "examples": [
+              null
+            ]
+          },
+          "created": {
+            "type": "null",
+            "title": "The Created Schema",
+            "default": null,
+            "examples": [
+              null
+            ]
+          },
+          "id": {
+            "type": "string",
+            "title": "The Id Schema",
+            "default": "",
+            "examples": [
+              "2f436ea7-427d-4a12-9af5-73c8975c545d"
+            ],
+            "pattern": "^(.*)$"
+          },
+          "externalId": {
+            "type": "null",
+            "title": "The Externalid Schema",
+            "default": null,
+            "examples": [
+              null
+            ]
+          },
+          "memo": {
+            "type": "null",
+            "title": "The Memo Schema",
+            "default": null,
+            "examples": [
+              null
+            ]
+          },
+          "description": {
+            "type": "null",
+            "title": "The Description Schema",
+            "default": null,
+            "examples": [
+              null
+            ]
+          },
+          "name": {
+            "type": "null",
+            "title": "The Name Schema",
+            "default": null,
+            "examples": [
+              null
+            ]
+          },
+          "legalName": {
+            "type": "null",
+            "title": "The Legalname Schema",
+            "default": null,
+            "examples": [
+              null
+            ]
+          },
+          "dBAName": {
+            "type": "null",
+            "title": "The Dbaname Schema",
+            "default": null,
+            "examples": [
+              null
+            ]
+          },
+          "vendorType": {
+            "type": "null",
+            "title": "The Vendortype Schema",
+            "default": null,
+            "examples": [
+              null
+            ]
+          },
+          "emails": {
+            "type": "null",
+            "title": "The Emails Schema",
+            "default": null,
+            "examples": [
+              null
+            ]
+          },
+          "externalParentId": {
+            "type": "null",
+            "title": "The Externalparentid Schema",
+            "default": null,
+            "examples": [
+              null
+            ]
+          },
+          "address": {
+            "type": "null",
+            "title": "The Address Schema",
+            "default": null,
+            "examples": [
+              null
+            ]
+          },
+          "phones": {
+            "type": "null",
+            "title": "The Phones Schema",
+            "default": null,
+            "examples": [
+              null
+            ]
+          },
+          "parent": {
+            "type": "null",
+            "title": "The Parent Schema",
+            "default": null,
+            "examples": [
+              null
+            ]
+          },
+          "subsidiaries": {
+            "type": "null",
+            "title": "The Subsidiaries Schema",
+            "default": null,
+            "examples": [
+              null
+            ]
+          },
+          "paymentMethods": {
+            "type": "null",
+            "title": "The Paymentmethods Schema",
+            "default": null,
+            "examples": [
+              null
+            ]
+          }
+        }
+      }
+    }
+  }
